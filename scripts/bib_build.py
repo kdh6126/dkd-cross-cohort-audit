@@ -128,6 +128,16 @@ def figures():
             old = os.path.join(fdir, new + ext)
             if os.path.exists(old):
                 os.remove(old)
+        # ScholarOne 의 proof 변환기는 이 EPS 를 읽지 못해 Save 를 막았다(2026-10-01). 실제로
+        # 올라간 그림은 같은 픽셀의 600 dpi LZW TIFF 다. 해시가 남도록 여기서 같이 만든다.
+        r = subprocess.run(['pdftoppm', '-r', '600', '-png', '-singlefile', src_pdf,
+                            os.path.join(fdir, new)], capture_output=True)
+        if r.returncode != 0:
+            raise SystemExit('TIFF 용 렌더 실패: %s' % src_pdf)
+        from PIL import Image
+        Image.open(os.path.join(fdir, new + '.png')).convert('RGB').save(
+            os.path.join(fdir, new + '.tif'), compression='tiff_lzw', dpi=(600, 600))
+        os.remove(os.path.join(fdir, new + '.png'))
     # 저널은 문서가 쓰는 스타일 파일을 전부 올리라고 한다. 설치본과 같은 파일을 옆에 둔다.
     # 경로에 한글 사용자명이 들어 있어 text=True(cp949)로는 읽지 못한다
     r = subprocess.run(['kpsewhich', CLS + '.cls'], capture_output=True)
@@ -412,7 +422,7 @@ def source_zip():
     out = os.path.join(DST, 'bib-manuscript-source.zip')
     names = ['bib-manuscript.tex', 'bib-manuscript.bbl', 'bib-supplement.tex',
              'bib-supplement.bbl', 'dkd-references.bib', 'bib-vancouver.bst', CLS + '.cls']
-    names += [FIGDIR + '/' + new + '.eps' for new, _ in FIGS + SUPP_FIGS]
+    names += [FIGDIR + '/' + new + ext for new, _ in FIGS + SUPP_FIGS for ext in ('.eps', '.tif')]
     with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
         for n in names:
             p = os.path.join(DST, n)

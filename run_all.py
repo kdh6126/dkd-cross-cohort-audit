@@ -639,7 +639,7 @@ def submit_check():
                     blockers.append('%s: %s' % (label, line.strip()[:96]))
     files = [f for f in SUBMIT_FILES if os.path.exists(f)]
     files += sorted(glob.glob('submission/Fig*.pdf') + glob.glob('submission/Additional_file_*')
-                    + glob.glob('submission_bib/figures/*.eps')
+                    + glob.glob('submission_bib/figures/*.eps') + glob.glob('submission_bib/figures/*.tif')
                     + glob.glob('submission_bib/Supplementary_File_*'))
     state = '최종 (모든 검사 통과)' if not bad else '잠정 (검사 미통과 - 제출본이 아니다)'
     lines = ['# 제출본 해시 %s' % time.strftime('%Y-%m-%dT%H:%M:%S'),
