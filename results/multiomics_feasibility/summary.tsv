@@ -1,0 +1,2 @@
+n_donors	tx_prot_case	tx_prot_control	tx_metab_case	tx_metab_control	metab_types	tx_prot_possible	tx_metab_possible	tx_metab_usable
+80	14	0	13	6	Spatial Lipidomics|Spatial Metabolomics	False	True	False

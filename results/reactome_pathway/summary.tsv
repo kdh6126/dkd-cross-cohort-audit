@@ -1,0 +1,2 @@
+ontology	n_pathways	n_compounds	n_matched	obs_median_abs_g	empirical_p	collagen_pathways	hydroxyproline_captured
+Reactome	216	2855	36	0.20613261149425025	1.0	9	False

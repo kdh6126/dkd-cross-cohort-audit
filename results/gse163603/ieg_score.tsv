@@ -1,0 +1,16 @@
+sample	patient	disease	tissue_source	storage	ieg_score
+17-0001 Interstitium	17-0001	Reference	Nephrectomy	OCT at -80C	0.139879223877166
+17-0002 Interstitium	17-0002	Reference	Nephrectomy	OCT at -80C	-0.42937570471346365
+18-0003v2 Interstitium	18-0003v2	Reference	Nephrectomy	OCT at -80C	-0.19908734597992012
+18-0004 Interstitium	18-0004	Reference	Nephrectomy	OCT at -80C	-0.5384983863361054
+18-0006 Interstitium	18-0006	Reference	Nephrectomy	OCT at -80C	-0.36454725656644077
+18-0007 Interstitium	18-0007	Reference	Nephrectomy	OCT at -80C	-0.02992022011646121
+18-0008 Interstitium	18-0008	Reference	Nephrectomy	OCT at -80C	0.26778950673918495
+18-0009 Interstitium	18-0009	Reference	Nephrectomy	OCT at -80C	1.0092331290427476
+18-0010 Interstitium	18-0010	Reference	Nephrectomy	OCT at -80C	0.3808845136684765
+DM1_S18 Interstitium	DM1_S18	Diabetic Nephropathy	Biopsy	OCT at -80C	-0.3520303475378527
+DM2_S19 Interstitium	DM2_S19	Diabetic Nephropathy	Biopsy	OCT at -80C	-0.0981626713734358
+DM3_S20 Interstitium	DM3_S20	Diabetic Nephropathy	Biopsy	OCT at -80C	-0.14502009119905354
+DM4_S21 Interstitium	DM4_S21	Diabetic Nephropathy	Biopsy	OCT at -80C	-0.44668925682494615
+DM5_S22 Interstitium	DM5_S22	Diabetic Nephropathy	Biopsy	OCT at -80C	-0.1844268482297871
+DM8_S25 Interstitium	DM8_S25	Diabetic Nephropathy	Biopsy	OCT at -80C	0.9899717555498878

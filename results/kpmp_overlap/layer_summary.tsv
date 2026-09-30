@@ -1,0 +1,17 @@
+disease	layers	n_participants	n_transcriptomics	n_proteomics	n_metabolomics
+AKI	imaging|other|proteomics|transcriptomics	7	7	7	0
+AKI	imaging|other|transcriptomics	6	6	0	0
+AKI	imaging|metabolomics|other|transcriptomics	2	2	0	2
+AKI	imaging|metabolomics|other|proteomics|transcriptomics	1	1	1	1
+CKD	imaging|other|transcriptomics	20	20	0	0
+CKD	imaging|metabolomics|other|transcriptomics	10	10	0	10
+CKD	imaging|other|proteomics|transcriptomics	6	6	6	0
+CKD	other|transcriptomics	1	1	0	0
+Deceased_donor	other|transcriptomics	3	3	0	0
+Diabetes_mellitus_resilient	imaging|other|transcriptomics	2	2	0	0
+Healthy_reference_tissue	imaging|other|transcriptomics	6	6	0	0
+Healthy_reference_tissue	imaging|metabolomics|other|transcriptomics	5	5	0	5
+Healthy_reference_tissue	metabolomics|other|transcriptomics	1	1	0	1
+Healthy_stone_donor	other|transcriptomics	4	4	0	0
+Tumor_nephrectomy	other|transcriptomics	4	4	0	0
+Tumor_nephrectomy	imaging|other|transcriptomics	2	2	0	0

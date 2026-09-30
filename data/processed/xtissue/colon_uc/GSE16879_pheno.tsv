@@ -1,0 +1,31 @@
+sample	label	subject_id	title	source
+GSM364627	0	GSM364627	CO1	Colonic mucosal biopsy from control individual
+GSM364628	0	GSM364628	CO2	Colonic mucosal biopsy from control individual
+GSM364629	0	GSM364629	CO3	Colonic mucosal biopsy from control individual
+GSM364630	0	GSM364630	CO4	Colonic mucosal biopsy from control individual
+GSM364631	0	GSM364631	CO5	Colonic mucosal biopsy from control individual
+GSM364632	0	GSM364632	CO6	Colonic mucosal biopsy from control individual
+GSM364633	1	GSM364633	UCR1_beforeT	Colonic mucosal biopsy from UC responder before first infliximab treatment
+GSM364634	1	GSM364634	UCR2_beforeT	Colonic mucosal biopsy from UC responder before first infliximab treatment
+GSM364635	1	GSM364635	UCR3_beforeT	Colonic mucosal biopsy from UC responder before first infliximab treatment
+GSM364636	1	GSM364636	UCR4_beforeT	Colonic mucosal biopsy from UC responder before first infliximab treatment
+GSM364637	1	GSM364637	UCR5_beforeT	Colonic mucosal biopsy from UC responder before first infliximab treatment
+GSM364638	1	GSM364638	UCR6_beforeT	Colonic mucosal biopsy from UC responder before first infliximab treatment
+GSM364639	1	GSM364639	UCR7_beforeT	Colonic mucosal biopsy from UC responder before first infliximab treatment
+GSM364640	1	GSM364640	UCR8_beforeT	Colonic mucosal biopsy from UC responder before first infliximab treatment
+GSM364641	1	GSM364641	UCNR1_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364642	1	GSM364642	UCNR2_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364643	1	GSM364643	UCNR3_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364644	1	GSM364644	UCNR4_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364645	1	GSM364645	UCNR5_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364646	1	GSM364646	UCNR6_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364647	1	GSM364647	UCNR7_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364648	1	GSM364648	UCNR8_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364649	1	GSM364649	UCNR9_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364650	1	GSM364650	UCNR10_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364651	1	GSM364651	UCNR11_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364652	1	GSM364652	UCNR12_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364653	1	GSM364653	UCNR13_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364654	1	GSM364654	UCNR14_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364655	1	GSM364655	UCNR15_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment
+GSM364656	1	GSM364656	UCNR16_beforeT	Colonic mucosal biopsy from UC non-responder before first infliximab treatment

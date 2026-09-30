@@ -1,0 +1,4 @@
+dataset	question	stat	value	verdict
+GSE20602	ERCB 밖 독립 특이성	MWU p	5.135350410004246e-18	DKD 특이
+GSE142153	혈액에서 보이는가	permutation p	0.7976011994002998	조직 국한
+GSE111154	초기에도 변하는가	permutation p	0.0014992503748125937	초기에도 변함

@@ -1,0 +1,33 @@
+asset	size_gb	role	usage	state	path
+GSE142025	0.011	RNA-seq, whole cortex, 27 DKD / 9 ctrl	LODO member (all4), harmonised	used	data/raw/geo/GSE142025
+GSE30528	0.002	array, glomeruli, 9 DKD / 13 ctrl	LODO member, harmonised	used	data/raw/geo/GSE30528
+GSE96804	0.014	array, glomeruli, 41 DKD / 20 ctrl	LODO member, harmonised	used	data/raw/geo/GSE96804
+GSE104948	0.013	array, glomeruli, 12 DKD / 26 ctrl / 158 other CKD	LODO member + specificity gate, harmonised	used	data/raw/geo/GSE104948
+GSE30529	0.002	array, tubulointerstitium, 10 DKD / 12 ctrl	compartment validation	used	data/raw/geo/GSE30529
+GSE104954	0.013	array, tubulointerstitium, 17 DKD / 26 ctrl / 152 other CKD	compartment validation + specificity gate	used	data/raw/geo/GSE104954
+GSE294519	0.002	RNA-seq, tubulointerstitium, 23 DKD / 13 tumour-nephrectomy control	fifth cohort, mapped into the frozen gene space at 98.5% coverage	used	data/raw/geo/GSE294519
+GSE30122	0.007	array, superseries	EXCLUDED - duplicates GSE30528+GSE30529	excluded	data/raw/geo/GSE30122
+GSE47183	0.008	array, ERCB glomeruli	EXCLUDED - DN subjects identical to GSE104948	excluded	data/raw/geo/GSE47183
+GSE99340	0.026	array, ERCB + cell lines	EXCLUDED - ERCB superset	excluded	data/raw/geo/GSE99340
+GSE131882	1.487	snRNA-seq, 3 DKD / 3 ctrl	UNUSED	unused	data/raw/geo/GSE131882
+GSE175759	0.052	RNA-seq tubulointerstitium, 90 samples	procurement replication (independent platform)	used	data/raw/geo/GSE175759
+GSE142153	0.009	array, PBMC blood, 23 DKD / 10 ctrl / 7 ESRD	UNUSED	unused	data/raw/geo/GSE142153
+GSE1009	0.0	array, 3v3, HG-U95Av2	UNUSED - too small / obsolete platform	unused	data/raw/geo/GSE1009
+GSE111154	0.002	array, early DN, 4v4	UNUSED - too small	unused	data/raw/geo/GSE111154
+GSE20602	0.002	array, nephrosclerosis	UNUSED - not DKD	unused	data/raw/geo/GSE20602
+GSE163603	0.002	RNA-seq, 레이저 미세절단 구획별, DKD 6명 / Reference 9명	preanalytical test - the only cohort besides GSE162830 that reports storage	used	data/raw/geo/GSE163603
+GSE162830	0.001	RNA-seq, histology-matched DN vs ING	histology-matched contrast (the one dataset with no procurement effect)	used	data/raw/geo/GSE162830
+GSE5406	0.024	array, human heart failure vs donor	external organ control - bounds the claim to kidney procurement	used	data/raw/geo/GSE5406
+KPMP v1.5 snRNA	3.034	single-nucleus atlas, 304,989 nuclei	donor-level pseudobulk negative control (DKD vs non-diabetic CKD biopsy)	used	data/raw/kpmp/KPMP_v1.5_snRNA_human_kidney.h5ad
+KPMP v1.5 scRNA	1.822	single-cell atlas, 225,177 cells	UNUSED (the GraphQL API was used instead)	unused	data/raw/kpmp/KPMP_v1.5_scRNA_human_kidney.h5ad
+KPMP Atlas API	0.0	per-gene cell type + regional proteomics	USED - 30 candidates corroborated	used	
+GWAS Catalog	0.696	GCST90018612/832, GCST90179152, GCST005886, GCST90134333-4	germline layer, SNP-count-matched nulls	used	data/raw/gwas
+Mendeley 83k89shdx5	0.0	SOMAscan 신장 피질, DKD 23 / 정상 10	USED - 후보 7개를 쟀고 4개가 q<0.05	used	data/raw/proteomics/mendeley_83k89shdx5
+PRIDE PXD041884	0.004	LC-MS/MS FFPE 신장 피질, DKD 5 / 비당뇨 7	USED - 후보 7개를 쟀고 2개가 q<0.05. 양쪽 조달 경로가 같다	used	data/raw/proteomics/pride_PXD041884
+ST003255	0.0	LC-MS 혈장, DKD 64 / IgAN 66 / MN 66 / HN 24 / 정상 66	second-modality contrast; the confounder-matched design in metabolomics	used	data/raw/metabolomics/ST003255
+ST001411	0.001	LC-MS 혈장, 당뇨+신경병증 48 / 당뇨만 49 / 정상 9	generalisation test: does the matched-comparator recommendation hold elsewhere	used	data/raw/metabolomics/ST001411
+ST000691	0.0	DKD 대사체 n=17	UNUSED - no comparison group	unused	data/raw/metabolomics/ST000691
+ST004442	0.0	DKD 혈장 대사체 2025	UNUSED - raw spectra only, no quantified matrix	unused	data/raw/metabolomics/ST004442
+ST004483	0.0	DKD 소변 대사체 2025	UNUSED - raw spectra only, no quantified matrix	unused	data/raw/metabolomics/ST004483
+ST002145	0.001	ChREBP 관련 대사체	UNUSED - not a human DKD case/control design	unused	data/raw/metabolomics/ST002145
+GPL571 / GPL17586 / gene_info	0.219	probe -> Entrez mapping	USED - gene space construction	used	data/raw/annotation

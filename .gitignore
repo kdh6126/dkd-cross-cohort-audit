@@ -1,0 +1,19 @@
+# raw third-party data: fetched by `python run_all.py --stage download`
+data/raw/
+
+# regenerable stores and caches
+db/dkd.sqlite
+db/columnar/
+**/expr_cache.npz
+__pycache__/
+*.pyc
+
+# stage logs
+logs/
+
+# LaTeX build products
+submission/*.aux
+submission/*.bbl
+submission/*.blg
+submission/*.log
+submission/*.out

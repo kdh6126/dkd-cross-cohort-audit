@@ -1,0 +1,8 @@
+cohort	role	compartment	platform	n_case	n_control	n_other	genes	case_procurement	control_procurement
+GSE104948	discovery	glomerulus	GPL22945/GPL24120	12	26	0	9900	biopsy	donor, nephrec.
+GSE142025	discovery	whole_cortex	Illumina_HiSeq4000	27	9	0	9900	biopsy	nephrec.
+GSE294519	discovery	tubulointerstitium	GPL24676	23	13	0	9900	biopsy	nephrec.
+GSE30528	discovery	glomerulus	GPL571	9	13	0	9900	biopsy	nephrec.
+GSE96804	discovery	glomerulus	GPL17586	41	20	0	9900	biopsy	nephrec.
+GSE104954	compartment pair	tubulointerstitium	GPL22945/GPL24120	17	26	0	9900	biopsy	donor, nephrec.
+GSE30529	compartment pair	tubulointerstitium	GPL571	10	12	0	9900	biopsy	nephrec.

@@ -1,0 +1,296 @@
+\begin{thebibliography}{10}
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\bibcommenthead
+
+\bibitem[\protect\citeauthoryear{Haynes et~al.}{2017}]{haynes2017}
+Haynes W, Vallania F, Liu C, et~al.
+\newblock {Empowering multi-cohort gene expression analysis to increase
+  reproducibility}.
+\newblock Pac Symp Biocomput. 2017;22:144--153.
+\newblock PMID: 27896970. \doi{10.1142/9789813207813_0015}.
+
+\bibitem[\protect\citeauthoryear{Meinshausen and
+  B{\"u}hlmann}{2010}]{meinshausen2010}
+Meinshausen N, B{\"u}hlmann P.
+\newblock Stability selection.
+\newblock Journal of the Royal Statistical Society: Series B.
+  2010;72(4):417--473.
+\newblock \doi{10.1111/j.1467-9868.2010.00740.x}.
+
+\bibitem[\protect\citeauthoryear{Simon et~al.}{2003}]{simon2003}
+Simon R, Radmacher M, Dobbin K, et~al.
+\newblock {Pitfalls in the use of DNA microarray data for diagnostic and
+  prognostic classification}.
+\newblock J Natl Cancer Inst. 2003;95(1):14--8.
+\newblock PMID: 12509396. \doi{10.1093/jnci/95.1.14}.
+
+\bibitem[\protect\citeauthoryear{Whalen et~al.}{2022}]{whalen2022}
+Whalen S, Schreiber J, Noble W, et~al.
+\newblock {Navigating the pitfalls of applying machine learning in genomics}.
+\newblock Nat Rev Genet. 2022;23(3):169--181.
+\newblock PMID: 34837041. \doi{10.1038/s41576-021-00434-9}.
+
+\bibitem[\protect\citeauthoryear{Diaz-Uriarte et~al.}{2022}]{diazuriarte2022}
+Diaz-Uriarte R, Gómez~de Lope E, Giugno R, et~al.
+\newblock {Ten quick tips for biomarker discovery and validation analyses using
+  machine learning}.
+\newblock PLoS Comput Biol. 2022;18(8):e1010357.
+\newblock PMID: 35951526. \doi{10.1371/journal.pcbi.1010357}.
+
+\bibitem[\protect\citeauthoryear{Leek et~al.}{2010}]{leek2010}
+Leek J, Scharpf R, Bravo H, et~al.
+\newblock {Tackling the widespread and critical impact of batch effects in
+  high-throughput data}.
+\newblock Nat Rev Genet. 2010;11(10):733--9.
+\newblock PMID: 20838408. \doi{10.1038/nrg2825}.
+
+\bibitem[\protect\citeauthoryear{Boulesteix et~al.}{2013}]{boulesteix2013}
+Boulesteix A, Lauer S, Eugster M.
+\newblock {A plea for neutral comparison studies in computational sciences}.
+\newblock PLoS One. 2013;8(4):e61562.
+\newblock PMID: 23637855. \doi{10.1371/journal.pone.0061562}.
+
+\bibitem[\protect\citeauthoryear{Jelizarow et~al.}{2010}]{jelizarow2010}
+Jelizarow M, Guillemot V, Tenenhaus A, et~al.
+\newblock {Over-optimism in bioinformatics: an illustration}.
+\newblock Bioinformatics. 2010;26(16):1990--8.
+\newblock PMID: 20581402. \doi{10.1093/bioinformatics/btq323}.
+
+\bibitem[\protect\citeauthoryear{Ullmann et~al.}{2023}]{ullmann2023}
+Ullmann T, Peschel S, Finger P, et~al.
+\newblock {Over-optimism in unsupervised microbiome analysis: Insights from
+  network learning and clustering}.
+\newblock PLoS Comput Biol. 2023;19(1):e1010820.
+\newblock PMID: 36608142. \doi{10.1371/journal.pcbi.1010820}.
+
+\bibitem[\protect\citeauthoryear{Weber et~al.}{2019}]{weber2019}
+Weber L, Saelens W, Cannoodt R, et~al.
+\newblock {Essential guidelines for computational method benchmarking}.
+\newblock Genome Biol. 2019;20(1):125.
+\newblock PMID: 31221194. \doi{10.1186/s13059-019-1738-8}.
+
+\bibitem[\protect\citeauthoryear{Mangul et~al.}{2019}]{mangul2019}
+Mangul S, Martin L, Hill B, et~al.
+\newblock {Systematic benchmarking of omics computational tools}.
+\newblock Nat Commun. 2019;10(1):1393.
+\newblock PMID: 30918265. \doi{10.1038/s41467-019-09406-4}.
+
+\bibitem[\protect\citeauthoryear{Norel et~al.}{2011}]{norel2011}
+Norel R, Rice J, Stolovitzky G.
+\newblock {The self-assessment trap: can we all be better than average?}
+\newblock Mol Syst Biol. 2011;7:537.
+\newblock PMID: 21988833. \doi{10.1038/msb.2011.70}.
+
+\bibitem[\protect\citeauthoryear{Dehghani et~al.}{2021}]{dehghani2021}
+Dehghani M, Tay Y, Gritsenko A, et~al.
+\newblock The benchmark lottery.
+\newblock arXiv. 2021;ArXiv:2107.07002.
+
+\bibitem[\protect\citeauthoryear{Haury et~al.}{2011}]{haury2011}
+Haury A, Gestraud P, Vert J.
+\newblock {The influence of feature selection methods on accuracy, stability
+  and interpretability of molecular signatures}.
+\newblock PLoS One. 2011;6(12):e28210.
+\newblock PMID: 22205940. \doi{10.1371/journal.pone.0028210}.
+
+\bibitem[\protect\citeauthoryear{Ebiele et~al.}{2026}]{ebiele2026}
+Ebiele M, Bendechache M, Brennan R.
+\newblock {Bias in filter feature selection evaluation: a meta-analysis of
+  datasets, baselines, and experimental design choices}.
+\newblock arXiv. 2026;ArXiv:2606.07068. \doi{10.48550/arXiv.2606.07068}.
+
+\bibitem[\protect\citeauthoryear{Angelakis}{2026}]{angelakis2026}
+Angelakis A.
+\newblock {REDE: a quantitative framework for differential-expression
+  reproducibility and diagnostic transfer across nine cohorts and three
+  cancers}.
+\newblock arXiv. 2026;ArXiv:2608.02796. \doi{10.48550/arXiv.2608.02796}.
+
+\bibitem[\protect\citeauthoryear{Woroniecka et~al.}{2011}]{woroniecka2011}
+Woroniecka K, Park A, Mohtat D, et~al.
+\newblock {Transcriptome analysis of human diabetic kidney disease}.
+\newblock Diabetes. 2011;60(9):2354--69.
+\newblock PMID: 21752957. \doi{10.2337/db10-1181}.
+
+\bibitem[\protect\citeauthoryear{Pan et~al.}{2018}]{pan2018}
+Pan Y, Jiang S, Hou Q, et~al.
+\newblock {Dissection of Glomerular Transcriptional Profile in Patients With
+  Diabetic Nephropathy: SRGAP2a Protects Podocyte Structure and Function}.
+\newblock Diabetes. 2018;67(4):717--730.
+\newblock PMID: 29242313. \doi{10.2337/db17-0755}.
+
+\bibitem[\protect\citeauthoryear{Grayson et~al.}{2018}]{grayson2018}
+Grayson P, Eddy S, Taroni J, et~al.
+\newblock {Metabolic pathways and immunometabolism in rare kidney diseases}.
+\newblock Ann Rheum Dis. 2018;77(8):1226--1233.
+\newblock PMID: 29724730. \doi{10.1136/annrheumdis-2017-212935}.
+
+\bibitem[\protect\citeauthoryear{Fan et~al.}{2019}]{fan2019}
+Fan Y, Yi Z, D'Agati V, et~al.
+\newblock {Comparison of Kidney Transcriptomic Profiles of Early and Advanced
+  Diabetic Nephropathy Reveals Potential New Mechanisms for Disease
+  Progression}.
+\newblock Diabetes. 2019;68(12):2301--2314.
+\newblock PMID: 31578193. \doi{10.2337/db19-0204}.
+
+\bibitem[\protect\citeauthoryear{Jin et~al.}{2026}]{jin2026}
+Jin Q, Li L, Qu P, et~al.
+\newblock {Mitigation of renal tubular injury by SIRT6 may improve individual
+  outcomes in diabetic kidney disease-potential mechanisms involving epigenetic
+  repression of inflammatory responses}.
+\newblock J Adv Res. 2026;85:281--294.
+\newblock PMID: 41076119. \doi{10.1016/j.jare.2025.10.008}.
+
+\bibitem[\protect\citeauthoryear{Park et~al.}{2022}]{park2022}
+Park S, Lee H, Lee J, et~al.
+\newblock {RNA-seq profiling of tubulointerstitial tissue reveals a potential
+  therapeutic role of dual anti-phosphatase 1 in glomerulonephritis}.
+\newblock J Cell Mol Med. 2022;26(12):3364--3377.
+\newblock PMID: 35488446. \doi{10.1111/jcmm.17340}.
+
+\bibitem[\protect\citeauthoryear{Eadon et~al.}{2021}]{eadon2021}
+Eadon M, Lampe S, Baig M, et~al.
+\newblock {Clinical, histopathologic and molecular features of idiopathic and
+  diabetic nodular mesangial sclerosis in humans}.
+\newblock Nephrol Dial Transplant. 2021;37(1):72--84.
+\newblock PMID: 33537765. \doi{10.1093/ndt/gfaa331}.
+
+\bibitem[\protect\citeauthoryear{Sur et~al.}{2021}]{sur2021}
+Sur S, Nguyen M, Boada P, et~al.
+\newblock {FcER1: A Novel Molecule Implicated in the Progression of Human
+  Diabetic Kidney Disease}.
+\newblock Front Immunol. 2021;12:769972.
+\newblock PMID: 34925339. \doi{10.3389/fimmu.2021.769972}.
+
+\bibitem[\protect\citeauthoryear{Baelde et~al.}{2004}]{baelde2004}
+Baelde H, Eikmans M, Doran P, et~al.
+\newblock {Gene expression profiling in glomeruli from human kidneys with
+  diabetic nephropathy}.
+\newblock Am J Kidney Dis. 2004;43(4):636--50.
+\newblock PMID: 15042541. \doi{10.1053/j.ajkd.2003.12.028}.
+
+\bibitem[\protect\citeauthoryear{Sircar et~al.}{2018}]{sircar2018}
+Sircar M, Rosales I, Selig M, et~al.
+\newblock {Complement 7 Is Up-Regulated in Human Early Diabetic Kidney
+  Disease}.
+\newblock Am J Pathol. 2018;188(10):2147--2154.
+\newblock PMID: 30253844. \doi{10.1016/j.ajpath.2018.06.018}.
+
+\bibitem[\protect\citeauthoryear{Neusser et~al.}{2010}]{neusser2010}
+Neusser M, Lindenmeyer M, Moll A, et~al.
+\newblock {Human nephrosclerosis triggers a hypoxia-related glomerulopathy}.
+\newblock Am J Pathol. 2010;176(2):594--607.
+\newblock PMID: 20019191. \doi{10.2353/ajpath.2010.090268}.
+
+\bibitem[\protect\citeauthoryear{Hannenhalli et~al.}{2006}]{hannenhalli2006}
+Hannenhalli S, Putt M, Gilmore J, et~al.
+\newblock {Transcriptional genomics associates FOX transcription factors with
+  human heart failure}.
+\newblock Circulation. 2006;114(12):1269--76.
+\newblock PMID: 16952980. \doi{10.1161/CIRCULATIONAHA.106.632430}.
+
+\bibitem[\protect\citeauthoryear{El-Achkar et~al.}{2021}]{elachkar2021}
+El-Achkar T, Eadon M, Menon R, et~al.
+\newblock {A multimodal and integrated approach to interrogate human kidney
+  biopsies with rigor and reproducibility: guidelines from the Kidney Precision
+  Medicine Project}.
+\newblock Physiol Genomics. 2021;53(1):1--11.
+\newblock PMID: 33197228. \doi{10.1152/physiolgenomics.00104.2020}.
+
+\bibitem[\protect\citeauthoryear{Lake et~al.}{2023}]{lake2023}
+Lake B, Menon R, Winfree S, et~al.
+\newblock {An atlas of healthy and injured cell states and niches in the human
+  kidney}.
+\newblock Nature. 2023;619(7970):585--594.
+\newblock \doi{10.1038/s41586-023-05769-3}.
+
+\bibitem[\protect\citeauthoryear{Whitlock}{2005}]{whitlock2005}
+Whitlock M.
+\newblock {Combining probability from independent tests: the weighted Z
+  ‐method is superior to Fisher's approach}.
+\newblock Journal of Evolutionary Biology. 2005;18(5):1368--1373.
+\newblock \doi{10.1111/j.1420-9101.2005.00917.x}.
+
+\bibitem[\protect\citeauthoryear{Langfelder and Horvath}{2008}]{langfelder2008}
+Langfelder P, Horvath S.
+\newblock {WGCNA: an R package for weighted correlation network analysis}.
+\newblock BMC Bioinformatics. 2008;9:559.
+\newblock PMID: 19114008. \doi{10.1186/1471-2105-9-559}.
+
+\bibitem[\protect\citeauthoryear{Feng et~al.}{2021}]{feng2021}
+Feng S, Gao Y, Yin D, et~al.
+\newblock {Identification of Lumican and Fibromodulin as Hub Genes Associated
+  with Accumulation of Extracellular Matrix in Diabetic Nephropathy}.
+\newblock Kidney Blood Press Res. 2021;46(3):275--285.
+\newblock PMID: 33887734. \doi{10.1159/000514013}.
+
+\bibitem[\protect\citeauthoryear{Risso et~al.}{2014}]{risso2014}
+Risso D, Ngai J, Speed T, et~al.
+\newblock {Normalization of RNA-seq data using factor analysis of control genes
+  or samples}.
+\newblock Nat Biotechnol. 2014;32(9):896--902.
+\newblock PMID: 25150836. \doi{10.1038/nbt.2931}.
+
+\bibitem[\protect\citeauthoryear{Leek and Storey}{2007}]{leek2007}
+Leek J, Storey J.
+\newblock {Capturing heterogeneity in gene expression studies by surrogate
+  variable analysis}.
+\newblock PLoS Genet. 2007;3(9):1724--35.
+\newblock PMID: 17907809. \doi{10.1371/journal.pgen.0030161}.
+
+\bibitem[\protect\citeauthoryear{Johnson et~al.}{2007}]{johnson2007}
+Johnson W, Li C, Rabinovic A.
+\newblock {Adjusting batch effects in microarray expression data using
+  empirical Bayes methods}.
+\newblock Biostatistics. 2007;8(1):118--27.
+\newblock PMID: 16632515. \doi{10.1093/biostatistics/kxj037}.
+
+\bibitem[\protect\citeauthoryear{Hedges}{1981}]{hedges1981}
+Hedges L.
+\newblock {Distribution Theory for Glass's Estimator of Effect size and Related
+  Estimators}.
+\newblock Journal of Educational Statistics. 1981;6(2):107--128.
+\newblock \doi{10.3102/10769986006002107}.
+
+\bibitem[\protect\citeauthoryear{Ma et~al.}{2012}]{ma2012}
+Ma Y, Dai H, Kong X.
+\newblock {Impact of warm ischemia on gene expression analysis in surgically
+  removed biosamples}.
+\newblock Anal Biochem. 2012;423(2):229--35.
+\newblock PMID: 22343191. \doi{10.1016/j.ab.2012.02.003}.
+
+\bibitem[\protect\citeauthoryear{Ferreira et~al.}{2018}]{ferreira2018}
+Ferreira P, Mu{\~n}oz-Aguirre M, Reverter F, et~al.
+\newblock {The effects of death and post-mortem cold ischemia on human tissue
+  transcriptomes}.
+\newblock Nat Commun. 2018;9:490.
+\newblock \doi{10.1038/s41467-017-02772-x}.
+
+\bibitem[\protect\citeauthoryear{Menon et~al.}{2026}]{menon2026}
+Menon R, Kimmel P, Otto E, et~al.
+\newblock {Not all reference samples are equal in single-cell transcriptomics
+  of human kidney tissue}.
+\newblock JCI Insight. 2026;11(14):e204385.
+\newblock \doi{10.1172/jci.insight.204385}.
+
+\bibitem[\protect\citeauthoryear{Betsou et~al.}{2010}]{betsou2010}
+Betsou F, Lehmann S, Ashton G, et~al.
+\newblock {Standard preanalytical coding for biospecimens: defining the sample
+  PREanalytical code}.
+\newblock Cancer Epidemiol Biomarkers Prev. 2010;19(4):1004--11.
+\newblock PMID: 20332280. \doi{10.1158/1055-9965.EPI-09-1268}.
+
+\bibitem[\protect\citeauthoryear{Lehmann et~al.}{2012}]{lehmann2012}
+Lehmann S, Guadagni F, Moore H, et~al.
+\newblock {Standard preanalytical coding for biospecimens: review and
+  implementation of the Sample PREanalytical Code (SPREC)}.
+\newblock Biopreserv Biobank. 2012;10(4):366--74.
+\newblock PMID: 24849886. \doi{10.1089/bio.2012.0012}.
+
+\bibitem[\protect\citeauthoryear{Moore et~al.}{2011}]{moore2011}
+Moore H, Kelly A, Jewell S, et~al.
+\newblock {Biospecimen reporting for improved study quality (BRISQ)}.
+\newblock J Proteome Res. 2011;10(8):3429--38.
+\newblock PMID: 21574648. \doi{10.1021/pr200021n}.
+
+\end{thebibliography}

@@ -1,0 +1,86 @@
+sample	label	subject_id	title	source
+GSM1426079	0	GSM1426079	control_colon_76	Biopsy from normal colonic mucosa of control individual
+GSM1426080	0	GSM1426080	control_colon_77	Biopsy from normal colonic mucosa of control individual
+GSM1426081	0	GSM1426081	control_colon_78	Biopsy from normal colonic mucosa of control individual
+GSM1426082	0	GSM1426082	control_colon_79	Biopsy from normal colonic mucosa of control individual
+GSM1426083	0	GSM1426083	control_colon_80	Biopsy from normal colonic mucosa of control individual
+GSM1426084	0	GSM1426084	control_colon_81	Biopsy from normal colonic mucosa of control individual
+GSM1426085	0	GSM1426085	control_colon_82	Biopsy from normal colonic mucosa of control individual
+GSM1426086	0	GSM1426086	control_colon_83	Biopsy from normal colonic mucosa of control individual
+GSM1426087	0	GSM1426087	control_colon_84	Biopsy from normal colonic mucosa of control individual
+GSM1426088	0	GSM1426088	control_colon_85	Biopsy from normal colonic mucosa of control individual
+GSM1426089	0	GSM1426089	control_colon_86	Biopsy from normal colonic mucosa of control individual
+GSM1426090	1	GSM1426090	UC_colon_active_105	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426091	1	GSM1426091	UC_colon_active_106	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426092	1	GSM1426092	UC_colon_active_107	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426093	1	GSM1426093	UC_colon_active_108	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426094	1	GSM1426094	UC_colon_active_109	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426095	1	GSM1426095	UC_colon_active_110	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426096	1	GSM1426096	UC_colon_active_111	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426097	1	GSM1426097	UC_colon_active_112	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426098	1	GSM1426098	UC_colon_active_113	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426099	1	GSM1426099	UC_colon_active_114	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426100	1	GSM1426100	UC_colon_active_115	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426101	1	GSM1426101	UC_colon_active_116	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426102	1	GSM1426102	UC_colon_active_117	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426103	1	GSM1426103	UC_colon_active_118	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426104	1	GSM1426104	UC_colon_active_119	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426105	1	GSM1426105	UC_colon_active_120	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426106	1	GSM1426106	UC_colon_active_121	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426107	1	GSM1426107	UC_colon_active_122	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426108	1	GSM1426108	UC_colon_active_123	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426109	1	GSM1426109	UC_colon_active_124	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426110	1	GSM1426110	UC_colon_active_125	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426111	1	GSM1426111	UC_colon_active_126	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426112	1	GSM1426112	UC_colon_active_127	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426113	1	GSM1426113	UC_colon_active_128	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426114	1	GSM1426114	UC_colon_active_129	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426115	1	GSM1426115	UC_colon_active_130	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426116	1	GSM1426116	UC_colon_active_131	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426117	1	GSM1426117	UC_colon_active_132	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426118	1	GSM1426118	UC_colon_active_133	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426119	1	GSM1426119	UC_colon_active_134	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426120	1	GSM1426120	UC_colon_active_135	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426121	1	GSM1426121	UC_colon_active_136	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426122	1	GSM1426122	UC_colon_active_137	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426123	1	GSM1426123	UC_colon_active_138	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426124	1	GSM1426124	UC_colon_active_139	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426125	1	GSM1426125	UC_colon_active_140	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426126	1	GSM1426126	UC_colon_active_141	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426127	1	GSM1426127	UC_colon_active_142	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426128	1	GSM1426128	UC_colon_active_143	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426129	1	GSM1426129	UC_colon_active_144	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426130	1	GSM1426130	UC_colon_active_145	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426131	1	GSM1426131	UC_colon_active_146	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426132	1	GSM1426132	UC_colon_active_147	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426133	1	GSM1426133	UC_colon_active_148	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426134	1	GSM1426134	UC_colon_active_149	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426135	1	GSM1426135	UC_colon_active_150	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426136	1	GSM1426136	UC_colon_active_151	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426137	1	GSM1426137	UC_colon_active_152	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426138	1	GSM1426138	UC_colon_active_153	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426139	1	GSM1426139	UC_colon_active_154	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426140	1	GSM1426140	UC_colon_active_155	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426141	1	GSM1426141	UC_colon_active_156	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426142	1	GSM1426142	UC_colon_active_157	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426143	1	GSM1426143	UC_colon_active_158	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426144	1	GSM1426144	UC_colon_active_159	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426145	1	GSM1426145	UC_colon_active_160	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426146	1	GSM1426146	UC_colon_active_161	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426147	1	GSM1426147	UC_colon_active_162	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426148	1	GSM1426148	UC_colon_active_163	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426149	1	GSM1426149	UC_colon_active_164	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426150	1	GSM1426150	UC_colon_active_165	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426151	1	GSM1426151	UC_colon_active_166	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426152	1	GSM1426152	UC_colon_active_167	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426153	1	GSM1426153	UC_colon_active_168	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426154	1	GSM1426154	UC_colon_active_169	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426155	1	GSM1426155	UC_colon_active_170	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426156	1	GSM1426156	UC_colon_active_171	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426157	1	GSM1426157	UC_colon_active_172	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426158	1	GSM1426158	UC_colon_active_173	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426159	1	GSM1426159	UC_colon_active_174	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426160	1	GSM1426160	UC_colon_active_175	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426161	1	GSM1426161	UC_colon_active_176	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426162	1	GSM1426162	UC_colon_active_177	Biopsy from inflamed colonic mucosa of active UC patient
+GSM1426163	1	GSM1426163	UC_colon_active_178	Biopsy from inflamed colonic mucosa of active UC patient

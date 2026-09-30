@@ -1,0 +1,23 @@
+cohort	sample	title	subject_id	group	label	stage	control_type	platform	compartment
+GSE30529	GSM757014	Diabetic Human Kidney 43, Tubuli	43	DKD	1			GPL571	tubulointerstitium
+GSE30529	GSM757015	Diabetic Human Kidney 62, Tubuli	62	DKD	1			GPL571	tubulointerstitium
+GSE30529	GSM757016	Diabetic Human Kidney 67, Tubuli	67	DKD	1			GPL571	tubulointerstitium
+GSE30529	GSM757017	Diabetic Human Kidney 120, Tubuli	120	DKD	1			GPL571	tubulointerstitium
+GSE30529	GSM757018	Diabetic Human Kidney 148, Tubuli	148	DKD	1			GPL571	tubulointerstitium
+GSE30529	GSM757019	Diabetic Human Kidney 162, Tubuli	162	DKD	1			GPL571	tubulointerstitium
+GSE30529	GSM757020	Diabetic Human Kidney 164, Tubuli	164	DKD	1			GPL571	tubulointerstitium
+GSE30529	GSM757021	Diabetic Human Kidney 168, Tubuli	168	DKD	1			GPL571	tubulointerstitium
+GSE30529	GSM757022	Diabetic Human Kidney 178, Tubuli	178	DKD	1			GPL571	tubulointerstitium
+GSE30529	GSM757023	Diabetic Human Kidney 187, Tubuli	187	DKD	1			GPL571	tubulointerstitium
+GSE30529	GSM757024	Control Human Kidney 17, Tubuli	17	control	0		tumor_nephrectomy	GPL571	tubulointerstitium
+GSE30529	GSM757025	Control Human Kidney 37, Tubuli	37	control	0		tumor_nephrectomy	GPL571	tubulointerstitium
+GSE30529	GSM757026	Control Human Kidney 53, Tubuli	53	control	0		tumor_nephrectomy	GPL571	tubulointerstitium
+GSE30529	GSM757027	Control Human Kidney 64, Tubuli	64	control	0		tumor_nephrectomy	GPL571	tubulointerstitium
+GSE30529	GSM757028	Control Human Kidney 70, Tubuli	70	control	0		tumor_nephrectomy	GPL571	tubulointerstitium
+GSE30529	GSM757029	Control Human Kidney 76, Tubuli	76	control	0		tumor_nephrectomy	GPL571	tubulointerstitium
+GSE30529	GSM757030	Control Human Kidney 77, Tubuli	77	control	0		tumor_nephrectomy	GPL571	tubulointerstitium
+GSE30529	GSM757031	Control Human Kidney 81, Tubuli	81	control	0		tumor_nephrectomy	GPL571	tubulointerstitium
+GSE30529	GSM757032	Control Human Kidney 82, Tubuli	82	control	0		tumor_nephrectomy	GPL571	tubulointerstitium
+GSE30529	GSM757033	Control Human Kidney 160, Tubuli	160	control	0		tumor_nephrectomy	GPL571	tubulointerstitium
+GSE30529	GSM757034	Control Human Kidney 172, Tubuli	172	control	0		tumor_nephrectomy	GPL571	tubulointerstitium
+GSE30529	GSM757035	Control Human Kidney 177, Tubuli	177	control	0		tumor_nephrectomy	GPL571	tubulointerstitium

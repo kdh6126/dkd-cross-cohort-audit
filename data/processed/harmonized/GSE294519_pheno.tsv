@@ -1,0 +1,37 @@
+cohort	sample	title	subject_id	group	label	stage	control_type	platform	compartment
+GSE294519	DKD 1	DKD 1	DKD 1	DKD	1			GPL24676	tubulointerstitium
+GSE294519	Normal 1	Normal 1	Normal 1	control	0		tumor_nephrectomy	GPL24676	tubulointerstitium
+GSE294519	Normal 2	Normal 2	Normal 2	control	0		tumor_nephrectomy	GPL24676	tubulointerstitium
+GSE294519	Normal 3	Normal 3	Normal 3	control	0		tumor_nephrectomy	GPL24676	tubulointerstitium
+GSE294519	Normal 4	Normal 4	Normal 4	control	0		tumor_nephrectomy	GPL24676	tubulointerstitium
+GSE294519	Normal 5	Normal 5	Normal 5	control	0		tumor_nephrectomy	GPL24676	tubulointerstitium
+GSE294519	Normal 6	Normal 6	Normal 6	control	0		tumor_nephrectomy	GPL24676	tubulointerstitium
+GSE294519	Normal 7	Normal 7	Normal 7	control	0		tumor_nephrectomy	GPL24676	tubulointerstitium
+GSE294519	Normal 8	Normal 8	Normal 8	control	0		tumor_nephrectomy	GPL24676	tubulointerstitium
+GSE294519	Normal 9	Normal 9	Normal 9	control	0		tumor_nephrectomy	GPL24676	tubulointerstitium
+GSE294519	Normal 10	Normal 10	Normal 10	control	0		tumor_nephrectomy	GPL24676	tubulointerstitium
+GSE294519	Normal 11	Normal 11	Normal 11	control	0		tumor_nephrectomy	GPL24676	tubulointerstitium
+GSE294519	DKD 2	DKD 2	DKD 2	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 3	DKD 3	DKD 3	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 4	DKD 4	DKD 4	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 5	DKD 5	DKD 5	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 6	DKD 6	DKD 6	DKD	1			GPL24676	tubulointerstitium
+GSE294519	Normal 12	Normal 12	Normal 12	control	0		tumor_nephrectomy	GPL24676	tubulointerstitium
+GSE294519	Normal 13	Normal 13	Normal 13	control	0		tumor_nephrectomy	GPL24676	tubulointerstitium
+GSE294519	DKD 7	DKD 7	DKD 7	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 8	DKD 8	DKD 8	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 9	DKD 9	DKD 9	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 10	DKD 10	DKD 10	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 11	DKD 11	DKD 11	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 12	DKD 12	DKD 12	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 13	DKD 13	DKD 13	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 14	DKD 14	DKD 14	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 15	DKD 15	DKD 15	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 16	DKD 16	DKD 16	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 17	DKD 17	DKD 17	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 18	DKD 18	DKD 18	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 19	DKD 19	DKD 19	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 20	DKD 20	DKD 20	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 21	DKD 21	DKD 21	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 22	DKD 22	DKD 22	DKD	1			GPL24676	tubulointerstitium
+GSE294519	DKD 23	DKD 23	DKD 23	DKD	1			GPL24676	tubulointerstitium

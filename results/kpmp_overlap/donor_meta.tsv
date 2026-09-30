@@ -1,0 +1,81 @@
+donor_id	disease_category	diabetes_history	disease	sex	age_stage	n_cells	is_diabetic	dkd
+163-5	Healthy_reference_tissue	No	normal	male	0000238	118	False	False
+163-6	Healthy_reference_tissue	unknown	normal	female	0000239	231	False	False
+164-1	Healthy_reference_tissue	No	normal	male	0000240	4627	False	False
+164-10	Healthy_reference_tissue	No	normal	female	0000239	3661	False	False
+164-3	Healthy_reference_tissue	No	normal	male	0000237	4410	False	False
+164-5	Healthy_reference_tissue	No	normal	female	0000238	4108	False	False
+164-6	Healthy_reference_tissue	No	normal	female	0000238	4900	False	False
+164-7	Healthy_reference_tissue	No	normal	female	0000239	2937	False	False
+164-8	Healthy_reference_tissue	No	normal	male	0000238	1159	False	False
+165-10	Healthy_reference_tissue	No	normal	female	0000240	5829	False	False
+165-7	Healthy_reference_tissue	No	normal	male	0000240	4124	False	False
+165-9	Healthy_reference_tissue	No	normal	female	0000238	4282	False	False
+18-142	Tumor_nephrectomy	unknown	normal	female	0000241	6948	False	False
+18-162	Tumor_nephrectomy	unknown	normal	female	0000241	4698	False	False
+18-312	Tumor_nephrectomy	unknown	normal	male	0000242	7757	False	False
+27-10039	CKD	Yes	chronic kidney disease	female	0000241	3516	True	True
+27-10041	CKD	Yes	chronic kidney disease	female	0000241	4305	True	True
+27-10043	CKD	Yes	chronic kidney disease	female	0000239	4198	True	True
+27-10074	CKD	Yes	chronic kidney disease	female	0000242	3561	True	True
+27-10088	Diabetes_mellitus_resilient	Yes	chronic kidney disease	female	0000238	4553	True	False
+27-10089	Diabetes_mellitus_resilient	Yes	chronic kidney disease	male	0000240	2462	True	False
+27-10094	CKD	Yes	chronic kidney disease	female	0000241	1900	True	True
+27-10104	CKD	Yes	chronic kidney disease	male	0000241	1161	True	True
+28-10051	CKD	Yes	chronic kidney disease	male	0000241	3426	True	True
+28-10109	CKD	Yes	chronic kidney disease	male	0000239	7682	True	True
+28-12178	CKD	Yes	chronic kidney disease	male	0000240	530	True	True
+28-12510	CKD	No	chronic kidney disease	male	0000240	114	False	False
+29-10006	CKD	Yes	chronic kidney disease	female	0000241	297	True	True
+29-10008	CKD	No	chronic kidney disease	female	0000241	3306	False	False
+29-10010	CKD	Yes	chronic kidney disease	male	0000242	361	True	True
+29-10011	CKD	Yes	chronic kidney disease	female	0000238	3676	True	True
+29-10012	CKD	Yes	chronic kidney disease	female	0000240	4884	True	True
+29-10013	CKD	Yes	chronic kidney disease	female	0000241	1494	True	True
+29-10016	CKD	Yes	chronic kidney disease	female	0000238	6789	True	True
+29-10276	CKD	Yes	chronic kidney disease	female	0000240	2779	True	True
+29-10277	CKD	Yes	chronic kidney disease	male	0000239	4735	True	True
+29-10280	CKD	Yes	chronic kidney disease	male	0000241	1291	True	True
+29-10380	CKD	No	chronic kidney disease	male	0000241	4057	False	False
+29-10393	CKD	No	chronic kidney disease	male	0000240	5189	False	False
+29-10400	CKD	Yes	chronic kidney disease	female	0000241	3329	True	True
+29-10401	CKD	No	chronic kidney disease	female	0000239	198	False	False
+29-10406	CKD	Yes	chronic kidney disease	male	0000241	4848	True	True
+30-10018	AKI	Yes	acute kidney injury	male	0000238	1901	True	False
+30-10034	AKI	Yes	acute kidney injury	female	0000242	4853	True	False
+30-10044	AKI	No	acute kidney injury	female	0000238	2395	False	False
+30-10631	AKI	No	acute kidney injury	male	0000240	5628	False	False
+30-10929	AKI	No	acute kidney injury	male	0000238	3404	False	False
+31-10000	CKD	No	chronic kidney disease	male	0000240	3513	False	False
+31-10001	CKD	Yes	chronic kidney disease	male	0000242	4932	True	True
+31-10006	CKD	No	chronic kidney disease	male	0000241	7379	False	False
+31-10013	CKD	Yes	chronic kidney disease	male	0000241	4968	True	True
+31-10035	CKD	Yes	chronic kidney disease	female	0000242	6258	True	True
+31-10061	CKD	Yes	chronic kidney disease	male	0000241	3280	True	True
+31-10063	CKD	No	chronic kidney disease	female	0000241	6198	False	False
+31-10081	CKD	Yes	chronic kidney disease	female	0000242	1129	True	True
+31-10091	CKD	Yes	chronic kidney disease	male	0000242	377	True	True
+31-10105	CKD	Yes	chronic kidney disease	male	0000238	724	True	True
+31-10177	CKD	No	chronic kidney disease	male	0000242	1954	False	False
+31-10210	CKD	No	chronic kidney disease	female	0000242	2643	False	False
+32-10003	AKI	No	acute kidney injury	male	0000238	6168	False	False
+32-10034	AKI	Yes	acute kidney injury	male	0000241	3420	True	False
+32-10205	AKI	Yes	acute kidney injury	male	0000241	4370	True	False
+32-10333	AKI	No	acute kidney injury	male	0000239	1318	False	False
+32-2	AKI	Yes	acute kidney injury	male	0000241	903	True	False
+33-10005	AKI	No	acute kidney injury	male	0000241	3695	False	False
+33-10006	AKI	No	acute kidney injury	male	0000237	4507	False	False
+34-10050	AKI	Yes	acute kidney injury	female	0000241	735	True	False
+34-10184	AKI	No	acute kidney injury	female	0000240	5054	False	False
+34-10187	AKI	No	acute kidney injury	male	0000237	3677	False	False
+34-10209	AKI	Yes	acute kidney injury	male	0000240	2521	True	False
+3490	Tumor_nephrectomy	unknown	normal	female	0000108	2135	False	False
+3499	Deceased_donor	unknown	normal	female	0000151	1377	False	False
+3504	Tumor_nephrectomy	unknown	normal	female	0000139	3014	False	False
+3535	Tumor_nephrectomy	No	normal	male	0000170	19257	False	False
+3593	Deceased_donor	No	normal	male	0000160	10434	False	False
+3613	Deceased_donor	unknown	normal	female	0000153	6061	False	False
+KRP446	Healthy_stone_donor	unknown	normal	male	0000123	4971	False	False
+KRP460	Healthy_stone_donor	unknown	normal	female	0000157	9119	False	False
+KRP461	Healthy_stone_donor	unknown	normal	male	0000148	1897	False	False
+KRP462	Healthy_stone_donor	unknown	normal	female	0000163	4390	False	False

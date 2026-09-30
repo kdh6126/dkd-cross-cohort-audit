@@ -1,0 +1,12 @@
+gse	platform	status	n_case	n_control	n_genes	annotation_route	scale	procurement_case	procurement_control	arms	evidence
+GSE75214	GPL6244	core	74	11	19235.0	annot:Gene ID	as deposited	endoscopic_biopsy	endoscopic_biopsy	matched	Mucosal biopsies were obtained at endoscopy from the colon (series text).
+GSE59071		excluded: colon subset of GSE75214 (identical sample titles and group sizes); confirmed or refuted by the value-vector audit	0	0							
+GSE87466	GPL13158	core	87	21	21118.0	annot:Gene ID	as deposited	endoscopic_biopsy	endoscopic_biopsy	matched	Mucosal biopsy samples (87 UC and 21 normal) were collected (series text).
+GSE179285	GPL6480	core	22	11	19529.0	annot:Gene ID	as deposited	endoscopic_biopsy	endoscopic_biopsy	matched	Patients ... or normal healthy controls underwent ileocolonoscopy; biopsies placed in RNAlater at the clinical site (series text).
+GSE11223	GPL1708	core	32	23	18419.0	annot:Gene ID	as deposited	endoscopic_biopsy	endoscopic_biopsy	matched	Transcriptional profiling of colon epithelial biopsies from UC patients and healthy control donors; indication for procedure recorded (series text).
+GSE47908	GPL570	core	39	15	20848.0	annot:Gene ID	as deposited	endoscopic_biopsy	endoscopic_biopsy	matched	Colonic mucosal biopsy from patient / control individual (sample source).
+GSE38713	GPL570	p2	15	13	20848.0	annot:Gene ID	as deposited	endoscopic_biopsy	endoscopic_biopsy	matched	Colonic biopsies from patients ... as well as non-inflammatory controls (series text).
+GSE53306	GPL14951	p2	16	12	18454.0	soft:Entrez_Gene_ID	as deposited	endoscopic_biopsy	endoscopic_biopsy	matched	Single endoscopic pinch biopsies (series text).
+GSE13367	GPL570	p2	8	10	20848.0	annot:Gene ID	as deposited	endoscopic_biopsy	endoscopic_biopsy	matched	Adjacent mucosal colonic biopsies were obtained endoscopically (series text).
+GSE16879	GPL570	p2	24	6	20848.0	annot:Gene ID	log2(x+1) applied (p99=4617)	endoscopic_biopsy	endoscopic_biopsy	matched	Mucosal biopsies were obtained at endoscopy (series text).
+GSE48958	GPL6244	p2	7	8	19235.0	annot:Gene ID	log2(x+1) applied (p99=3761)	endoscopic_biopsy	endoscopic_biopsy	matched	Colonic mucosal biopsies were obtained during endoscopy (series text).

@@ -1,0 +1,23 @@
+cohort	sample	title	subject_id	group	label	stage	control_type	platform	compartment
+GSE30528	GSM756992	Diabetic Human Kidney 40, Glomeruli	40	DKD	1			GPL571	glomerulus
+GSE30528	GSM756993	Diabetic Human Kidney 48, Glomeruli	48	DKD	1			GPL571	glomerulus
+GSE30528	GSM756994	Diabetic Human Kidney 62, Glomeruli	62	DKD	1			GPL571	glomerulus
+GSE30528	GSM756995	Diabetic Human Kidney 67, Glomeruli	67	DKD	1			GPL571	glomerulus
+GSE30528	GSM756996	Diabetic Human Kidney 151, Glomeruli	151	DKD	1			GPL571	glomerulus
+GSE30528	GSM756997	Diabetic Human Kidney 158, Glomeruli	158	DKD	1			GPL571	glomerulus
+GSE30528	GSM756998	Diabetic Human Kidney 164, Glomeruli	164	DKD	1			GPL571	glomerulus
+GSE30528	GSM756999	Diabetic Human Kidney 168, Glomeruli	168	DKD	1			GPL571	glomerulus
+GSE30528	GSM757000	Diabetic Human Kidney 178, Glomeruli	178	DKD	1			GPL571	glomerulus
+GSE30528	GSM757001	Control Human Kidney 33, Glomeruli	33	control	0		tumor_nephrectomy	GPL571	glomerulus
+GSE30528	GSM757002	Control Human Kidney 34, Glomeruli	34	control	0		tumor_nephrectomy	GPL571	glomerulus
+GSE30528	GSM757003	Control Human Kidney 76, Glomeruli	76	control	0		tumor_nephrectomy	GPL571	glomerulus
+GSE30528	GSM757004	Control Human Kidney 77, Glomeruli	77	control	0		tumor_nephrectomy	GPL571	glomerulus
+GSE30528	GSM757005	Control Human Kidney 81, Glomeruli	81	control	0		tumor_nephrectomy	GPL571	glomerulus
+GSE30528	GSM757006	Control Human Kidney 82, Glomeruli	82	control	0		tumor_nephrectomy	GPL571	glomerulus
+GSE30528	GSM757007	Control Human Kidney 83, Glomeruli	83	control	0		tumor_nephrectomy	GPL571	glomerulus
+GSE30528	GSM757008	Control Human Kidney 100, Glomeruli	100	control	0		tumor_nephrectomy	GPL571	glomerulus
+GSE30528	GSM757009	Control Human Kidney 110, Glomeruli	110	control	0		tumor_nephrectomy	GPL571	glomerulus
+GSE30528	GSM757010	Control Human Kidney 119, Glomeruli	119	control	0		tumor_nephrectomy	GPL571	glomerulus
+GSE30528	GSM757011	Control Human Kidney 123, Glomeruli	123	control	0		tumor_nephrectomy	GPL571	glomerulus
+GSE30528	GSM757012	Control Human Kidney 150, Glomeruli	150	control	0		tumor_nephrectomy	GPL571	glomerulus
+GSE30528	GSM757013	Control Human Kidney 154, Glomeruli	154	control	0		tumor_nephrectomy	GPL571	glomerulus

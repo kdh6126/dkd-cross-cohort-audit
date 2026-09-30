@@ -1,0 +1,2 @@
+n_diagnoses	dn_shared_top50	dn_jaccard_top50	dn_spearman	min_shared_top50	max_shared_top50	median_shared_top50	candidates_v1	candidates_v2	candidates_shared
+7	1	0.010101010101010102	0.6925172121994565	0	18	2.0	30	30	14

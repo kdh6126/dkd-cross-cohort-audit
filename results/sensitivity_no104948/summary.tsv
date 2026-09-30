@@ -1,0 +1,3 @@
+arm	n_final	n_overlap	gate_pass_top50	gate_pass_top100	gate_pass_top200	n_common	n_cand	median_cand	median_rest	mwu_p
+main (GSE104948 포함)	30	17	0.4	0.42	0.45	9900	30	1.017000239105859	-0.17421608892575163	5.135350410004246e-18
+sensitivity (제외)	30	17	0.48	0.45	0.4	9900	30	0.9981384302224616	-0.17421608892575163	4.77061915643692e-16

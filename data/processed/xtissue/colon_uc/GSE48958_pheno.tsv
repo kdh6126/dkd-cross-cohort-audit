@@ -1,0 +1,16 @@
+sample	label	subject_id	title	source
+GSM1187602	0	GSM1187602	control_1 [mRNA]	colonic mucosal biopsy from control individual
+GSM1187603	0	GSM1187603	control_2 [mRNA]	colonic mucosal biopsy from control individual
+GSM1187604	0	GSM1187604	control_3 [mRNA]	colonic mucosal biopsy from control individual
+GSM1187605	0	GSM1187605	control_4 [mRNA]	colonic mucosal biopsy from control individual
+GSM1187606	0	GSM1187606	control_5 [mRNA]	colonic mucosal biopsy from control individual
+GSM1187607	0	GSM1187607	control_7 [mRNA]	colonic mucosal biopsy from control individual
+GSM1187608	0	GSM1187608	control_8 [mRNA]	colonic mucosal biopsy from control individual
+GSM1187609	0	GSM1187609	control_10 [mRNA]	colonic mucosal biopsy from control individual
+GSM1187610	1	GSM1187610	UC_active_1 [mRNA]	colonic mucosal biopsy from UC patient with active disease
+GSM1187611	1	GSM1187611	UC_active_2 [mRNA]	colonic mucosal biopsy from UC patient with active disease
+GSM1187612	1	GSM1187612	UC_active_3 [mRNA]	colonic mucosal biopsy from UC patient with active disease
+GSM1187613	1	GSM1187613	UC_active_4 [mRNA]	colonic mucosal biopsy from UC patient with active disease
+GSM1187614	1	GSM1187614	UC_active_6 [mRNA]	colonic mucosal biopsy from UC patient with active disease
+GSM1187615	1	GSM1187615	UC_active_7 [mRNA]	colonic mucosal biopsy from UC patient with active disease
+GSM1187616	1	GSM1187616	UC_active_9 [mRNA]	colonic mucosal biopsy from UC patient with active disease

@@ -1,0 +1,2 @@
+n_proteins	n_candidates_measured	n_sig	n_concordant	bg_n	bg_sig_frac	bg_conc_frac	fisher_p	binom_p	n_dkd	n_control
+1142	7	2	5	1135	0.1092511013215859	0.6704845814977973	0.1754849850218666	0.5794426268819697	5	7

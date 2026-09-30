@@ -1,0 +1,7 @@
+cohort	genes	samples	case	control	other	vmin	vmed	vmax	compartment
+GSE142025	9900	36	27	9	0	0.4	10.59	19.29	whole_cortex
+GSE30528	9900	22	9	13	0	-7.68	0.0	7.91	glomerulus
+GSE96804	9900	61	41	20	0	2.18	6.37	19.37	glomerulus
+GSE104948	9900	196	12	26	158	2.51	7.59	14.94	glomerulus
+GSE30529	9900	22	10	12	0	-7.59	0.0	7.43	tubulointerstitium
+GSE104954	9900	195	17	26	152	2.7	6.32	14.35	tubulointerstitium

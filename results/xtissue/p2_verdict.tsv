@@ -1,0 +1,3 @@
+tissue	n_matched	n_asymmetric	matched_all_abs_g_below_0_5	asymmetric_negative_and_larger_than_every_matched
+colon_uc	10	0	False	
+liver_masld	4	3	False	False

@@ -1,0 +1,4 @@
+contrast	n_a	n_b	n_sig_q05	n_large_g	max_abs_g
+DKD vs healthy	64	66	84	62	2.655893945768007
+DKD vs other kidney disease	64	156	29	13	1.0765144259381163
+other kidney disease vs healthy	156	66	84	52	2.1962866153238023

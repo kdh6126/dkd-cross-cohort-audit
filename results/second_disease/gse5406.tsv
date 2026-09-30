@@ -1,0 +1,7 @@
+test	n_a	n_b	ieg_g	rest_g	p	ieg_block	top_block	ratio	selector	n_ieg_top
+disease vs donor	194.0	16.0	-0.22581545126273705	0.058102461311863265	0.004214557696172127					
+ischaemic vs idiopathic	108.0	86.0	0.33207034363645066	0.015155152950348865	4.033616475482283e-08					
+block_size						16.0	180.5	11.28125		
+selector									effect_size	0.0
+selector									stability	0.0
+selector									connectivity	0.0

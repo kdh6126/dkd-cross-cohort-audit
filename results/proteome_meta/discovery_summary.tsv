@@ -1,0 +1,2 @@
+n_shared_genes	n_sig_somascan	n_sig_massspec	n_concordant	n_both_sig_concordant	expected_independent	binom_p	perm_p	perm_null_mean	n_perm	verdict
+170	41	17	115	4	2.0500000000000003	0.15093893886801457	0.10258	1.86773	200000	negative

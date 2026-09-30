@@ -1,0 +1,2 @@
+genes_total	genes_passing	background_rate	mean_passing_under_permutation	gate_fdr_estimate	perm_abs_g_95th
+9900	820	0.08282828282828283	136.66	0.16665853658536586	0.9437611236670418

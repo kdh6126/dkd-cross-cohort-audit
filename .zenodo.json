@@ -1,0 +1,51 @@
+{
+  "title": "Auditing cross-cohort feature-selection benchmarks: cohort composition and tissue-context-dependent confounding across kidney, liver and colon transcriptomes",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Kim, Dohun",
+      "affiliation": "Autonomous Intelligence DX Research Section, Electronics and Telecommunications Research Institute, Daejeon, Republic of Korea"
+    },
+    {
+      "name": "Bae, Minho",
+      "affiliation": "Autonomous Intelligence DX Research Section, Electronics and Telecommunications Research Institute, Daejeon, Republic of Korea"
+    },
+    {
+      "name": "Park, Jinho",
+      "affiliation": "Autonomous Intelligence DX Research Section, Electronics and Telecommunications Research Institute, Daejeon, Republic of Korea"
+    },
+    {
+      "name": "Lee, Hayoung",
+      "affiliation": "Autonomous Intelligence DX Research Section, Electronics and Telecommunications Research Institute, Daejeon, Republic of Korea"
+    },
+    {
+      "name": "Lim, Hyeokjin",
+      "affiliation": "Autonomous Intelligence DX Research Section, Electronics and Telecommunications Research Institute, Daejeon, Republic of Korea"
+    },
+    {
+      "name": "Lee, Seonghee",
+      "affiliation": "Autonomous Intelligence DX Research Section, Electronics and Telecommunications Research Institute, Daejeon, Republic of Korea"
+    }
+  ],
+  "keywords": [
+    "feature selection",
+    "benchmarking",
+    "reproducibility",
+    "batch effects",
+    "pre-analytical variables",
+    "diabetic kidney disease",
+    "transcriptomics"
+  ],
+  "license": "mit",
+  "version": "1.0.0",
+  "description": "Code and derived data for a study of how much a cross-cohort feature-selection benchmark depends on which cohorts are in it, using diabetic kidney disease as the case. Includes harmonised expression matrices on a frozen 9,900-gene Entrez space, a cohort audit identifying three public series as patient-level duplicates of others, and a single entry point that regenerates every figure and table in the associated paper. Primary GEO and KPMP data are not redistributed; the pipeline fetches them.",
+  "grants": [],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/kdh6126/dkd-cross-cohort-audit",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Funded by the National Research Foundation of Korea (NRF) grant funded by the Korean government (MSIT) (No. RS-2026-25524613); an internal research grant of the Electronics and Telecommunications Research Institute (ETRI) (No. 25YT1400); the Culture, Sports and Tourism R\\&D Program through the Korea Creative Content Agency grant funded by the Ministry of Culture, Sports and Tourism in 2024 (No. RS-2024-00398310)."
+}

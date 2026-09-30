@@ -1,0 +1,21 @@
+accession	repository	title	platform	n_samples	taxon	pmid	citation	institute
+GSE142025	NCBI Gene Expression Omnibus	Comparison of Kidney Transcriptomic Profiles of Early and Advanced Diabetic Nephropathy Reveals Potential New Mechanisms for Disease Progression	20301	36	Homo sapiens	31578193;32086290	Fan Y et al., Diabetes (2019)	
+GSE30528	NCBI Gene Expression Omnibus	Transcriptome Analysis of Human Diabetic Kidney Disease (DKD Glomeruli vs. Control Glomeruli)	571	22	Homo sapiens	21752957	Woroniecka KI et al., Diabetes (2011)	
+GSE30529	NCBI Gene Expression Omnibus	Transcriptome Analysis of Human Diabetic Kidney Disease (DKD Tubuli vs. Control Tubuli)	571	22	Homo sapiens	21752957	Woroniecka KI et al., Diabetes (2011)	
+GSE96804	NCBI Gene Expression Omnibus	Exon Level Expression Profiling of Diabetic Nephropathy	17586	61	Homo sapiens	29242313;30511699	Pan Y et al., Diabetes (2018)	
+GSE104948	NCBI Gene Expression Omnibus	Glomerular Transcriptome from European Renal cDNA Bank subjects and living donors	24120/22945	196	Homo sapiens	29724730;40059827	Grayson PC et al., Ann Rheum Dis (2018)	
+GSE104954	NCBI Gene Expression Omnibus	Tubulointerstitial transcriptome from ERCB subjects with chronic kidney disease and living donor biopsies.	22945/24120	195	Homo sapiens	29724730;40059827	Grayson PC et al., Ann Rheum Dis (2018)	
+GSE30122	NCBI Gene Expression Omnibus	Transcriptome Analysis of Human Diabetic Kidney Disease	571	69	Homo sapiens	21752957;26190114	Woroniecka KI et al., Diabetes (2011)	
+GSE47183	NCBI Gene Expression Omnibus	In silico nano-dissection: defining cell type specificity at transcriptional level in human disease (glomeruli)	11670/14663	122	Homo sapiens	23950145;24925724	Ju W et al., Genome Res (2013)	
+GSE99340	NCBI Gene Expression Omnibus	Transcriptome-based network analysis reveals renal cell type-specific dysregulation of hypoxia-associated transcripts	19184/19109	413	Homo sapiens	28819298	Shved N et al., Sci Rep (2017)	
+GSE131882	NCBI Gene Expression Omnibus	The Single Cell Transcriptomic Landscape of Early Human Diabetic Nephropathy	24676	6	Homo sapiens	31506348;33850129	Wilson PC et al., Proc Natl Acad Sci U S A (2019)	
+GSE175759	NCBI Gene Expression Omnibus	RNA-seq profiling of tubulointerstitial tissue reveals a potential therapeutic role of dual anti-phosphatase 1 in kidney diseases	16791	90	Homo sapiens	35488446	Park S et al., J Cell Mol Med (2022)	
+GSE142153	NCBI Gene Expression Omnibus	Human PBMCs: Healthy vs Diabetic nephropathy vs ESRD	6480	40	Homo sapiens	34925339	Sur S et al., Front Immunol (2021)	
+GSE1009	NCBI Gene Expression Omnibus	Diabetic nephropathy	8300	6	Homo sapiens	15042541	Baelde HJ et al., Am J Kidney Dis (2004)	
+GSE111154	NCBI Gene Expression Omnibus	RNA Expression data for early diabetic nephropathy (EDN)	17586	8	Homo sapiens	30253844	Sircar M et al., Am J Pathol (2018)	
+GSE20602	NCBI Gene Expression Omnibus	Human Nephrosclerosis Triggers a Hypoxia-Related Glomerulopathy	96	18	Homo sapiens	20019191	Neusser MA et al., Am J Pathol (2010)	
+ST000691	Metabolomics Workbench	Metabolomics of diabetic nephropathy	LC-MS					University of Michigan
+ST004483	Metabolomics Workbench	Identification of Metabolomic Signatures of Diabetic Kidney Disease in Urine Using Untargeted Gas Chromatography-Mass Spectrometry	GC-MS					Center for Precision Medicine, Wake Forest University School of Medicine
+ST004442	Metabolomics Workbench	Identification of Metabolomic Signatures of Diabetic Kidney Disease in Plasma Using Untargeted Gas Chromatography-Mass Spectrometry	GC-MS					Center for Precision Medicine, Wake Forest University School of Medicine
+ST002145	Metabolomics Workbench	The Carbohydrate Sensing Transcription Factor ChREBP Links Mitochondrial Lipidomes to Mitochondrial Dynamics and Progression of Diabetic Nephropathy	LC-MS					University of Texas MD Anderson Cancer Center
+ST003255	Metabolomics Workbench	Metabolomics study to identify cause-specific biomarkers for Chronic Kidney Disease occurrence and progression in the Korean population	LC-MS					Seoul National University

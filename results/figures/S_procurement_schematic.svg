@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="372pt" height="280.8pt" viewBox="0 0 372 280.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-15T08:50:01.497921</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 280.8 
+L 372 280.8 
+L 372 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 42.465167 136.959768 
+L 86.326227 136.959768 
+Q 87.309658 136.959768 87.309658 134.387208 
+L 87.309658 107.118072 
+Q 87.309658 104.545512 86.326227 104.545512 
+L 42.465167 104.545512 
+Q 41.481736 104.545512 41.481736 107.118072 
+L 41.481736 134.387208 
+Q 41.481736 136.959768 42.465167 136.959768 
+z
+" clip-path="url(#p76a68a5ca9)" style="fill: #ffffff; stroke: #c1440e; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 91.636758 136.959768 
+L 135.497817 136.959768 
+Q 136.481249 136.959768 136.481249 134.387208 
+L 136.481249 107.118072 
+Q 136.481249 104.545512 135.497817 104.545512 
+L 91.636758 104.545512 
+Q 90.653327 104.545512 90.653327 107.118072 
+L 90.653327 134.387208 
+Q 90.653327 136.959768 91.636758 136.959768 
+z
+" clip-path="url(#p76a68a5ca9)" style="fill: #ffffff; stroke: #2a5d8f; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 42.366824 260.699904 
+L 135.596161 260.699904 
+Q 136.579592 260.699904 136.579592 258.127344 
+L 136.579592 227.771136 
+Q 136.579592 225.198576 135.596161 225.198576 
+L 42.366824 225.198576 
+Q 41.383392 225.198576 41.383392 227.771136 
+L 41.383392 258.127344 
+Q 41.383392 260.699904 42.366824 260.699904 
+z
+" clip-path="url(#p76a68a5ca9)" style="fill: #f4f2ee; stroke: #d9d9d9; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="kidney-left-outline">
+    <path d="M 64.395697 35.85816 
+C 68.693294 35.189294 72.617187 40.540219 72.804039 53.248666 
+C 73.364595 63.950515 73.364595 74.652365 72.804039 85.354214 
+C 72.617187 98.062661 68.693294 103.413586 64.395697 102.74472 
+C 60.0981 102.74472 56.921615 97.393795 56.921615 83.347618 
+C 56.734763 75.990096 58.790136 75.990096 59.257266 69.30144 
+C 58.790136 62.612784 56.734763 62.612784 56.921615 55.255262 
+C 56.921615 41.209085 60.0981 35.85816 64.395697 35.85816 
+" clip-path="url(#p76a68a5ca9)" style="fill: #e3cfc6; stroke: #1a1a1a; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="kidney-right-outline">
+    <path d="M 113.567288 35.85816 
+C 109.269691 35.189294 105.345798 40.540219 105.158946 53.248666 
+C 104.59839 63.950515 104.59839 74.652365 105.158946 85.354214 
+C 105.345798 98.062661 109.269691 103.413586 113.567288 102.74472 
+C 117.864885 102.74472 121.04137 97.393795 121.04137 83.347618 
+C 121.228222 75.990096 119.172849 75.990096 118.705719 69.30144 
+C 119.172849 62.612784 121.228222 62.612784 121.04137 55.255262 
+C 121.04137 41.209085 117.864885 35.85816 113.567288 35.85816 
+" clip-path="url(#p76a68a5ca9)" style="fill: #e3cfc6; stroke: #1a1a1a; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 88.981492 203.07456 
+L 88.981492 20.4228 
+" clip-path="url(#p76a68a5ca9)" style="fill: none; stroke-dasharray: 0.7,1.155; stroke-dashoffset: 0; stroke: #d9d9d9; stroke-width: 0.7"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 7.5px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1a1a1a" x="40.793333" y="15.592765" transform="rotate(-0 40.793333 15.592765)">(a) how the tissue was obtained</text>
+   </g>
+   <g id="kidney-left-cortex">
+    <path d="M 64.395697 43.215682 
+C 67.747823 42.693966 70.808459 46.867688 70.954204 56.780276 
+C 71.391438 65.127719 71.391438 73.475161 70.954204 81.822604 
+C 70.808459 91.735192 67.747823 95.908914 64.395697 95.387198 
+C 61.043571 95.387198 58.565913 91.213477 58.565913 80.257459 
+C 58.420169 74.518592 60.023359 74.518592 60.387721 69.30144 
+C 60.023359 64.084288 58.420169 64.084288 58.565913 58.345421 
+C 58.565913 47.389403 61.043571 43.215682 64.395697 43.215682 
+" clip-path="url(#p76a68a5ca9)" style="fill: #c9a99c"/>
+   </g>
+   <g id="kidney-right-cortex">
+    <path d="M 113.567288 43.215682 
+C 110.215162 42.693966 107.154526 46.867688 107.008781 56.780276 
+C 106.571547 65.127719 106.571547 73.475161 107.008781 81.822604 
+C 107.154526 91.735192 110.215162 95.908914 113.567288 95.387198 
+C 116.919414 95.387198 119.397072 91.213477 119.397072 80.257459 
+C 119.542816 74.518592 117.939626 74.518592 117.575264 69.30144 
+C 117.939626 64.084288 119.542816 64.084288 119.397072 58.345421 
+C 119.397072 47.389403 116.919414 43.215682 113.567288 43.215682 
+" clip-path="url(#p76a68a5ca9)" style="fill: #c9a99c"/>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1a1a1a" x="83.080902" y="25.549415" transform="rotate(-0 83.080902 25.549415)">needle</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #c1440e" transform="translate(123.401606 47.537049)">sampled</text>
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #c1440e" transform="translate(123.401606 56.262822)">here</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c1440e" x="64.395697" y="116.286504" transform="rotate(-0 64.395697 116.286504)">CASES</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 6.3px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c1440e" x="64.395697" y="129.071606" transform="rotate(-0 64.395697 129.071606)">percutaneous biopsy</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #2a5d8f" x="113.567288" y="116.286504" transform="rotate(-0 113.567288 116.286504)">CONTROLS</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 6.3px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #2a5d8f" x="113.567288" y="129.071606" transform="rotate(-0 113.567288 129.071606)">nephrectomy / donor</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #8a8a8a" transform="translate(26.658041 150.01931)">kidney in situ and perfused;</text>
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #8a8a8a" transform="translate(32.869666 159.625617)">a 1-2 mm core is taken</text>
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #8a8a8a" transform="translate(31.479025 168.672954)">and fixed at the bedside</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #8a8a8a" transform="translate(80.82935 149.981529)">organ already removed;</text>
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #8a8a8a" transform="translate(76.869585 159.000288)">normal-appearing cortex is</text>
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #8a8a8a" transform="translate(73.775882 168.056829)">cut away from the tumour (T)</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 6.3px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(-5.046951 186.281567)">The two routes differ in how long the tissue is without circulation and</text>
+    <text style="font-size: 6.3px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(-8.423357 195.743379)">in how it is handled before fixation. Immediate-early genes (FOS, JUN,</text>
+    <text style="font-size: 6.3px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(-3.00831 205.201254)">EGR1 and the rest of the 19-gene module) respond to exactly that.</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #1a1a1a" x="88.981492" y="238.45905" transform="rotate(-0 88.981492 238.45905)">In every public DKD cohort, cases are biopsies and controls are not.</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8a8a8a" x="88.981492" y="252.60813" transform="rotate(-0 88.981492 252.60813)">The module separates the two routes in 8 of 9 kidney datasets.</text>
+   </g>
+   <g id="kidney-left-medulla">
+    <path d="M 64.395697 47.228875 
+C 67.232111 46.787424 69.82188 50.319034 69.945203 58.706609 
+C 70.31517 65.76983 70.31517 72.83305 69.945203 79.896271 
+C 69.82188 88.283846 67.232111 91.815456 64.395697 91.374005 
+C 61.559283 91.374005 59.462803 87.842394 59.462803 78.571917 
+C 59.339481 73.715953 60.696026 73.715953 61.004332 69.30144 
+C 60.696026 64.886927 59.339481 64.886927 59.462803 60.030963 
+C 59.462803 50.760486 61.559283 47.228875 64.395697 47.228875 
+" clip-path="url(#p76a68a5ca9)" style="fill: #e3cfc6"/>
+   </g>
+   <g id="kidney-right-medulla">
+    <path d="M 113.567288 47.228875 
+C 110.730874 46.787424 108.141104 50.319034 108.017782 58.706609 
+C 107.647815 65.76983 107.647815 72.83305 108.017782 79.896271 
+C 108.141104 88.283846 110.730874 91.815456 113.567288 91.374005 
+C 116.403702 91.374005 118.500182 87.842394 118.500182 78.571917 
+C 118.623504 73.715953 117.266958 73.715953 116.958653 69.30144 
+C 117.266958 64.886927 118.623504 64.886927 118.500182 60.030963 
+C 118.500182 50.760486 116.403702 47.228875 113.567288 47.228875 
+" clip-path="url(#p76a68a5ca9)" style="fill: #e3cfc6"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 82.09747 28.14048 
+L 67.837708 61.58376 
+" clip-path="url(#p76a68a5ca9)" style="fill: none; stroke: #1a1a1a; stroke-width: 1.4"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 109.633561 93.998016 
+C 110.572474 93.998016 111.473058 93.022196 112.136969 91.285469 
+C 112.800881 89.548741 113.173915 87.192903 113.173915 84.7368 
+C 113.173915 82.280697 112.800881 79.924859 112.136969 78.188131 
+C 111.473058 76.451404 110.572474 75.475584 109.633561 75.475584 
+C 108.694648 75.475584 107.794064 76.451404 107.130152 78.188131 
+C 106.46624 79.924859 106.093206 82.280697 106.093206 84.7368 
+C 106.093206 87.192903 106.46624 89.548741 107.130152 91.285469 
+C 107.794064 93.022196 108.694648 93.998016 109.633561 93.998016 
+z
+" clip-path="url(#p76a68a5ca9)" style="fill: #b0a89c; stroke: #1a1a1a; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 67.837708 61.58376 
+L 64.887413 68.01516 
+" clip-path="url(#p76a68a5ca9)" style="fill: none; stroke: #c1440e; stroke-width: 2.4"/>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 5.8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #1a1a1a" x="109.633561" y="86.237777" transform="rotate(-0 109.633561 86.237777)">T</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 115.534152 43.57584 
+L 121.434742 43.57584 
+L 121.434742 56.43864 
+L 115.534152 56.43864 
+L 115.534152 43.57584 
+z
+" clip-path="url(#p76a68a5ca9)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #c1440e; stroke-linejoin: miter"/>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_7">
+    <path d="M 181.267316 72.645768 
+L 211.63569 72.645768 
+Q 212.422436 72.645768 212.422436 70.073208 
+L 212.422436 50.521752 
+Q 212.422436 47.949192 211.63569 47.949192 
+L 181.267316 47.949192 
+Q 180.48057 47.949192 180.48057 50.521752 
+L 180.48057 70.073208 
+Q 180.48057 72.645768 181.267316 72.645768 
+z
+" clip-path="url(#p739c624d8e)" style="fill: #ffffff; stroke: #c1440e; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 222.964825 72.645768 
+L 253.333199 72.645768 
+Q 254.119945 72.645768 254.119945 70.073208 
+L 254.119945 50.521752 
+Q 254.119945 47.949192 253.333199 47.949192 
+L 222.964825 47.949192 
+Q 222.178079 47.949192 222.178079 50.521752 
+L 222.178079 70.073208 
+Q 222.178079 72.645768 222.964825 72.645768 
+z
+" clip-path="url(#p739c624d8e)" style="fill: #ffffff; stroke: #2a5d8f; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 181.267316 170.403048 
+L 211.63569 170.403048 
+Q 212.422436 170.403048 212.422436 167.830488 
+L 212.422436 148.279032 
+Q 212.422436 145.706472 211.63569 145.706472 
+L 181.267316 145.706472 
+Q 180.48057 145.706472 180.48057 148.279032 
+L 180.48057 167.830488 
+Q 180.48057 170.403048 181.267316 170.403048 
+z
+" clip-path="url(#p739c624d8e)" style="fill: #ffffff; stroke: #c1440e; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 222.964825 170.403048 
+L 253.333199 170.403048 
+Q 254.119945 170.403048 254.119945 167.830488 
+L 254.119945 148.279032 
+Q 254.119945 145.706472 253.333199 145.706472 
+L 222.964825 145.706472 
+Q 222.178079 145.706472 222.178079 148.279032 
+L 222.178079 167.830488 
+Q 222.178079 170.403048 222.964825 170.403048 
+z
+" clip-path="url(#p739c624d8e)" style="fill: #ffffff; stroke: #c1440e; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 7.5px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1a1a1a" x="179.929848" y="15.592765" transform="rotate(-0 179.929848 15.592765)">(b) what the comparison actually contrasts</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 6.8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1a1a1a" x="179.929848" y="38.236186" transform="rotate(-0 179.929848 38.236186)">conventional design</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 6.5px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c1440e" x="196.451503" y="61.979545" transform="rotate(-0 196.451503 61.979545)">biopsy</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 6.5px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #2a5d8f" x="238.149012" y="61.979545" transform="rotate(-0 238.149012 61.979545)">nephrectomy</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8a8a8a" x="217.69363" y="61.901972" transform="rotate(-0 217.69363 61.901972)">vs</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a8a8a" x="179.929848" y="84.10545" transform="rotate(-0 179.929848 84.10545)">disease AND handling differ</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 6.5px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1a1a1a" x="179.929848" y="102.331778" transform="rotate(-0 179.929848 102.331778)">immediate-early module, Hedges' g = -0.84</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 6.8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1a1a1a" x="179.929848" y="135.993466" transform="rotate(-0 179.929848 135.993466)">this paper</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 6.5px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c1440e" x="196.451503" y="159.736825" transform="rotate(-0 196.451503 159.736825)">biopsy</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 6.5px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c1440e" x="238.149012" y="159.736825" transform="rotate(-0 238.149012 159.736825)">biopsy</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #8a8a8a" x="217.69363" y="159.659252" transform="rotate(-0 217.69363 159.659252)">vs</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a8a8a" x="179.929848" y="181.86273" transform="rotate(-0 179.929848 181.86273)">only disease differs</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 6.5px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1a1a1a" x="179.929848" y="200.089058" transform="rotate(-0 179.929848 200.089058)">immediate-early module, Hedges' g = +0.08</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 6.3px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(179.929848 235.160207)">Replacing the control with a biopsy of a different kidney disease removes</text>
+    <text style="font-size: 6.3px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(179.929848 244.620051)">the handling difference, and the module effect goes with it. What survives</text>
+    <text style="font-size: 6.3px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(179.929848 254.079894)">that substitution is the part of the signal that is about the disease.</text>
+   </g>
+  </g>
+  <g id="text_28">
+   <text style="font-size: 5.8px; font-family: 'Arial', 'Helvetica', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a8a8a" x="1.86" y="278.175281" transform="rotate(-0 1.86 278.175281)">Draft schematic. Anatomy is not to scale; the effect sizes are read from the KPMP single-nucleus analysis.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p76a68a5ca9">
+   <rect x="40.793333" y="7.56" width="98.343182" height="257.256"/>
+  </clipPath>
+  <clipPath id="p739c624d8e">
+   <rect x="179.929848" y="7.56" width="78.674545" height="257.256"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,139 @@
+path	declared	exists	n_readers	n_writers	readers	writers	only_exploratory
+results/baselines_all4/results.tsv	True	True	1	0	make_figures.py		False
+results/bootstrap_ci/intervals.tsv	False	True	0	1		bootstrap_ci.py	False
+results/bootstrap_ci/paired_differences.tsv	True	True	0	1		bootstrap_ci.py	False
+results/bootstrap_ci/replicates.tsv	False	True	0	1		bootstrap_ci.py	False
+results/candidates_v2/candidate_dossier.tsv	True	False	1	1	kr_content.py	candidate_dossier.py	True
+results/candidates_v2/candidates_all.tsv	True	True	2	0	conventional_pipeline.py|fig_v1_v2.py		False
+results/candidates_v2/candidates_gated.tsv	True	True	3	0	candidate_freeze_audit.py|overview_figure.py|validate_gse162830.py		False
+results/candidates_v2/literature_review.tsv	True	True	3	0	literature_ledger.py|make_project_biomarker_report.py|overview_figure.py		False
+results/candidates_v2/master_candidate_table.tsv	True	True	17	1	additional_files.py|build_omics_catalog.py|candidate_dossier.py|candidate_external_validation.py|candidate_figure.py|candidate_freeze_audit.py|comparator_reordering.py|fig_v1_v2.py|gene_claim_audit.py|kegg_joint_pathway.py|make_project_biomarker_report.py|multiomics_spatial.py|proteome_ms_validation.py|proteome_validation.py|reactome_joint_pathway.py|specificity_comparator_sweep.py|supplementary_stress.py	crossomics_link.py	False
+results/ckd_generalization/g_%s.tsv	False	False	0	1		ckd_generalization.py	False
+results/ckd_generalization/g_*.tsv	False	False	0	1		comparator_reordering.py	False
+results/ckd_generalization/g_dn.tsv	False	True	0	1		comparator_reordering.py	False
+results/ckd_generalization/per_diagnosis.tsv	True	True	2	1	bib_overview.py|overview_figure.py	ckd_generalization.py	False
+results/coexpression.tsv	True	True	0	1		coexpression_check.py	False
+results/cohort_sensitivity/by_size.tsv	True	True	2	1	bib_overview.py|kr_content.py	cohort_sensitivity.py	True
+results/cohort_sensitivity/metric_agreement.tsv	True	True	0	1		benchmark_protocol.py	False
+results/cohort_sensitivity/subsets.tsv	True	True	7	1	benchmark_protocol.py|bib_overview.py|kr_content.py|method_vs_design.py|overview_figure.py|paper_figures.py|xtissue_figure.py	cohort_sensitivity.py	False
+results/cohort_sensitivity/winner_frequency.tsv	True	True	0	1		benchmark_protocol.py	False
+results/cohort_table.tsv	True	True	4	1	additional_files.py|bib_overview.py|build_omics_catalog.py|overview_figure.py	cohort_table.py	False
+results/comparator_reordering/candidate_rank_shift.tsv	True	True	3	1	build_omics_catalog.py|master_candidate_table.py|reordering_figure.py	comparator_reordering.py	False
+results/comparator_reordering/summary.tsv	True	True	1	1	reordering_figure.py	comparator_reordering.py	False
+results/comparator_reordering/top_overlap.tsv	True	True	1	1	reordering_figure.py	comparator_reordering.py	False
+results/comparison.tsv	False	False	0	1		compare_methods.py	False
+results/comparison_all4.tsv	True	True	5	0	build_db.py|build_omics_catalog.py|make_figures.py|make_ppt.py|status_facts.py		False
+results/comparison_glom3.tsv	True	True	4	0	build_db.py|make_figures.py|make_ppt.py|status_facts.py		False
+results/conventional_pipeline/comparison.tsv	True	True	1	1	propagate_gate_fdr.py	conventional_pipeline.py	False
+results/conventional_pipeline/lodo_comparison.tsv	False	True	0	1		conventional_pipeline.py	False
+results/correction_sweep/sweep.tsv	True	True	0	2		correction_sweep.py|correction_sweep_agg.py	False
+results/data_inventory.tsv	True	True	5	1	build_db.py|build_omics_catalog.py|kr_content.py|make_figures.py|make_ppt.py	data_inventory.py	False
+results/dataset_provenance.tsv	False	True	2	1	build_omics_catalog.py|kr_detail.py	dataset_provenance.py	True
+results/deconfound.tsv	True	True	4	1	conventional_pipeline.py|fig_v1_v2.py|make_figures.py|propagate_gate_fdr.py	dkd_deconfound.py	False
+results/deconfound_v2.tsv	True	True	2	0	build_omics_catalog.py|propagate_gate_fdr.py		False
+results/design_survey/kidney_metabolomics_designs.tsv	True	True	0	1		comparator_design_survey.py	False
+results/enrichment/KEGG_2021_Human.tsv	True	True	1	0	build_omics_catalog.py		True
+results/external_validation/gse142153_blood.tsv	False	True	0	1		candidate_external_validation.py	False
+results/external_validation/gse20602_nsc.tsv	False	True	1	1	candidate_dossier.py	candidate_external_validation.py	True
+results/external_validation/summary.tsv	True	True	1	1	additional_files.py	candidate_external_validation.py	False
+results/external_validation/supplementary.tsv	True	True	0	1		supplementary_stress.py	False
+results/figures/staged_map.tsv	False	True	0	1		stage_figures.py	False
+results/final_candidates.tsv	True	True	9	1	candidate_external_validation.py|conventional_pipeline.py|dkd_deconfound.py|fig_v1_v2.py|method_extensions.py|propagate_gate_fdr.py|rederive_candidates.py|ruv_benchmark.py|specificity_comparator_sweep.py	final_candidates.py	False
+results/final_candidates_gated.tsv	True	True	10	0	generative_robustness.py|kpmp_corroborate.py|kpmp_singlecell.py|literature_review.py|master_candidate_table.py|overview_figure.py|per_diagnosis_profile.py|rederive_candidates.py|specificity_null.py|stress_test.py		False
+results/gate_characteristics.tsv	True	True	2	1	kr_content.py|status_facts.py	propagate_gate_fdr.py	True
+results/generative_robustness.tsv	True	True	1	1	make_ppt.py	generative_robustness.py	True
+results/gse162830_validation.tsv	True	True	0	1		validate_gse162830.py	False
+results/gse163603/ieg_score.tsv	False	True	0	1		gse163603_procurement.py	False
+results/gse163603/summary.tsv	True	True	1	1	storage_metadata_test.py	gse163603_procurement.py	False
+results/gse175759_validation.tsv	True	True	0	1		validate_gse175759.py	False
+results/gse175759_validation_effects.tsv	True	True	1	0	make_figures.py		False
+results/gwas_layer.tsv	True	True	1	0	gwas_layer.py		False
+results/ieg_artifact.tsv	True	True	1	1	make_figures.py	ieg_artifact_test.py	False
+results/ieg_heterogeneity.tsv	True	True	7	0	bib_overview.py|ieg_heterogeneity.py|kr_content.py|overview_figure.py|paper_figures.py|procurement_schematic.py|storage_metadata_test.py		False
+results/kegg_pathway/null_distribution.tsv	False	True	0	1		kegg_joint_pathway.py	False
+results/kegg_pathway/summary.tsv	True	True	0	2		kegg_joint_pathway.py|reactome_joint_pathway.py	False
+results/kegg_pathway/targeted_metabolites.tsv	False	True	0	1		kegg_joint_pathway.py	False
+results/kpmp_corroboration.tsv	True	True	3	1	build_db.py|make_ppt.py|master_candidate_table.py	kpmp_corroborate.py	False
+results/kpmp_overlap/donor_meta.tsv	True	True	1	1	build_omics_catalog.py	kpmp_donor_meta.py	True
+results/kpmp_overlap/layer_summary.tsv	True	True	1	1	additional_files.py	kpmp_modality_overlap.py	False
+results/kpmp_overlap/participant_layers.tsv	True	True	2	1	build_omics_catalog.py|multiomics_feasibility.py	kpmp_modality_overlap.py	False
+results/kpmp_singlecell/expr_cache.npz	True	True	1	0	ieg_heterogeneity.py		False
+results/kpmp_singlecell/pseudobulk_de.tsv	True	True	4	0	additional_files.py|kr_content.py|make_figures.py|procurement_schematic.py		False
+results/literature_review.tsv	True	True	4	1	build_db.py|make_ppt.py|master_candidate_table.py|overview_figure.py	literature_review.py	False
+results/master_candidate_table.tsv	True	True	8	1	build_db.py|build_omics_catalog.py|comparator_reordering.py|fig_v1_v2.py|gwas_layer.py|make_figures.py|make_ppt.py|validate_gse175759.py	master_candidate_table.py	False
+results/metabolomics/ST003255_%s.tsv	False	False	0	1		metabolomics_feasibility.py	False
+results/metabolomics/ST003255_DKD_vs_other_kidney_disease.tsv	True	True	2	1	kegg_joint_pathway.py|reactome_joint_pathway.py	metabolomics_experiments.py	False
+results/metabolomics/ST003255_contrasts.tsv	True	True	1	1	kr_content.py	metabolomics_feasibility.py	True
+results/metabolomics/crossomics_collagen.tsv	True	True	1	1	kr_content.py	crossomics_link.py	True
+results/metabolomics/crossomics_per_disease.tsv	False	True	0	1		crossomics_link.py	False
+results/metabolomics/experiments_auroc.tsv	True	True	1	1	kr_content.py	metabolomics_experiments.py	True
+results/metabolomics/experiments_k_sensitivity.tsv	True	True	0	1		metabolomics_experiments.py	False
+results/metabolomics/experiments_shared_effect.tsv	False	True	0	1		metabolomics_experiments.py	False
+results/metabolomics/experiments_survivors.tsv	False	True	0	1		metabolomics_experiments.py	False
+results/metabolomics/robust_per_disease.tsv	True	True	1	1	kr_content.py	metabolomics_robustness.py	True
+results/metabolomics/robust_severity_adjusted.tsv	False	True	1	2	kr_content.py	crossomics_link.py|metabolomics_robustness.py	True
+results/method_extensions/extensions.tsv	False	True	0	1		method_extensions.py	False
+results/method_extensions/summary.tsv	False	True	0	1		method_extensions.py	False
+results/method_vs_design/effect_size.tsv	False	True	0	1		method_vs_design.py	False
+results/method_vs_design/variance.tsv	True	True	1	1	kr_content.py	method_vs_design.py	True
+results/module_size/block_size_ci.tsv	True	True	0	1		sim_block_size.py	False
+results/module_size/block_size_paired.tsv	True	True	0	1		sim_block_size.py	False
+results/module_size/block_size_paired_meanCI.tsv	False	True	1	0	kr_content.py		True
+results/module_size/block_size_sweep.tsv	False	True	0	1		module_size_test.py	False
+results/module_size/real_module_membership.tsv	True	True	0	1		module_size_test.py	False
+results/module_size/real_rbs_sweep.tsv	True	True	2	1	additional_files.py|paper_figures.py	sim_real_rbs.py	False
+results/multiomics_feasibility/layer_pair_contrast.tsv	False	True	1	1	build_omics_catalog.py	multiomics_feasibility.py	True
+results/multiomics_feasibility/summary.tsv	True	True	1	1	make_project_biomarker_report.py	multiomics_feasibility.py	True
+results/multiomics_spatial/candidates_two_layer.tsv	False	True	0	1		multiomics_spatial.py	False
+results/neuropathy/ST001411_%s.tsv	False	False	0	1		neuropathy_generalization.py	False
+results/neuropathy/contrasts.tsv	True	True	0	1		neuropathy_generalization.py	False
+results/neuropathy/disjoint_control_r.tsv	False	True	0	1		neuropathy_generalization.py	False
+results/null_control.tsv	True	True	4	1	build_omics_catalog.py|kr_content.py|make_ppt.py|overview_figure.py	null_control.py	False
+results/null_control_draws.tsv	True	True	2	0	compare_methods.py|make_figures.py		False
+results/per_dataset/consensus_across_datasets.tsv	True	True	0	1		per_dataset_features.py	False
+results/per_dataset/cross_dataset_jaccard.tsv	False	True	0	1		per_dataset_features.py	False
+results/per_dataset/features_%s.tsv	False	False	0	1		per_dataset_features.py	False
+results/per_diagnosis_profile.tsv	True	True	2	1	make_figures.py|master_candidate_table.py	per_diagnosis_profile.py	False
+results/proposed_all4/results.tsv	True	True	1	0	make_figures.py		False
+results/proteome_meta/candidate_protein_coverage.tsv	True	True	3	1	build_omics_catalog.py|make_project_biomarker_report.py|proteome_identity_audit.py	proteome_meta.py	False
+results/proteome_meta/cohort_audit.tsv	True	True	2	1	additional_files.py|make_project_biomarker_report.py	proteome_cohort_audit.py	False
+results/proteome_meta/discovery_attempt.tsv	True	True	1	1	additional_files.py	proteome_discovery_test.py	False
+results/proteome_meta/discovery_summary.tsv	True	True	1	1	additional_files.py	proteome_discovery_test.py	False
+results/proteome_meta/freeze_summary.tsv	True	True	1	1	additional_files.py	candidate_freeze_audit.py	False
+results/proteome_meta/literature_ledger.tsv	True	True	0	1		literature_ledger.py	False
+results/proteome_meta/literature_ledger_summary.tsv	True	True	1	1	additional_files.py	literature_ledger.py	False
+results/proteome_meta/matching_balance.tsv	True	True	1	1	additional_files.py	proteome_meta.py	False
+results/proteome_meta/protein_identity_audit.tsv	True	True	1	1	additional_files.py	proteome_identity_audit.py	False
+results/proteome_meta/summary.tsv	True	True	4	1	additional_files.py|kr_figures.py|make_project_biomarker_report.py|proteome_table.py	proteome_meta.py	False
+results/proteome_ms/protein_ms_dkd_vs_control.tsv	True	True	4	1	kr_figures.py|proteome_discovery_test.py|proteome_meta.py|proteome_table.py	proteome_ms_validation.py	False
+results/proteome_ms/summary.tsv	True	True	1	1	kr_figures.py	proteome_ms_validation.py	True
+results/proteome_validation/protein_dkd_vs_control.tsv	True	True	4	1	kr_figures.py|proteome_discovery_test.py|proteome_meta.py|proteome_table.py	proteome_validation.py	False
+results/proteome_validation/summary.tsv	True	True	1	1	kr_figures.py	proteome_validation.py	True
+results/reactome_pathway/summary.tsv	True	True	0	1		reactome_joint_pathway.py	False
+results/reactome_pathway/targeted_metabolites.tsv	False	True	0	1		reactome_joint_pathway.py	False
+results/ruv_benchmark/benchmark.tsv	True	True	7	0	bib_overview.py|build_omics_catalog.py|kr_content.py|method_vs_design.py|overview_figure.py|paper_figures.py|propagate_gate_fdr.py		False
+results/second_disease/gse5406.tsv	True	True	1	1	paper_figures.py	second_disease.py	False
+results/sensitivity_no104948/summary.tsv	True	True	1	1	status_facts.py	sensitivity_drop_ercb.py	True
+results/simulation/simulation.tsv	True	True	0	1		simulation.py	False
+results/specificity_null.tsv	True	True	3	1	make_figures.py|master_candidate_table.py|propagate_gate_fdr.py	specificity_null.py	False
+results/specificity_sweep/candidate_consistency.tsv	True	True	2	1	candidate_dossier.py|kr_content.py	specificity_comparator_sweep.py	True
+results/specificity_sweep/g_by_diagnosis.tsv	False	True	0	1		specificity_comparator_sweep.py	False
+results/specificity_sweep/per_diagnosis.tsv	False	True	0	1		specificity_comparator_sweep.py	False
+results/specificity_sweep/subset_sweep.tsv	False	True	0	1		specificity_comparator_sweep.py	False
+results/storage_test/per_dataset.tsv	True	True	0	1		storage_metadata_test.py	False
+results/storage_test/summary.tsv	True	True	0	1		storage_metadata_test.py	False
+results/stress_test.tsv	True	True	2	1	make_figures.py|make_ppt.py	stress_test.py	False
+results/subject_overlap.tsv	True	True	0	1		cohort_table.py	False
+results/validation/consensus_signature.tsv	False	True	1	0	enrich.py		True
+results/wgcna_validation/soft_threshold.tsv	True	True	1	1	additional_files.py	wgcna_validation.py	False
+results/wgcna_validation/variants.tsv	True	True	2	1	additional_files.py|kr_content.py	wgcna_validation.py	False
+results/xtissue/colon_uc/sweep/subsets.tsv	True	True	1	0	bib_overview.py		True
+results/xtissue/liver_masld/sweep/subsets.tsv	True	True	1	0	bib_overview.py		True
+results/xtissue/overlap_audit.tsv	True	True	0	1		xtissue_overlap_audit.py	False
+results/xtissue/p2_ieg_by_cohort.tsv	True	True	2	2	bib_overview.py|xtissue_posthoc.py	xtissue_figure.py|xtissue_p2.py	False
+results/xtissue/p2_verdict.tsv	True	True	0	2		xtissue_p2.py|xtissue_verdicts.py	False
+results/xtissue/posthoc/h4_gse48452_contrasts.tsv	False	True	0	1		xtissue_posthoc.py	False
+results/xtissue/posthoc/h4_gse48452_summary.tsv	True	True	0	1		xtissue_posthoc.py	False
+results/xtissue/posthoc/h5_inflammation_adjustment.tsv	True	True	0	1		xtissue_posthoc.py	False
+results/xtissue/posthoc_effect_concordance.tsv	True	True	1	2	bib_overview.py	xtissue_figure.py|xtissue_posthoc.py	True
+results/xtissue/verdicts.tsv	True	True	0	1		xtissue_verdicts.py	False

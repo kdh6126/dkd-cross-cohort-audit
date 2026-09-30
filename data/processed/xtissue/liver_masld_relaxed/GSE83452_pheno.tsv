@@ -1,0 +1,149 @@
+sample	label	subject_id	title	source
+GSM2203254	0	GSM2203254	liver biopsy 1	no NASH liver baseline
+GSM2203255	1	GSM2203255	liver biopsy 2	NASH liver baseline
+GSM2203258	1	GSM2203258	liver biopsy 5	NASH liver baseline
+GSM2203259	1	GSM2203259	liver biopsy 6	NASH liver baseline
+GSM2203265	1	GSM2203265	liver biopsy 13	NASH liver baseline
+GSM2203268	0	GSM2203268	liver biopsy 17	no NASH liver baseline
+GSM2203269	1	GSM2203269	liver biopsy 18	NASH liver baseline
+GSM2203272	0	GSM2203272	liver biopsy 21	no NASH liver baseline
+GSM2203273	0	GSM2203273	liver biopsy 22	no NASH liver baseline
+GSM2203276	1	GSM2203276	liver biopsy 25	NASH liver baseline
+GSM2203277	1	GSM2203277	liver biopsy 26	NASH liver baseline
+GSM2203280	0	GSM2203280	liver biopsy 29	no NASH liver baseline
+GSM2203281	1	GSM2203281	liver biopsy 30	NASH liver baseline
+GSM2203284	1	GSM2203284	liver biopsy 33	NASH liver baseline
+GSM2203285	0	GSM2203285	liver biopsy 34	no NASH liver baseline
+GSM2203288	1	GSM2203288	liver biopsy 37	NASH liver baseline
+GSM2203289	1	GSM2203289	liver biopsy 38	NASH liver baseline
+GSM2203292	0	GSM2203292	liver biopsy 41	no NASH liver baseline
+GSM2203293	1	GSM2203293	liver biopsy 42	NASH liver baseline
+GSM2203296	1	GSM2203296	liver biopsy 45	NASH liver baseline
+GSM2203297	1	GSM2203297	liver biopsy 46	NASH liver baseline
+GSM2203300	1	GSM2203300	liver biopsy 49	NASH liver baseline
+GSM2203301	0	GSM2203301	liver biopsy 50	no NASH liver baseline
+GSM2203304	1	GSM2203304	liver biopsy 53	NASH liver baseline
+GSM2203305	1	GSM2203305	liver biopsy 54	NASH liver baseline
+GSM2203308	1	GSM2203308	liver biopsy 57	NASH liver baseline
+GSM2203310	1	GSM2203310	liver biopsy 59	NASH liver baseline
+GSM2203316	0	GSM2203316	liver biopsy 66	no NASH liver baseline
+GSM2203319	1	GSM2203319	liver biopsy 69	NASH liver baseline
+GSM2203320	0	GSM2203320	liver biopsy 70	no NASH liver baseline
+GSM2203323	1	GSM2203323	liver biopsy 74	NASH liver baseline
+GSM2203326	1	GSM2203326	liver biopsy 77	NASH liver baseline
+GSM2203331	1	GSM2203331	liver biopsy 83	NASH liver baseline
+GSM2203332	1	GSM2203332	liver biopsy 84	NASH liver baseline
+GSM2203333	0	GSM2203333	liver biopsy 85	no NASH liver baseline
+GSM2203335	0	GSM2203335	liver biopsy 87	no NASH liver baseline
+GSM2203338	1	GSM2203338	liver biopsy 90	NASH liver baseline
+GSM2203339	1	GSM2203339	liver biopsy 91	NASH liver baseline
+GSM2203342	1	GSM2203342	liver biopsy 94	NASH liver baseline
+GSM2203343	0	GSM2203343	liver biopsy 95	no NASH liver baseline
+GSM2203346	1	GSM2203346	liver biopsy 98	NASH liver baseline
+GSM2203347	0	GSM2203347	liver biopsy 99	no NASH liver baseline
+GSM2203350	1	GSM2203350	liver biopsy 102	NASH liver baseline
+GSM2203351	1	GSM2203351	liver biopsy 103	NASH liver baseline
+GSM2203352	0	GSM2203352	liver biopsy 104	no NASH liver baseline
+GSM2203356	0	GSM2203356	liver biopsy 108	no NASH liver baseline
+GSM2203357	1	GSM2203357	liver biopsy 109	NASH liver baseline
+GSM2203360	0	GSM2203360	liver biopsy 112	no NASH liver baseline
+GSM2203361	1	GSM2203361	liver biopsy 113	NASH liver baseline
+GSM2203364	1	GSM2203364	liver biopsy 116	NASH liver baseline
+GSM2203365	0	GSM2203365	liver biopsy 117	no NASH liver baseline
+GSM2203368	1	GSM2203368	liver biopsy 121	NASH liver baseline
+GSM2203372	1	GSM2203372	liver biopsy 126	NASH liver baseline
+GSM2203374	1	GSM2203374	liver biopsy 128	NASH liver baseline
+GSM2203376	1	GSM2203376	liver biopsy 131	NASH liver baseline
+GSM2203378	1	GSM2203378	liver biopsy 133	NASH liver baseline
+GSM2203379	1	GSM2203379	liver biopsy 134	NASH liver baseline
+GSM2203380	1	GSM2203380	liver biopsy 135	NASH liver baseline
+GSM2203381	1	GSM2203381	liver biopsy 136	NASH liver baseline
+GSM2203382	1	GSM2203382	liver biopsy 137	NASH liver baseline
+GSM2203383	1	GSM2203383	liver biopsy 138	NASH liver baseline
+GSM2203384	0	GSM2203384	liver biopsy 139	no NASH liver baseline
+GSM2203385	1	GSM2203385	liver biopsy 140	NASH liver baseline
+GSM2203386	1	GSM2203386	liver biopsy 141	NASH liver baseline
+GSM2203388	1	GSM2203388	liver biopsy 143	NASH liver baseline
+GSM2203390	1	GSM2203390	liver biopsy 145	NASH liver baseline
+GSM2203391	1	GSM2203391	liver biopsy 146	NASH liver baseline
+GSM2203392	1	GSM2203392	liver biopsy 147	NASH liver baseline
+GSM2203393	1	GSM2203393	liver biopsy 148	NASH liver baseline
+GSM2203394	1	GSM2203394	liver biopsy 149	NASH liver baseline
+GSM2203395	1	GSM2203395	liver biopsy 150	NASH liver baseline
+GSM2203396	0	GSM2203396	liver biopsy 151	no NASH liver baseline
+GSM2203397	0	GSM2203397	liver biopsy 152	no NASH liver baseline
+GSM2203398	1	GSM2203398	liver biopsy 153	NASH liver baseline
+GSM2203399	1	GSM2203399	liver biopsy 155	NASH liver baseline
+GSM2203400	0	GSM2203400	liver biopsy 156	no NASH liver baseline
+GSM2203401	1	GSM2203401	liver biopsy 157	NASH liver baseline
+GSM2203402	1	GSM2203402	liver biopsy 158	NASH liver baseline
+GSM2203403	1	GSM2203403	liver biopsy 159	NASH liver baseline
+GSM2203404	1	GSM2203404	liver biopsy 160	NASH liver baseline
+GSM2203405	0	GSM2203405	liver biopsy 161	no NASH liver baseline
+GSM2203406	1	GSM2203406	liver biopsy 162	NASH liver baseline
+GSM2203407	1	GSM2203407	liver biopsy 163	NASH liver baseline
+GSM2203408	1	GSM2203408	liver biopsy 164	NASH liver baseline
+GSM2203410	0	GSM2203410	liver biopsy 166	no NASH liver baseline
+GSM2203411	0	GSM2203411	liver biopsy 167	no NASH liver baseline
+GSM2203414	1	GSM2203414	liver biopsy 170	NASH liver baseline
+GSM2203416	1	GSM2203416	liver biopsy 172	NASH liver baseline
+GSM2203417	0	GSM2203417	liver biopsy 173	no NASH liver baseline
+GSM2203418	0	GSM2203418	liver biopsy 174	no NASH liver baseline
+GSM2203419	1	GSM2203419	liver biopsy 175	NASH liver baseline
+GSM2203420	0	GSM2203420	liver biopsy 176	no NASH liver baseline
+GSM2203421	0	GSM2203421	liver biopsy 177	no NASH liver baseline
+GSM2203422	1	GSM2203422	liver biopsy 178	NASH liver baseline
+GSM2203423	1	GSM2203423	liver biopsy 179	NASH liver baseline
+GSM2203425	0	GSM2203425	liver biopsy 181	no NASH liver baseline
+GSM2203426	0	GSM2203426	liver biopsy 182	no NASH liver baseline
+GSM2203427	1	GSM2203427	liver biopsy 183	NASH liver baseline
+GSM2203428	1	GSM2203428	liver biopsy 184	NASH liver baseline
+GSM2203429	0	GSM2203429	liver biopsy 185	no NASH liver baseline
+GSM2203430	1	GSM2203430	liver biopsy 186	NASH liver baseline
+GSM2203431	1	GSM2203431	liver biopsy 187	NASH liver baseline
+GSM2203432	0	GSM2203432	liver biopsy 188	no NASH liver baseline
+GSM2203434	0	GSM2203434	liver biopsy 190	no NASH liver baseline
+GSM2203435	1	GSM2203435	liver biopsy 192	NASH liver baseline
+GSM2203437	1	GSM2203437	liver biopsy 194	NASH liver baseline
+GSM2203438	1	GSM2203438	liver biopsy 195	NASH liver baseline
+GSM2203439	1	GSM2203439	liver biopsy 196	NASH liver baseline
+GSM2203440	1	GSM2203440	liver biopsy 197	NASH liver baseline
+GSM2203443	0	GSM2203443	liver biopsy 201	no NASH liver baseline
+GSM2203444	1	GSM2203444	liver biopsy 203	NASH liver baseline
+GSM2203445	1	GSM2203445	liver biopsy 204	NASH liver baseline
+GSM2203446	1	GSM2203446	liver biopsy 206	NASH liver baseline
+GSM2203447	1	GSM2203447	liver biopsy 207	NASH liver baseline
+GSM2203448	1	GSM2203448	liver biopsy 208	NASH liver baseline
+GSM2203449	1	GSM2203449	liver biopsy 209	NASH liver baseline
+GSM2203450	1	GSM2203450	liver biopsy 210	NASH liver baseline
+GSM2203451	1	GSM2203451	liver biopsy 212	NASH liver baseline
+GSM2203452	1	GSM2203452	liver biopsy 213	NASH liver baseline
+GSM2203453	1	GSM2203453	liver biopsy 214	NASH liver baseline
+GSM2203454	1	GSM2203454	liver biopsy 215	NASH liver baseline
+GSM2203455	0	GSM2203455	liver biopsy 216	no NASH liver baseline
+GSM2203457	1	GSM2203457	liver biopsy 218	NASH liver baseline
+GSM2203458	1	GSM2203458	liver biopsy 219	NASH liver baseline
+GSM2203459	0	GSM2203459	liver biopsy 220	no NASH liver baseline
+GSM2203460	1	GSM2203460	liver biopsy 221	NASH liver baseline
+GSM2203461	0	GSM2203461	liver biopsy 222	no NASH liver baseline
+GSM2203462	1	GSM2203462	liver biopsy 223	NASH liver baseline
+GSM2203463	0	GSM2203463	liver biopsy 224	no NASH liver baseline
+GSM2203464	0	GSM2203464	liver biopsy 225	no NASH liver baseline
+GSM2203465	1	GSM2203465	liver biopsy 226	NASH liver baseline
+GSM2203466	1	GSM2203466	liver biopsy 227	NASH liver baseline
+GSM2203467	1	GSM2203467	liver biopsy 228	NASH liver baseline
+GSM2203468	0	GSM2203468	liver biopsy 229	no NASH liver baseline
+GSM2203469	1	GSM2203469	liver biopsy 230	NASH liver baseline
+GSM2203470	1	GSM2203470	liver biopsy 231	NASH liver baseline
+GSM2203471	0	GSM2203471	liver biopsy 232	no NASH liver baseline
+GSM2203472	1	GSM2203472	liver biopsy 233	NASH liver baseline
+GSM2203473	1	GSM2203473	liver biopsy 234	NASH liver baseline
+GSM2203474	1	GSM2203474	liver biopsy 235	NASH liver baseline
+GSM2203475	1	GSM2203475	liver biopsy 236	NASH liver baseline
+GSM2203476	1	GSM2203476	liver biopsy 237	NASH liver baseline
+GSM2203477	1	GSM2203477	liver biopsy 238	NASH liver baseline
+GSM2203479	1	GSM2203479	liver biopsy 240	NASH liver baseline
+GSM2203480	1	GSM2203480	liver biopsy 241	NASH liver baseline
+GSM2203481	0	GSM2203481	liver biopsy 243	no NASH liver baseline
+GSM2203483	1	GSM2203483	liver biopsy 245	NASH liver baseline
+GSM2203484	0	GSM2203484	liver biopsy 247	no NASH liver baseline

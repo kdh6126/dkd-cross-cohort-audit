@@ -1,0 +1,44 @@
+dataset	group	n	procurement	ieg_z	n_ieg
+GSE104948	ANCA Associated Vasculitis	22	biopsy	0.03608913844343331	19
+GSE104948	DN	12	biopsy	-0.07276034655504338	19
+GSE104948	Focal Segmental Glomerular Sclerosis	18	biopsy	-0.09676405263701916	19
+GSE104948	Focal Segmental Glomerular Sclerosis/Minimal Change Disease	6	biopsy	-0.06533547021145543	19
+GSE104948	Hypertensive Nephropathy	15	biopsy	-0.028707640712246473	19
+GSE104948	IgA Nephropathy	27	biopsy	-0.07683442605953499	19
+GSE104948	Membranous Glomerulonephropathy	21	biopsy	-0.24273355309541744	19
+GSE104948	Minimal Change Disease	14	biopsy	-0.4735314742320536	19
+GSE104948	Systemic Lupus Erythematosus	32	biopsy	0.05745740450888852	19
+GSE104948	Thin Membrande Disease	3	biopsy	-0.5311604699590332	19
+GSE104948	living_donor	21	living_donor	0.46179327035076245	19
+GSE104948	tumor_nephrectomy	5	tumor_nephrectomy	1.3004208076820958	19
+GSE104954	ANCA-associated vasculitis	21	biopsy	-0.28381090997969105	19
+GSE104954	DN	17	biopsy	0.02181221447450736	19
+GSE104954	Focal segmental glomerulosclerosis	13	biopsy	-0.010594519719674195	19
+GSE104954	Focal segmental glomerulosclerosis and minimal change disease	4	biopsy	-0.6990224347047906	19
+GSE104954	Hypertensive nephropathy	20	biopsy	0.1750266707826217	19
+GSE104954	IgA nephropathy	25	biopsy	-0.23018018899884807	19
+GSE104954	Membranous glomerulonephropathy	17	biopsy	-0.3809720951027023	19
+GSE104954	Minimal change disease	13	biopsy	-0.5352222870600124	19
+GSE104954	Systemic lupus erythematosus	33	biopsy	-0.1277451113238118	19
+GSE104954	Thin membrande disease	6	biopsy	-0.2319580279183684	19
+GSE104954	living_donor	21	living_donor	1.0098707667761904	19
+GSE104954	tumor_nephrectomy	5	tumor_nephrectomy	1.7222954710845513	19
+GSE142025	Advanced_DN	21	biopsy	-0.24963885696853214	19
+GSE142025	Control	9	tumor_nephrectomy	1.262554967897456	19
+GSE142025	Early_DN	6	biopsy	-1.0200964524563214	19
+GSE30528	DKD	9	biopsy	-0.19080638002871922	19
+GSE30528	control	13	tumor_nephrectomy	0.13209672463526712	19
+GSE30529	DKD	10	biopsy	-0.259304714840819	19
+GSE30529	control	12	tumor_nephrectomy	0.2160872623673492	19
+GSE96804	DN	41	biopsy	-0.39139860774253005	19
+GSE96804	control	20	tumor_nephrectomy	0.8023671458721866	19
+GSE162830	DN	18	biopsy	-0.22188181676624547	19
+GSE162830	ING	5	biopsy	0.4801645288516677	19
+GSE162830	reference	9	tumor_nephrectomy	0.17700556194823094	19
+GSE175759	DN	3	biopsy	-0.036552137502469294	19
+GSE175759	otherCKD	62	biopsy	-0.38851691542677713	19
+GSE175759	reference	22	tumor_nephrectomy	1.0998956894985268	19
+KPMP_snRNA	DN	27	biopsy	-0.3385486900806427	19
+KPMP_snRNA	otherCKD	10	biopsy	-0.3235715329647064	19
+KPMP_snRNA	reference	12	donor/nephrectomy	0.8258420825004578	19
+KPMP_snRNA	nephrectomy	6	tumor_nephrectomy	0.45765259861946106	19

@@ -1,0 +1,55 @@
+study_id	n	title	design	levels	note
+ST000050	49	Preterm Neonatal Urinary Renal Developmental and acute kidney injury M	unclear	Acute Kidney Injury:0 ;; Acute Kidney Injury:1 ;; Acute Kidney Injury:Pool	
+ST000342	33	Renal metabolic pathways indicating ischemic or inflammatory changes	healthy_control	Organ:Plasma | Treatment:Quality Control ;; Organ:Renal Tissue | Treatment:PRBC ;; Organ:Renal Tissue | Treatment:PRBC+FST ;; Organ:Renal Tissue | Treatment:PRBC-FST ;; Organ:Renal Tissue | Treatment:Quality Control ;; O	
+ST000465	16	Uniquely Tumor-Selective Englerin A Profoundly Alters Lipid Metabolism	excluded		암/동물/무관
+ST000540	32	Kidney tissue metabolomic profiling of diabetic nephropathy in the ste	excluded		암/동물/무관
+ST000558	61	Plasma metabolomic profiling of diabetic nephropathy in the steptozoto	excluded		암/동물/무관
+ST000559	54	Urine metabolomic profiling of diabetic nephropathy in the steptozotoc	excluded		암/동물/무관
+ST000560	29	Metabolomics of immunoglobulin-producing cells in IgA nephropathy	healthy_control	Phenotype:HC ;; Phenotype:IgAN ;; Phenotype:Pool	
+ST000565	112	Association of hemodialysis patient plasma trace metals with response 	unclear	Gender:F | Race:- ;; Gender:F | Race:African American ;; Gender:F | Race:Caucasian ;; Gender:F | Race:Other ;; Gender:M | Race:African American ;; Gender:M | Race:Caucasian ;; Gender:M | Race:Other ;; Gender:Pool | Race:	
+ST000691	17	Metabolomics of diabetic nephropathy	within_disease	Progression:Pooled plasma ;; Progression:Y	
+ST000756	10	Metabolomics of cilia and modulation of renal microcirculation	other	Days post-STZ:- ;; Days post-STZ:3 ;; Days post-STZ:30 ;; Days post-STZ:POOLED	
+ST000816	100	Lipidomics of Chronic Kidney Disease progression	within_disease	Progressors:Non-progressor | Visit:Baseline ;; Progressors:Non-progressor | Visit:Followup ;; Progressors:Non-progressor | Visit:NA ;; Progressors:Progressor | Visit:Baseline ;; Progressors:Progressor | Visit:Followup ;;	
+ST000878	14	Fatty Acid Oxidation is Impaired in An Orthologous Mouse Model of Auto	excluded		암/동물/무관
+ST001353	24	Untargeted metabolomics in skeletal muscle of mice with chronic kidney	excluded		암/동물/무관
+ST001390	12	Natural history of the systemic responses to a renal inoculation of ur	other	Timepoint:- ;; Timepoint:12 ;; Timepoint:6	
+ST001624	13	Tissue-specific 1H-NMR metabolomic profiling in mice with adenine-indu	excluded		암/동물/무관
+ST001625	13	Tissue-specific 1H-NMR metabolomic profiling in mice with adenine-indu	excluded		암/동물/무관
+ST001626	14	Tissue-specific 1H-NMR metabolomic profiling in mice with adenine-indu	excluded		암/동물/무관
+ST001627	14	Tissue-specific 1H-NMR metabolomic profiling in mice with adenine-indu	excluded		암/동물/무관
+ST001628	14	Tissue-specific 1H-NMR metabolomic profiling in mice with adenine-indu	excluded		암/동물/무관
+ST001629	14	Tissue-specific 1H-NMR metabolomic profiling in mice with adenine-indu	excluded		암/동물/무관
+ST001630	14	Tissue-specific 1H-NMR metabolomic profiling in mice with adenine-indu	excluded		암/동물/무관
+ST001631	14	Tissue-specific 1H-NMR metabolomic profiling in mice with adenine-indu	excluded		암/동물/무관
+ST001705	256	Machine learning-enabled renal cell carcinoma status prediction using 	excluded		암/동물/무관
+ST001706	258	Machine learning-enabled renal cell carcinoma status prediction using 	excluded		암/동물/무관
+ST001923	82	Urine-Based Metabolomics and Machine Learning Reveals Metabolites Asso	excluded		암/동물/무관
+ST001924	84	Urine-Based Metabolomics and Machine Learning Reveals Metabolites Asso	excluded		암/동물/무관
+ST001943	86	Urinary signature of chronic kidney disease in patients with severe ob	healthy_control	Genotype:Healthy1V ;; Genotype:Healthy24h ;; Genotype:O ;; Genotype:OBS ;; Genotype:ODBS ;; Genotype:QC_CC ;; Genotype:QC_CKD ;; Genotype:QC_Control ;; Genotype:QC_Healthy	
+ST002145	10	The Carbohydrate Sensing Transcription Factor ChREBP Links Mitochondri	healthy_control	Genotype:ChREBP knockdown ;; Genotype:Control	
+ST002220	20	Catabolism of branched-chain amino acids (BCAAs) in renal cells HK2 an	unclear	Cell line:786-M1A | Treatment:13C6-leucine+13C6-isoleucine ;; Cell line:786-M2A | Treatment:13C6-leucine+13C6-isoleucine ;; Cell line:786-O | Treatment:13C6-leucine+13C6-isoleucine ;; Cell line:HK2 | Treatment:13C6-leuci	
+ST002224	48	Intracellular metabolic profile of renal cells cultured in Plasmax	unclear	Cell line:786-M1A | Treatment:Plasmax + 2.5% FBS ;; Cell line:786-M2A | Treatment:Plasmax + 2.5% FBS ;; Cell line:786-O | Treatment:Plasmax + 2.5% FBS ;; Cell line:HK2 | Treatment:Plasmax + 2.5% FBS	
+ST002227	20	Assessing the contribution of branched-chain amino acid (BCAA)-derived	unclear	Cell line:786-M1A | Treatment:15N-leucine+15N-isoleucine ;; Cell line:786-M2A | Treatment:15N-leucine+15N-isoleucine ;; Cell line:786-O | Treatment:15N-leucine+15N-isoleucine ;; Cell line:HK2 | Treatment:15N-leucine+15N-	
+ST002241	10	ACSS2 Regulates HIF-2α Degradation through the E3-Ubiquitin Ligase MUL	excluded		암/동물/무관
+ST002382	60	Deep multi-omic profiling reveals extensive mitochondrial remodeling d	other	Treatment:CTRL ;; Treatment:MHG ;; Treatment:QC ;; Treatment:SHG ;; Treatment:blank	
+ST002403	36	Deep multi-omic profiling reveals extensive mitochondrial remodeling d	unclear	group:black | type:mito ;; group:blue | type:mito ;; group:red | type:mito	
+ST002553	176	Exploring the Impact of Oral Arabic Gum Consumption on Sphingolipid Me	healthy_control	Treatment:Arabic gum ;; Treatment:Control	
+ST002659	66	MoTrPAC: Endurance exercise training study in young adult rats, Tissue	excluded		암/동물/무관
+ST003111	18	Inhibition of Asparagine Synthetase Effectively Retards Polycystic Kid	excluded		암/동물/무관
+ST003113	46	Inhibition of Asparagine Synthetase Effectively Retards Polycystic Kid	unclear	Sample source:Brain | Treatment:2DG ;; Sample source:Brain | Treatment:Saline ;; Sample source:MEF cells | Factor:Labeled_Untreated_11_1 ;; Sample source:MEF cells | Factor:Labeled_Untreated_11_2 ;; Sample source:MEF cel	
+ST003255	286	Metabolomics study to identify cause-specific biomarkers for Chronic K	disease_contrast	Disease:DKD ;; Disease:HN ;; Disease:IgAN ;; Disease:MN ;; Disease:Normal	
+ST003738	33	Impact of Trans-Fatty acids on renal health in mice with partial Tgfβ3	excluded		암/동물/무관
+ST003924	65	NMR-based Urinary Biomarkers in Pediatric Primary Mitochondrial Disord	healthy_control	Disease:CKD1_2 | Sample source:Urine ;; Disease:CKD3_5 | Sample source:Urine ;; Disease:Control | Sample source:Urine ;; Disease:PMD | Sample source:Urine ;; Disease:PMD+CKD | Sample source:Urine ;; Disease:SMD | Sample 	
+ST003950	78	Plasma Phospholipids Analysis in Thai EGFR-mutated Non-Small Cell Lung	excluded		암/동물/무관
+ST003989	78	Plasma Amino Acids Analysis in Thai EGFR-mutated Non-Small Cell Lung C	excluded		암/동물/무관
+ST004137	96	Untargeted urine metabolomic profiling provides insights into the impa	other	Factor[Group]:NA | Sample source:Blank ;; Factor[Group]:NA | Sample source:Urine ;; Factor[Group]:NA | Sample source:Urine (pooled) ;; Factor[Group]:Post-treatment | Sample source:Urine ;; Factor[Group]:Pre-treatment | S	
+ST004167	26	Targeted Lipidomic Profiling of STBD1 Knockdown in Clear Cell Renal Ca	excluded		암/동물/무관
+ST004177	78	Plasma Organic acids Analysis in Thai EGFR-mutated Non-Small Cell Lung	excluded		암/동물/무관
+ST004184	78	Plasma Sugar and Sugar Alcohols Analysis in Thai EGFR-mutated Non-Smal	excluded		암/동물/무관
+ST004207	111	Tumour sampling conditions perturb the metabolic landscape of clear ce	excluded		암/동물/무관
+ST004442	40	Identification of Metabolomic Signatures of Diabetic Kidney Disease in	healthy_control	Sample source:Plasma | Treatment:Control ;; Sample source:Plasma | Treatment:DKD ;; Sample source:Plasma | Treatment:DM	
+ST004483	40	Identification of Metabolomic Signatures of Diabetic Kidney Disease in	healthy_control	Sample source:Urine | Treatment:Control ;; Sample source:Urine | Treatment:DKD ;; Sample source:Urine | Treatment:DM	
+ST004519	76	Chronic Kidney Disease Induces Distinct Alterations of Macrophage Lipi	excluded		암/동물/무관
+ST004611	198	Targeted metabolomics of plasma samples from metastatic renal cell car	excluded		암/동물/무관
+ST004785	46	Effects of high fat feeding on subcellular diacylglycerol and ceramide	unclear	Subcellular compartment:Cytosol | Treatment:High fat diet | Sample source:Mouse renal cortex ;; Subcellular compartment:Cytosol | Treatment:Regular chow | Sample source:Mouse renal cortex ;; Subcellular compartment:Endop	
+ST004882	61	Plasma metabolomics characterization of murine pre-renal azotemia as c	excluded		암/동물/무관

@@ -1,0 +1,4 @@
+contrast	n_a	n_b	n_sig	n_large	median_abs_g	max_abs_g
+neuropathy vs normal (conventional)	48	9	120	364	0.3761312122466798	1.8903959579612266
+neuropathy vs diabetes only (recommended)	48	49	0	10	0.1284913188103188	0.5851871469119762
+diabetes only vs normal (effect of diabetes)	49	9	103	375	0.39116607520785773	2.034977104643199

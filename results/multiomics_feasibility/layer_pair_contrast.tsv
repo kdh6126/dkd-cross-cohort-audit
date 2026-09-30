@@ -1,0 +1,4 @@
+layer_a	layer_b	n_both	n_case	n_control	contrast_possible
+transcriptomics	proteomics	14	14	0	False
+transcriptomics	metabolomics	19	13	6	True
+proteomics	metabolomics	1	1	0	False

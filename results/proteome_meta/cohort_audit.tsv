@@ -1,0 +1,13 @@
+attribute	somascan_cohort	massspec_cohort
+Repository / accession	Mendeley Data 83k89shdx5	PRIDE PXD041884
+Source publication	Hirohama 2023 (JASN)	Schwab 2024 (Proteomics Clin Appl)
+Measurement principle	SomaScan aptamer panel, 1,305 proteins	Label-free LC-MS/MS, Q-TOF, shotgun
+Case group as defined by the source	23 individuals with diabetic kidney disease	5 clinically validated diabetic cases, all with nodular sclerosis
+Control group as defined by the source	10 healthy controls	7 non-diabetic control cases
+Sample labels in the released matrix	Con_01..Con_10, DKD_01..DKD_23	C1, C2d, C3, C4, C6, C7, C9 / D1, D3, D4, D5, D6
+Tissue	Kidney cortex	Kidney FFPE tissue curls, over 60% cortex per case
+Procurement route stated for the cases	Kidney tissue; route not stated in the accessible text	Explant tissue, archival FFPE, one institution
+Procurement route stated for the controls	Kidney tissue; route not stated in the accessible text	Explant tissue, archival FFPE, same institution
+Biopsy-versus-nephrectomy asymmetry by design	Cannot be established from the accessible text	Absent: both arms are archival explant cases from one source
+Pre-analytical exposure reported	No ischaemia, fixation or storage time reported	No ischaemia, fixation or storage time reported
+Already-published protein finding in this cohort	MMP7 is the source publication's headline biomarker	None of our candidates is a named finding of the source

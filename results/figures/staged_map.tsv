@@ -1,0 +1,11 @@
+submission_name	source_name	label
+Fig1	P0_overview	fig:overview
+Fig2	P2_null_control	fig:null
+Fig3	P1_cohort_sensitivity	fig:sensitivity
+Fig4	P3_procurement	fig:procurement
+Fig5	P4_singlecell_control	fig:singlecell
+Fig6	P5_block_size	fig:blocksize
+Fig7	P6_corrections	fig:corrections
+Fig8	P9_reordering	fig:reordering
+Fig9	P10_cross_tissue	fig:xtissue
+Fig10	P7_candidates	fig:candidates

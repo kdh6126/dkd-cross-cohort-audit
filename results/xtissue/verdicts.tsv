@@ -1,0 +1,6 @@
+prediction	tissue	observed	verdict
+P1	colon_uc	3-cohort Jaccard diff +0.006 to +0.192 (0 of 10 negative); AUROC diff -0.005 to +0.067 (1 of 10 negative)	failed: Jaccard difference does not span zero
+P1	liver_masld	3-cohort Jaccard diff -0.008 to +0.174 (1 of 10 negative); AUROC diff +0.040 to +0.377 (0 of 10 negative)	held
+P2	colon_uc	matched cohorts 10, asymmetric 0	failed
+P2	liver_masld	matched cohorts 4, asymmetric 3	failed
+P3	all	uncorrected RBS top-50 IEG: kidney 8.0, liver 0.6, colon 0.0; reduction by correction: kidney 7.2, liver 0.6, colon 0.0	held

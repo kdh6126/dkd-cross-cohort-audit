@@ -1,0 +1,33 @@
+module	module_detail	rank_by	adjacency	power	module_size	ieg_in_module	ieg_in_top50	ieg_median_rank
+gs_top	top-decile |gs|	kIN	unsigned	4	990	12	0	958.5
+gs_top	top-decile |gs|	kME	unsigned	4	990	12	0	966.0
+gs_top	top-decile |gs|	kIN	signed	4	990	12	0	969.0
+gs_top	top-decile |gs|	kME	signed	4	990	12	0	966.0
+gs_top	top-decile |gs|	kIN	unsigned	6	990	12	0	919.0
+gs_top	top-decile |gs|	kME	unsigned	6	990	12	0	966.0
+gs_top	top-decile |gs|	kIN	signed	6	990	12	0	967.5
+gs_top	top-decile |gs|	kME	signed	6	990	12	0	966.0
+gs_top	top-decile |gs|	kIN	unsigned	8	990	12	0	837.5
+gs_top	top-decile |gs|	kME	unsigned	8	990	12	0	966.0
+gs_top	top-decile |gs|	kIN	signed	8	990	12	0	961.5
+gs_top	top-decile |gs|	kME	signed	8	990	12	0	966.0
+gs_top	top-decile |gs|	kIN	unsigned	12	990	12	0	664.0
+gs_top	top-decile |gs|	kME	unsigned	12	990	12	0	966.0
+gs_top	top-decile |gs|	kIN	signed	12	990	12	0	936.5
+gs_top	top-decile |gs|	kME	signed	12	990	12	0	966.0
+tom_cluster	TOM cluster (k=4)	kIN	unsigned	4	3956	17	0	3531.0
+tom_cluster	TOM cluster (k=4)	kME	unsigned	4	3956	17	0	3501.0
+tom_cluster	TOM cluster (k=4)	kIN	signed	4	2068	0	0	
+tom_cluster	TOM cluster (k=4)	kME	signed	4	2068	0	0	
+tom_cluster	TOM cluster (k=4)	kIN	unsigned	6	3957	17	0	3036.0
+tom_cluster	TOM cluster (k=4)	kME	unsigned	6	3957	17	0	3501.0
+tom_cluster	TOM cluster (k=4)	kIN	signed	6	2066	0	0	
+tom_cluster	TOM cluster (k=4)	kME	signed	6	2066	0	0	
+tom_cluster	TOM cluster (k=4)	kIN	unsigned	8	3957	17	0	2579.0
+tom_cluster	TOM cluster (k=4)	kME	unsigned	8	3957	17	0	3501.0
+tom_cluster	TOM cluster (k=4)	kIN	signed	8	2063	0	0	
+tom_cluster	TOM cluster (k=4)	kME	signed	8	2063	0	0	
+tom_cluster	TOM cluster (k=4)	kIN	unsigned	12	3957	17	0	1710.0
+tom_cluster	TOM cluster (k=4)	kME	unsigned	12	3957	17	0	3501.0
+tom_cluster	TOM cluster (k=4)	kIN	signed	12	2059	0	0	
+tom_cluster	TOM cluster (k=4)	kME	signed	12	2059	0	0	

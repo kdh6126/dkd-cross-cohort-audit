@@ -1,0 +1,18 @@
+sample	label	subject_id	title	source
+GSM435821	1	GSM435821	Global gene expression of NASH patients, P53	patient liver biopsy
+GSM435822	1	GSM435822	Global gene expression of NASH patients, P55	patient liver biopsy
+GSM435823	1	GSM435823	Global gene expression of NASH patient, P59	patient liver biopsy
+GSM435824	1	GSM435824	Global gene expression of NASH patients, P35	Patient liver biopsy
+GSM435825	1	GSM435825	Global gene expression of NASH patients, P37	Patient liver biopsy
+GSM435826	1	GSM435826	Global gene expression of NASH patients, P40	Patient liver biopsy
+GSM435827	1	GSM435827	Global gene expression of NASH patients, P41	Patient liver biopsy
+GSM435828	0	GSM435828	Global gene expression of NASH patients, Normal control A486	Total RNA purchased from ADMET Technologies (Durham, NC), extracted from healthy liver tissue.
+GSM435833	0	GSM435833	Global gene expression of NASH patients, normal control A643	Total RNA purchased from ADMET Technologies (Durham, NC), extracted from healthy liver tissue.
+GSM610690	1	GSM610690	Global gene expression of NASH patient, P34	Patient liver biopsy
+GSM610691	1	GSM610691	Global gene expression of NASH patients, P51	patient liver biopsy
+GSM610695	1	GSM610695	Global gene expression of NASH patients, P62	patient liver biopsy
+GSM610696	1	GSM610696	Global gene expression of NASH patients, P64	Patient liver biopsy
+GSM610717	1	GSM610717	Global gene expression of NASH patients, P66	Patient liver biopsy
+GSM610718	0	GSM610718	Global gene expression of NASH patients, normal control A99	Total RNA purchased from ADMET Technologies (Durham, NC), extracted from healthy liver tissue.
+GSM610737	0	GSM610737	Global gene expression of NASH patients, normal control A107	Total RNA purchased from ADMET Technologies (Durham, NC), extracted from healthy liver tissue.
+GSM610738	0	GSM610738	Global gene expression of NASH patients, normal control A154	Total RNA purchased from ADMET Technologies (Durham, NC), extracted from healthy liver tissue.

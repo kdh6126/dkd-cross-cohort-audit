@@ -1,0 +1,37 @@
+cohort	sample	title	subject_id	group	label	stage	control_type	platform	compartment
+GSE142025	GSM4217781	A11A	A11A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217782	A12A	A12A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217783	A13A	A13A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217784	A14A	A14A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217785	A15A	A15A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217786	A17A	A17A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217787	A18A	A18A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217788	A19A	A19A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217789	A20A	A20A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217790	A21A	A21A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217791	A22A	A22A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217792	A23A	A23A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217793	A24A	A24A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217794	A25A	A25A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217795	A26A	A26A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217796	A28A	A28A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217797	A29A	A29A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217798	A30A	A30A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217799	A31A	A31A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217800	A32A	A32A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217801	A33A	A33A	Advanced_DN	1	Advanced_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217802	B3B	B3B	Early_DN	1	Early_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217803	B4B	B4B	Early_DN	1	Early_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217804	B5B	B5B	Early_DN	1	Early_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217805	B6B	B6B	Early_DN	1	Early_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217806	B8B	B8B	Early_DN	1	Early_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217807	B9B	B9B	Early_DN	1	Early_DN		Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217808	N2A	N2A	Control	0	Control	tumor_nephrectomy	Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217809	N3A	N3A	Control	0	Control	tumor_nephrectomy	Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217810	N5B	N5B	Control	0	Control	tumor_nephrectomy	Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217811	N6B	N6B	Control	0	Control	tumor_nephrectomy	Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217812	N7B	N7B	Control	0	Control	tumor_nephrectomy	Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217813	N8B	N8B	Control	0	Control	tumor_nephrectomy	Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217814	N10B	N10B	Control	0	Control	tumor_nephrectomy	Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217815	N12B	N12B	Control	0	Control	tumor_nephrectomy	Illumina_HiSeq4000	whole_cortex
+GSE142025	GSM4217816	N13B	N13B	Control	0	Control	tumor_nephrectomy	Illumina_HiSeq4000	whole_cortex

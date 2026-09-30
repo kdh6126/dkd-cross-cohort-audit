@@ -1,0 +1,136 @@
+\begin{thebibliography}{10}
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\bibcommenthead
+
+\bibitem[\protect\citeauthoryear{Whitlock}{2005}]{whitlock2005}
+Whitlock M.
+\newblock {Combining probability from independent tests: the weighted Z
+  ‐method is superior to Fisher's approach}.
+\newblock Journal of Evolutionary Biology. 2005;18(5):1368--1373.
+\newblock \doi{10.1111/j.1420-9101.2005.00917.x}.
+
+\bibitem[\protect\citeauthoryear{Langfelder and Horvath}{2008}]{langfelder2008}
+Langfelder P, Horvath S.
+\newblock {WGCNA: an R package for weighted correlation network analysis}.
+\newblock BMC Bioinformatics. 2008;9:559.
+\newblock PMID: 19114008. \doi{10.1186/1471-2105-9-559}.
+
+\bibitem[\protect\citeauthoryear{Feng et~al.}{2021}]{feng2021}
+Feng S, Gao Y, Yin D, et~al.
+\newblock {Identification of Lumican and Fibromodulin as Hub Genes Associated
+  with Accumulation of Extracellular Matrix in Diabetic Nephropathy}.
+\newblock Kidney Blood Press Res. 2021;46(3):275--285.
+\newblock PMID: 33887734. \doi{10.1159/000514013}.
+
+\bibitem[\protect\citeauthoryear{Meinshausen and
+  B{\"u}hlmann}{2010}]{meinshausen2010}
+Meinshausen N, B{\"u}hlmann P.
+\newblock Stability selection.
+\newblock Journal of the Royal Statistical Society: Series B.
+  2010;72(4):417--473.
+\newblock \doi{10.1111/j.1467-9868.2010.00740.x}.
+
+\bibitem[\protect\citeauthoryear{Tibshirani}{1996}]{tibshirani1996}
+Tibshirani R.
+\newblock {Regression Shrinkage and Selection Via the Lasso}.
+\newblock Journal of the Royal Statistical Society Series B: Statistical
+  Methodology. 1996;58(1):267--288.
+\newblock \doi{10.1111/j.2517-6161.1996.tb02080.x}.
+
+\bibitem[\protect\citeauthoryear{Zou and Hastie}{2005}]{zou2005}
+Zou H, Hastie T.
+\newblock {Regularization and Variable Selection Via the Elastic Net}.
+\newblock Journal of the Royal Statistical Society Series B: Statistical
+  Methodology. 2005;67(2):301--320.
+\newblock \doi{10.1111/j.1467-9868.2005.00503.x}.
+
+\bibitem[\protect\citeauthoryear{Peng et~al.}{2005}]{peng2005}
+Peng H, Long F, Ding C.
+\newblock {Feature selection based on mutual information criteria of
+  max-dependency, max-relevance, and min-redundancy}.
+\newblock IEEE Transactions on Pattern Analysis and Machine Intelligence.
+  2005;27(8):1226--1238.
+\newblock \doi{10.1109/TPAMI.2005.159}.
+
+\bibitem[\protect\citeauthoryear{Kononenko}{1994}]{kononenko1994}
+Kononenko I.
+\newblock {Estimating attributes: Analysis and extensions of RELIEF}.
+\newblock In: Lecture Notes in Computer Science. Springer; 1994. p. 171--182.
+
+\bibitem[\protect\citeauthoryear{Breiman}{2001}]{breiman2001}
+Breiman L.
+\newblock {Random Forests}.
+\newblock Machine Learning. 2001;45(1):5--32.
+\newblock \doi{10.1023/A:1010933404324}.
+
+\bibitem[\protect\citeauthoryear{Kursa and Rudnicki}{2010}]{kursa2010}
+Kursa M, Rudnicki W.
+\newblock {Feature Selection with the Boruta Package}.
+\newblock Journal of Statistical Software. 2010;36(11).
+\newblock \doi{10.18637/jss.v036.i11}.
+
+\bibitem[\protect\citeauthoryear{Hedges}{1981}]{hedges1981}
+Hedges L.
+\newblock {Distribution Theory for Glass's Estimator of Effect size and Related
+  Estimators}.
+\newblock Journal of Educational Statistics. 1981;6(2):107--128.
+\newblock \doi{10.3102/10769986006002107}.
+
+\bibitem[\protect\citeauthoryear{Venet et~al.}{2011}]{venet2011}
+Venet D, Dumont J, Detours V.
+\newblock {Most random gene expression signatures are significantly associated
+  with breast cancer outcome}.
+\newblock PLoS Comput Biol. 2011;7(10):e1002240.
+\newblock PMID: 22028643. \doi{10.1371/journal.pcbi.1002240}.
+
+\bibitem[\protect\citeauthoryear{Ma et~al.}{2012}]{ma2012}
+Ma Y, Dai H, Kong X.
+\newblock {Impact of warm ischemia on gene expression analysis in surgically
+  removed biosamples}.
+\newblock Anal Biochem. 2012;423(2):229--35.
+\newblock PMID: 22343191. \doi{10.1016/j.ab.2012.02.003}.
+
+\bibitem[\protect\citeauthoryear{Ferreira et~al.}{2018}]{ferreira2018}
+Ferreira P, Mu{\~n}oz-Aguirre M, Reverter F, et~al.
+\newblock {The effects of death and post-mortem cold ischemia on human tissue
+  transcriptomes}.
+\newblock Nat Commun. 2018;9:490.
+\newblock \doi{10.1038/s41467-017-02772-x}.
+
+\bibitem[\protect\citeauthoryear{Menon et~al.}{2026}]{menon2026}
+Menon R, Kimmel P, Otto E, et~al.
+\newblock {Not all reference samples are equal in single-cell transcriptomics
+  of human kidney tissue}.
+\newblock JCI Insight. 2026;11(14):e204385.
+\newblock \doi{10.1172/jci.insight.204385}.
+
+\bibitem[\protect\citeauthoryear{Hirohama et~al.}{2023}]{hirohama2023}
+Hirohama D, Abedini A, Moon S, et~al.
+\newblock {Unbiased human kidney tissue proteomics identifies matrix
+  metalloproteinase 7 as a kidney disease biomarker}.
+\newblock J Am Soc Nephrol. 2023;34(7):1279--1291.
+\newblock PMID: 37022120. \doi{10.1681/ASN.0000000000000141}.
+
+\bibitem[\protect\citeauthoryear{Schwab et~al.}{2024}]{schwab2024}
+Schwab S, Harris P, Michel C, et~al.
+\newblock {Quantifying protein acetylation in diabetic nephropathy from
+  formalin-fixed paraffin-embedded tissue}.
+\newblock Proteomics Clin Appl. 2024;18(6):e202400018.
+\newblock PMID: 38923810. \doi{10.1002/prca.202400018}.
+
+\bibitem[\protect\citeauthoryear{Mantel and Haenszel}{1959}]{mantel1959}
+Mantel N, Haenszel W.
+\newblock {Statistical Aspects of the Analysis of Data From Retrospective
+  Studies of Disease}.
+\newblock JNCI: Journal of the National Cancer Institute. 1959;22(4):719--748.
+\newblock \doi{10.1093/jnci/22.4.719}.
+
+\bibitem[\protect\citeauthoryear{Benjamini and Hochberg}{1995}]{benjamini1995}
+Benjamini Y, Hochberg Y.
+\newblock {Controlling the False Discovery Rate: A Practical and Powerful
+  Approach to Multiple Testing}.
+\newblock Journal of the Royal Statistical Society Series B: Statistical
+  Methodology. 1995;57(1):289--300.
+\newblock \doi{10.1111/j.2517-6161.1995.tb02031.x}.
+
+\end{thebibliography}

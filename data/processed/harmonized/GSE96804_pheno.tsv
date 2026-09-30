@@ -1,0 +1,62 @@
+cohort	sample	title	subject_id	group	label	stage	control_type	platform	compartment
+GSE96804	GSM2544275	Human glomeruli DN 01	Human glomeruli DN 01	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544276	Human glomeruli DN 02	Human glomeruli DN 02	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544277	Human glomeruli DN 03	Human glomeruli DN 03	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544278	Human glomeruli DN 04	Human glomeruli DN 04	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544279	Human glomeruli DN 05	Human glomeruli DN 05	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544280	Human glomeruli DN 06	Human glomeruli DN 06	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544281	Human glomeruli DN 07	Human glomeruli DN 07	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544282	Human glomeruli DN 08	Human glomeruli DN 08	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544283	Human glomeruli DN 09	Human glomeruli DN 09	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544284	Human glomeruli DN 10	Human glomeruli DN 10	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544285	Human glomeruli DN 11	Human glomeruli DN 11	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544286	Human glomeruli DN 12	Human glomeruli DN 12	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544287	Human glomeruli DN 13	Human glomeruli DN 13	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544288	Human glomeruli DN 14	Human glomeruli DN 14	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544289	Human glomeruli DN 15	Human glomeruli DN 15	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544290	Human glomeruli DN 16	Human glomeruli DN 16	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544291	Human glomeruli DN 17	Human glomeruli DN 17	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544292	Human glomeruli DN 18	Human glomeruli DN 18	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544293	Human glomeruli DN 19	Human glomeruli DN 19	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544294	Human glomeruli DN 20	Human glomeruli DN 20	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544295	Human glomeruli DN 21	Human glomeruli DN 21	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544296	Human glomeruli DN 22	Human glomeruli DN 22	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544297	Human glomeruli DN 23	Human glomeruli DN 23	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544298	Human glomeruli DN 24	Human glomeruli DN 24	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544299	Human glomeruli DN 25	Human glomeruli DN 25	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544300	Human glomeruli DN 26	Human glomeruli DN 26	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544301	Human glomeruli DN 27	Human glomeruli DN 27	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544302	Human glomeruli DN 28	Human glomeruli DN 28	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544303	Human glomeruli DN 29	Human glomeruli DN 29	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544304	Human glomeruli DN 30	Human glomeruli DN 30	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544305	Human glomeruli DN 31	Human glomeruli DN 31	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544306	Human glomeruli DN 32	Human glomeruli DN 32	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544307	Human glomeruli DN 33	Human glomeruli DN 33	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544308	Human glomeruli DN 34	Human glomeruli DN 34	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544309	Human glomeruli DN 35	Human glomeruli DN 35	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544310	Human glomeruli DN 36	Human glomeruli DN 36	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544311	Human glomeruli DN 37	Human glomeruli DN 37	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544312	Human glomeruli DN 38	Human glomeruli DN 38	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544313	Human glomeruli DN 39	Human glomeruli DN 39	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544314	Human glomeruli DN 40	Human glomeruli DN 40	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544315	Human glomeruli DN 41	Human glomeruli DN 41	DN	1			GPL17586	glomerulus
+GSE96804	GSM2544316	Human glomeruli Control 01	Human glomeruli Control 01	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544317	Human glomeruli Control 02	Human glomeruli Control 02	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544318	Human glomeruli Control 03	Human glomeruli Control 03	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544319	Human glomeruli Control 04	Human glomeruli Control 04	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544320	Human glomeruli Control 05	Human glomeruli Control 05	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544321	Human glomeruli Control 06	Human glomeruli Control 06	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544322	Human glomeruli Control 07	Human glomeruli Control 07	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544323	Human glomeruli Control 08	Human glomeruli Control 08	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544324	Human glomeruli Control 09	Human glomeruli Control 09	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544325	Human glomeruli Control 10	Human glomeruli Control 10	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544326	Human glomeruli Control 11	Human glomeruli Control 11	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544327	Human glomeruli Control 12	Human glomeruli Control 12	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544328	Human glomeruli Control 13	Human glomeruli Control 13	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544329	Human glomeruli Control 14	Human glomeruli Control 14	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544330	Human glomeruli Control 15	Human glomeruli Control 15	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544331	Human glomeruli Control 16	Human glomeruli Control 16	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544332	Human glomeruli Control 17	Human glomeruli Control 17	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544333	Human glomeruli Control 18	Human glomeruli Control 18	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544334	Human glomeruli Control 19	Human glomeruli Control 19	control	0		tumor_nephrectomy	GPL17586	glomerulus
+GSE96804	GSM2544335	Human glomeruli Control 20	Human glomeruli Control 20	control	0		tumor_nephrectomy	GPL17586	glomerulus

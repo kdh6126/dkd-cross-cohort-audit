@@ -1,0 +1,13 @@
+gene	on_somascan	on_massspec	sig_somascan	sig_massspec
+ACTN1	False	True	False	True
+CA10	True	False	True	False
+COL1A2	False	True	False	False
+CTNNBIP1	False	True	False	False
+LUM	True	True	False	False
+MMP2	True	False	True	False
+MMP7	True	True	True	True
+RNASE6	False	True	False	False
+THBS2	True	False	True	False
+TNFRSF12A	True	False	False	False
+TNNT2	True	False	False	False
+VCAN	False	True	False	False

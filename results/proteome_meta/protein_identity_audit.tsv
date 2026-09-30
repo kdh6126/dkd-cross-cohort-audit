@@ -1,0 +1,13 @@
+gene	on_somascan	somamer_id	somascan_uniprot	somascan_target	n_somamers	on_massspec	ms_accession	ms_peptides_total	ms_peptides_unique	ms_peptides_shared	ms_shared_with	ms_rollup_peptide_count	caveat
+ACTN1	False				0	True	P12814	25	8	17	O43707 (ACTN4), P35609 (ACTN2), Q08043 (ACTN3)	25.0	most peptides are shared with O43707 (ACTN4)
+CA10	True	seq_3289_19_2	Q9NS85	Carbonic Anhydrase X	1	False		0	0	0		0.0	
+COL1A2	False				0	True	P08123	7	7	0		7.0	
+CTNNBIP1	False				0	True	Q9NSA3	1	1	0		1.0	fewer than 3 unique peptides
+LUM	True	seq_13114_50_3	P51884	Lumican	1	True	P51884	4	4	0		4.0	
+MMP2	True	seq_4160_49_1	P08253	MMP-2	1	False		0	0	0		0.0	
+MMP7	True	seq_2789_26_2	P09237	MMP-7	1	True	P09237	2	2	0		2.0	fewer than 3 unique peptides
+RNASE6	False				0	True	Q93091	1	1	0		1.0	fewer than 3 unique peptides
+THBS2	True	seq_3339_33_1	P35442	TSP2	1	False		0	0	0		0.0	
+TNFRSF12A	True	seq_5138_50_3	Q9NP84	TWEAKR	1	False		0	0	0		0.0	
+TNNT2	True	seq_5315_22_3	P45379	Troponin T	1	False		0	0	0		0.0	
+VCAN	False				0	True	P13611	3	3	0		3.0	

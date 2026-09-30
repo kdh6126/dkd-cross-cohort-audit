@@ -1,0 +1,197 @@
+cohort	sample	title	subject_id	group	label	stage	control_type	platform	compartment
+GSE104948	GSM2810770	H7-Glom-DN901	H7-Glom-DN901	DN	1			GPL22945	glomerulus
+GSE104948	GSM2810771	H7-Glom-DN910	H7-Glom-DN910	DN	1			GPL22945	glomerulus
+GSE104948	GSM2810772	H7-Glom-DN914	H7-Glom-DN914	DN	1			GPL22945	glomerulus
+GSE104948	GSM2810773	H7-Glom-DN916	H7-Glom-DN916	DN	1			GPL22945	glomerulus
+GSE104948	GSM2810774	H7-Glom-DN932	H7-Glom-DN932	DN	1			GPL22945	glomerulus
+GSE104948	GSM2810775	H7-Glom-DN941	H7-Glom-DN941	DN	1			GPL22945	glomerulus
+GSE104948	GSM2810776	H7-Glom-DN947	H7-Glom-DN947	DN	1			GPL22945	glomerulus
+GSE104948	GSM2810777	H7-Glom-FSGS&MCD905	H7-Glom-FSGS&MCD905	Focal Segmental Glomerular Sclerosis/Minimal Change Disease	-1			GPL22945	glomerulus
+GSE104948	GSM2810778	H7-Glom-FSGS&MCD922	H7-Glom-FSGS&MCD922	Focal Segmental Glomerular Sclerosis/Minimal Change Disease	-1			GPL22945	glomerulus
+GSE104948	GSM2810779	H7-Glom-FSGS&MCD923	H7-Glom-FSGS&MCD923	Focal Segmental Glomerular Sclerosis/Minimal Change Disease	-1			GPL22945	glomerulus
+GSE104948	GSM2810780	H7-Glom-FSGS&MCD931	H7-Glom-FSGS&MCD931	Focal Segmental Glomerular Sclerosis/Minimal Change Disease	-1			GPL22945	glomerulus
+GSE104948	GSM2810781	H7-Glom-FSGS&MCD940	H7-Glom-FSGS&MCD940	Focal Segmental Glomerular Sclerosis/Minimal Change Disease	-1			GPL22945	glomerulus
+GSE104948	GSM2810782	H7-Glom-FSGS&MCD944	H7-Glom-FSGS&MCD944	Focal Segmental Glomerular Sclerosis/Minimal Change Disease	-1			GPL22945	glomerulus
+GSE104948	GSM2810783	H7-Glom-FSGS912	H7-Glom-FSGS912	Focal Segmental Glomerular Sclerosis	-1			GPL22945	glomerulus
+GSE104948	GSM2810784	H7-Glom-FSGS915	H7-Glom-FSGS915	Focal Segmental Glomerular Sclerosis	-1			GPL22945	glomerulus
+GSE104948	GSM2810785	H7-Glom-FSGS917	H7-Glom-FSGS917	Focal Segmental Glomerular Sclerosis	-1			GPL22945	glomerulus
+GSE104948	GSM2810786	H7-Glom-FSGS918	H7-Glom-FSGS918	Focal Segmental Glomerular Sclerosis	-1			GPL22945	glomerulus
+GSE104948	GSM2810787	H7-Glom-FSGS920	H7-Glom-FSGS920	Focal Segmental Glomerular Sclerosis	-1			GPL22945	glomerulus
+GSE104948	GSM2810788	H7-Glom-FSGS927	H7-Glom-FSGS927	Focal Segmental Glomerular Sclerosis	-1			GPL22945	glomerulus
+GSE104948	GSM2810789	H7-Glom-FSGS933	H7-Glom-FSGS933	Focal Segmental Glomerular Sclerosis	-1			GPL22945	glomerulus
+GSE104948	GSM2810790	H7-Glom-FSGS970	H7-Glom-FSGS970	Focal Segmental Glomerular Sclerosis	-1			GPL22945	glomerulus
+GSE104948	GSM2810791	H7-Glom-FSGS971	H7-Glom-FSGS971	Focal Segmental Glomerular Sclerosis	-1			GPL22945	glomerulus
+GSE104948	GSM2810792	H7-Glom-FSGS972	H7-Glom-FSGS972	Focal Segmental Glomerular Sclerosis	-1			GPL22945	glomerulus
+GSE104948	GSM2810793	H7-Glom-LD_974	H7-Glom-LD_974	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810794	H7-Glom-LD_975	H7-Glom-LD_975	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810795	H7-Glom-LD_976	H7-Glom-LD_976	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810796	H7-Glom-LD_978	H7-Glom-LD_978	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810797	H7-Glom-LD_979	H7-Glom-LD_979	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810798	H7-Glom-LD_980	H7-Glom-LD_980	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810799	H7-Glom-LD_981	H7-Glom-LD_981	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810800	H7-Glom-LD_982	H7-Glom-LD_982	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810801	H7-Glom-LD_983	H7-Glom-LD_983	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810802	H7-Glom-LD_984	H7-Glom-LD_984	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810803	H7-Glom-LD_985	H7-Glom-LD_985	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810804	H7-Glom-LD_987	H7-Glom-LD_987	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810805	H7-Glom-LD_988	H7-Glom-LD_988	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810806	H7-Glom-LD_989	H7-Glom-LD_989	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810807	H7-Glom-LD_990	H7-Glom-LD_990	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810808	H7-Glom-LD_992	H7-Glom-LD_992	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810809	H7-Glom-LD_993	H7-Glom-LD_993	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810810	H7-Glom-LD_994	H7-Glom-LD_994	living_donor	0		living_donor	GPL22945	glomerulus
+GSE104948	GSM2810811	H7-Glom-MCD903	H7-Glom-MCD903	Minimal Change Disease	-1			GPL22945	glomerulus
+GSE104948	GSM2810812	H7-Glom-MCD919	H7-Glom-MCD919	Minimal Change Disease	-1			GPL22945	glomerulus
+GSE104948	GSM2810813	H7-Glom-MCD921	H7-Glom-MCD921	Minimal Change Disease	-1			GPL22945	glomerulus
+GSE104948	GSM2810814	H7-Glom-MCD945	H7-Glom-MCD945	Minimal Change Disease	-1			GPL22945	glomerulus
+GSE104948	GSM2810815	H7-Glom-MCD973	H7-Glom-MCD973	Minimal Change Disease	-1			GPL22945	glomerulus
+GSE104948	GSM2810816	H7-Glom-RPGN902	H7-Glom-RPGN902	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810817	H7-Glom-RPGN904	H7-Glom-RPGN904	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810818	H7-Glom-RPGN906	H7-Glom-RPGN906	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810819	H7-Glom-RPGN907	H7-Glom-RPGN907	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810820	H7-Glom-RPGN908	H7-Glom-RPGN908	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810821	H7-Glom-RPGN909	H7-Glom-RPGN909	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810822	H7-Glom-RPGN911	H7-Glom-RPGN911	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810823	H7-Glom-RPGN913	H7-Glom-RPGN913	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810824	H7-Glom-RPGN924	H7-Glom-RPGN924	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810825	H7-Glom-RPGN925	H7-Glom-RPGN925	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810826	H7-Glom-RPGN926	H7-Glom-RPGN926	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810827	H7-Glom-RPGN928	H7-Glom-RPGN928	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810828	H7-Glom-RPGN929	H7-Glom-RPGN929	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810829	H7-Glom-RPGN930	H7-Glom-RPGN930	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810830	H7-Glom-RPGN934	H7-Glom-RPGN934	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810831	H7-Glom-RPGN936	H7-Glom-RPGN936	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810832	H7-Glom-RPGN937	H7-Glom-RPGN937	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810833	H7-Glom-RPGN938	H7-Glom-RPGN938	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810834	H7-Glom-RPGN939	H7-Glom-RPGN939	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810835	H7-Glom-RPGN942	H7-Glom-RPGN942	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810836	H7-Glom-RPGN943	H7-Glom-RPGN943	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810837	H7-Glom-RPGN946	H7-Glom-RPGN946	ANCA Associated Vasculitis	-1			GPL22945	glomerulus
+GSE104948	GSM2810838	H7-Glom-TN995	H7-Glom-TN995	tumor_nephrectomy	0		tumor_nephrectomy	GPL22945	glomerulus
+GSE104948	GSM2810839	H7-Glom-TN996	H7-Glom-TN996	tumor_nephrectomy	0		tumor_nephrectomy	GPL22945	glomerulus
+GSE104948	GSM2810840	H7-Glom-TN997	H7-Glom-TN997	tumor_nephrectomy	0		tumor_nephrectomy	GPL22945	glomerulus
+GSE104948	GSM2810645	H1-Glom-DN1	H1-Glom-DN1	DN	1			GPL24120	glomerulus
+GSE104948	GSM2810646	H1-Glom-DN10	H1-Glom-DN10	DN	1			GPL24120	glomerulus
+GSE104948	GSM2810647	H1-Glom-DN2	H1-Glom-DN2	DN	1			GPL24120	glomerulus
+GSE104948	GSM2810648	H1-Glom-DN5	H1-Glom-DN5	DN	1			GPL24120	glomerulus
+GSE104948	GSM2810649	H1-Glom-DN8	H1-Glom-DN8	DN	1			GPL24120	glomerulus
+GSE104948	GSM2810650	H1-Glom-MCD1	H1-Glom-MCD1	Minimal Change Disease	-1			GPL24120	glomerulus
+GSE104948	GSM2810651	H1-Glom-MCD2	H1-Glom-MCD2	Minimal Change Disease	-1			GPL24120	glomerulus
+GSE104948	GSM2810652	H1-Glom-MCD3	H1-Glom-MCD3	Minimal Change Disease	-1			GPL24120	glomerulus
+GSE104948	GSM2810653	H1-Glom-MCD5	H1-Glom-MCD5	Minimal Change Disease	-1			GPL24120	glomerulus
+GSE104948	GSM2810654	H1-Glom-TMD1	H1-Glom-TMD1	Thin Membrande Disease	-1			GPL24120	glomerulus
+GSE104948	GSM2810655	H1-Glom-TMD2	H1-Glom-TMD2	Thin Membrande Disease	-1			GPL24120	glomerulus
+GSE104948	GSM2810656	H1-Glom-TMD5	H1-Glom-TMD5	Thin Membrande Disease	-1			GPL24120	glomerulus
+GSE104948	GSM2810657	H2-Glom-HT1	H2-Glom-HT1	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810658	H2-Glom-HT11	H2-Glom-HT11	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810659	H2-Glom-HT12	H2-Glom-HT12	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810660	H2-Glom-HT13	H2-Glom-HT13	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810661	H2-Glom-HT14	H2-Glom-HT14	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810662	H2-Glom-HT15	H2-Glom-HT15	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810663	H2-Glom-HT16	H2-Glom-HT16	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810664	H2-Glom-HT18	H2-Glom-HT18	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810665	H2-Glom-HT2	H2-Glom-HT2	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810666	H2-Glom-HT20	H2-Glom-HT20	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810667	H2-Glom-HT4	H2-Glom-HT4	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810668	H2-Glom-HT5	H2-Glom-HT5	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810669	H2-Glom-HT6	H2-Glom-HT6	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810670	H2-Glom-HT7	H2-Glom-HT7	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810671	H2-Glom-HT8	H2-Glom-HT8	Hypertensive Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810672	H3-Glom-MCD10	H3-Glom-MCD10	Minimal Change Disease	-1			GPL24120	glomerulus
+GSE104948	GSM2810673	H3-Glom-MCD12	H3-Glom-MCD12	Minimal Change Disease	-1			GPL24120	glomerulus
+GSE104948	GSM2810674	H3-Glom-MCD6	H3-Glom-MCD6	Minimal Change Disease	-1			GPL24120	glomerulus
+GSE104948	GSM2810675	H3-Glom-MCD7	H3-Glom-MCD7	Minimal Change Disease	-1			GPL24120	glomerulus
+GSE104948	GSM2810676	H3-Glom-MCD9	H3-Glom-MCD9	Minimal Change Disease	-1			GPL24120	glomerulus
+GSE104948	GSM2810677	H3-Glom-TN2	H3-Glom-TN2	tumor_nephrectomy	0		tumor_nephrectomy	GPL24120	glomerulus
+GSE104948	GSM2810678	H3-Glom-TN4	H3-Glom-TN4	tumor_nephrectomy	0		tumor_nephrectomy	GPL24120	glomerulus
+GSE104948	GSM2810679	H4-Glom-IgA1	H4-Glom-IgA1	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810680	H4-Glom-IgA10	H4-Glom-IgA10	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810681	H4-Glom-IgA11	H4-Glom-IgA11	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810682	H4-Glom-IgA12	H4-Glom-IgA12	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810683	H4-Glom-IgA13	H4-Glom-IgA13	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810684	H4-Glom-IgA14	H4-Glom-IgA14	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810685	H4-Glom-IgA15	H4-Glom-IgA15	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810686	H4-Glom-IgA16	H4-Glom-IgA16	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810687	H4-Glom-IgA17	H4-Glom-IgA17	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810688	H4-Glom-IgA18	H4-Glom-IgA18	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810689	H4-Glom-IgA19	H4-Glom-IgA19	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810690	H4-Glom-IgA2	H4-Glom-IgA2	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810691	H4-Glom-IgA20	H4-Glom-IgA20	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810692	H4-Glom-IgA21	H4-Glom-IgA21	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810693	H4-Glom-IgA22	H4-Glom-IgA22	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810694	H4-Glom-IgA23	H4-Glom-IgA23	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810695	H4-Glom-IgA24	H4-Glom-IgA24	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810696	H4-Glom-IgA25	H4-Glom-IgA25	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810697	H4-Glom-IgA26	H4-Glom-IgA26	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810698	H4-Glom-IgA27	H4-Glom-IgA27	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810699	H4-Glom-IgA3	H4-Glom-IgA3	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810700	H4-Glom-IgA4	H4-Glom-IgA4	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810701	H4-Glom-IgA5	H4-Glom-IgA5	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810702	H4-Glom-IgA6	H4-Glom-IgA6	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810703	H4-Glom-IgA7	H4-Glom-IgA7	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810704	H4-Glom-IgA8	H4-Glom-IgA8	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810705	H4-Glom-IgA9	H4-Glom-IgA9	IgA Nephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810706	H5-Glom-FSGS428	H5-Glom-FSGS428	Focal Segmental Glomerular Sclerosis	-1			GPL24120	glomerulus
+GSE104948	GSM2810707	H5-Glom-FSGS433	H5-Glom-FSGS433	Focal Segmental Glomerular Sclerosis	-1			GPL24120	glomerulus
+GSE104948	GSM2810708	H5-Glom-FSGS441	H5-Glom-FSGS441	Focal Segmental Glomerular Sclerosis	-1			GPL24120	glomerulus
+GSE104948	GSM2810709	H5-Glom-FSGS446	H5-Glom-FSGS446	Focal Segmental Glomerular Sclerosis	-1			GPL24120	glomerulus
+GSE104948	GSM2810710	H5-Glom-FSGS449	H5-Glom-FSGS449	Focal Segmental Glomerular Sclerosis	-1			GPL24120	glomerulus
+GSE104948	GSM2810711	H5-Glom-FSGS457	H5-Glom-FSGS457	Focal Segmental Glomerular Sclerosis	-1			GPL24120	glomerulus
+GSE104948	GSM2810712	H5-Glom-FSGS458	H5-Glom-FSGS458	Focal Segmental Glomerular Sclerosis	-1			GPL24120	glomerulus
+GSE104948	GSM2810713	H5-Glom-FSGS459	H5-Glom-FSGS459	Focal Segmental Glomerular Sclerosis	-1			GPL24120	glomerulus
+GSE104948	GSM2810714	H5-Glom-LD_478	H5-Glom-LD_478	living_donor	0		living_donor	GPL24120	glomerulus
+GSE104948	GSM2810715	H5-Glom-LD_479	H5-Glom-LD_479	living_donor	0		living_donor	GPL24120	glomerulus
+GSE104948	GSM2810716	H5-Glom-LD_482	H5-Glom-LD_482	living_donor	0		living_donor	GPL24120	glomerulus
+GSE104948	GSM2810717	H5-Glom-MGN403	H5-Glom-MGN403	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810718	H5-Glom-MGN415	H5-Glom-MGN415	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810719	H5-Glom-MGN416	H5-Glom-MGN416	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810720	H5-Glom-MGN417	H5-Glom-MGN417	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810721	H5-Glom-MGN421	H5-Glom-MGN421	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810722	H5-Glom-MGN422	H5-Glom-MGN422	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810723	H5-Glom-MGN424	H5-Glom-MGN424	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810724	H5-Glom-MGN425	H5-Glom-MGN425	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810725	H5-Glom-MGN431	H5-Glom-MGN431	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810726	H5-Glom-MGN432	H5-Glom-MGN432	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810727	H5-Glom-MGN434	H5-Glom-MGN434	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810728	H5-Glom-MGN435	H5-Glom-MGN435	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810729	H5-Glom-MGN436	H5-Glom-MGN436	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810730	H5-Glom-MGN437	H5-Glom-MGN437	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810731	H5-Glom-MGN439	H5-Glom-MGN439	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810732	H5-Glom-MGN452	H5-Glom-MGN452	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810733	H5-Glom-MGN453	H5-Glom-MGN453	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810734	H5-Glom-MGN455	H5-Glom-MGN455	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810735	H5-Glom-MGN456	H5-Glom-MGN456	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810736	H5-Glom-MGN460	H5-Glom-MGN460	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810737	H5-Glom-MGN461	H5-Glom-MGN461	Membranous Glomerulonephropathy	-1			GPL24120	glomerulus
+GSE104948	GSM2810738	H5-Glom-SLE401	H5-Glom-SLE401	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810739	H5-Glom-SLE402	H5-Glom-SLE402	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810740	H5-Glom-SLE404	H5-Glom-SLE404	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810741	H5-Glom-SLE405	H5-Glom-SLE405	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810742	H5-Glom-SLE406	H5-Glom-SLE406	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810743	H5-Glom-SLE407	H5-Glom-SLE407	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810744	H5-Glom-SLE408	H5-Glom-SLE408	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810745	H5-Glom-SLE409	H5-Glom-SLE409	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810746	H5-Glom-SLE410	H5-Glom-SLE410	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810747	H5-Glom-SLE411	H5-Glom-SLE411	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810748	H5-Glom-SLE412	H5-Glom-SLE412	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810749	H5-Glom-SLE413	H5-Glom-SLE413	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810750	H5-Glom-SLE414	H5-Glom-SLE414	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810751	H5-Glom-SLE418	H5-Glom-SLE418	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810752	H5-Glom-SLE419	H5-Glom-SLE419	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810753	H5-Glom-SLE423	H5-Glom-SLE423	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810754	H5-Glom-SLE430	H5-Glom-SLE430	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810755	H5-Glom-SLE438	H5-Glom-SLE438	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810756	H5-Glom-SLE440	H5-Glom-SLE440	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810757	H5-Glom-SLE442	H5-Glom-SLE442	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810758	H5-Glom-SLE444	H5-Glom-SLE444	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810759	H5-Glom-SLE445	H5-Glom-SLE445	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810760	H5-Glom-SLE448	H5-Glom-SLE448	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810761	H5-Glom-SLE450	H5-Glom-SLE450	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810762	H5-Glom-SLE451	H5-Glom-SLE451	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810763	H5-Glom-SLE454	H5-Glom-SLE454	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810764	H5-Glom-SLE462	H5-Glom-SLE462	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810765	H5-Glom-SLE463	H5-Glom-SLE463	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810766	H5-Glom-SLE464	H5-Glom-SLE464	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810767	H5-Glom-SLE465	H5-Glom-SLE465	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810768	H5-Glom-SLE466	H5-Glom-SLE466	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus
+GSE104948	GSM2810769	H5-Glom-SLE467	H5-Glom-SLE467	Systemic Lupus Erythematosus	-1			GPL24120	glomerulus

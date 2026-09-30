@@ -1,0 +1,14 @@
+# Pinned to the interpreter the reported results were produced on (Python 3.14.7).
+# Only these are imported by run_all.py and scripts/. statsmodels and scanpy are NOT
+# required -- every test in the paper is implemented directly against numpy/scipy.
+numpy==2.5.2
+scipy==1.18.1
+pandas==3.0.5
+scikit-learn==1.9.0
+matplotlib==3.11.1
+pyarrow==25.0.1
+h5py==3.16.0
+python-pptx==1.0.2
+# generative stage only (`--stage generative`); CPU build is sufficient
+torch==2.13.0
+streamlit>=1.36   # scripts/omics_catalog_app.py 만 사용

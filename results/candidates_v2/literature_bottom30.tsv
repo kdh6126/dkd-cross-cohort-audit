@@ -1,0 +1,31 @@
+gene	queried_on	n_any	n_kidney	n_dkd	n_dkd_biomarker	verdict	ambiguity_note	dkd_pmids	dkd_biomarker_pmids
+NDUFS7	2026-09-11	79	3	0	0	kidney-studied, NOT in DKD			
+ADD1	2026-09-11	329	27	0	0	kidney-studied, NOT in DKD			
+GSTK1	2026-09-11	93	11	2	0	reported in DKD (few papers)		42069296;40778749	
+ADCY9	2026-09-11	150	0	0	0	NOVEL - no kidney literature			
+BMP8A	2026-09-11	67	4	1	0	reported in DKD (few papers)		34214161	
+ARPIN	2026-09-11	45	0	0	0	NOVEL - no kidney literature			
+AMIGO2	2026-09-11	99	1	0	0	kidney-studied, NOT in DKD			
+ACYP1	2026-09-11	22	0	0	0	NOVEL - no kidney literature			
+AGRN	2026-09-11	172	4	0	0	kidney-studied, NOT in DKD			
+ZNF749	2026-09-11	1	0	0	0	NOVEL - no kidney literature			
+GVINP1	2026-09-11	10	1	0	0	kidney-studied, NOT in DKD			
+GPR153	2026-09-11	16	1	1	0	reported in DKD (few papers)		32643557	
+ACVR2A	2026-09-11	230	5	0	0	kidney-studied, NOT in DKD			
+ACVR1	2026-09-11	652	11	0	0	kidney-studied, NOT in DKD			
+RBM12B	2026-09-11	7	0	0	0	NOVEL - no kidney literature			
+ACTL6A	2026-09-11	89	2	0	0	kidney-studied, NOT in DKD			
+ACTN4	2026-09-11	398	128	6	1	ALREADY PROPOSED as DKD marker		41485626;38807395;35706474;28990106;27613243;17968527	35706474
+ACP3	2026-09-11	53	3	0	0	kidney-studied, NOT in DKD			
+LINC00939	2026-09-11	1	0	0	0	NOVEL - no kidney literature			
+PPIEL	2026-09-11	10	0	0	0	NOVEL - no kidney literature			
+GIMAP6	2026-09-11	34	2	0	0	kidney-studied, NOT in DKD			
+MUC5B	2026-09-11	1426	7	1	0	reported in DKD (few papers)		41541775	
+ZNF674	2026-09-11	22	0	0	0	NOVEL - no kidney literature			
+POU5F1P4	2026-09-11	2	0	0	0	NOVEL - no kidney literature			
+ACP2	2026-09-11	145	4	2	1	ALREADY PROPOSED as DKD marker		38858654;32545899	32545899
+ACP1	2026-09-11	477	4	0	0	kidney-studied, NOT in DKD			
+ASIC1	2026-09-11	306	9	0	0	kidney-studied, NOT in DKD			
+ACAT2	2026-09-11	433	20	0	0	kidney-studied, NOT in DKD			
+AANAT	2026-09-11	667	5	0	0	kidney-studied, NOT in DKD			
+AAMP	2026-09-11	82	1	0	0	kidney-studied, NOT in DKD			

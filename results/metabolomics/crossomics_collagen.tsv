@@ -1,0 +1,7 @@
+contrast	metabolite	kind	hedges_g	q	significant
+DKD vs 정상	4-Hydroxyproline	표적	0.8766448761787962	1.2378186614280295e-05	True
+DKD vs 정상	cis-4-Hydroxyproline	음성대조	0.0510668387871991	0.8712745390667583	False
+DKD vs 다른 신장병	4-Hydroxyproline	표적	0.7209567743929549	0.0001399356119876	True
+DKD vs 다른 신장병	cis-4-Hydroxyproline	음성대조	0.2462102335614978	0.3742934659610423	False
+다른 신장병 vs 정상	4-Hydroxyproline	표적	0.1286785038880216	0.4742153162151341	False
+다른 신장병 vs 정상	cis-4-Hydroxyproline	음성대조	-0.1853390256429764	0.3928545535377545	False

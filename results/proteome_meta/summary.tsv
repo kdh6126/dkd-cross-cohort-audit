@@ -1,0 +1,2 @@
+n_layers	n_candidates_measured	n_sig_union	n_sig_both	obs_sig	obs_conc	cmh_chi2	cmh_p	cmh_or	cmh_or_lo	cmh_or_hi	n_measurement_events	perm_p_sig	perm_p_conc	perm_p_matched	perm_null_mean	perm_null_mean_matched	n_perm	sampling
+2	12	5	1	6	11	3.5547352101311147	0.02968789034275242	3.3352133779813395	1.0879277691588518	10.224620229398242	14	0.035235	0.19006	0.03941	2.74778	2.824425	200000	without replacement
