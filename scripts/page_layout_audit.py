@@ -59,9 +59,11 @@ def audit(path, mx, my, slack=2.0):
         text = page.get_text()
         caps = CAPTION.findall(text)
         drawings = len(page.get_drawings())
-        if caps and drawings < 20:
-            bad.append((i, 'caption without a figure', 'caption %s, %d drawings'
-                        % (', '.join(sorted(set(caps))[:3]), drawings)))
+        # 투고 그림은 PNG 라 벡터 선이 없다. 래스터 이미지가 하나라도 있으면 그림이 있는 것이다.
+        images = len(page.get_image_info())
+        if caps and drawings < 20 and not images:
+            bad.append((i, 'caption without a figure', 'caption %s, %d drawings, %d images'
+                        % (', '.join(sorted(set(caps))[:3]), drawings, images)))
         if not spans and drawings:
             bad.append((i, 'page with no text', '%d drawings' % drawings))
     return len(doc), bad

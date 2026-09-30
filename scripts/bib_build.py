@@ -7,7 +7,7 @@ BMC 판(submission/dkd-manuscript.tex)이 감사를 거친 원본이다. BiB 는
 본문에서 빠진 방법과 결과는 BMC 판의 문장을 그대로 떼어 Supplementary Notes 로 묶는다.
 손으로 옮겨 적으면 두 판이 어긋나므로, 보충 자료는 여기서 매번 BMC 판에서 다시 만든다.
 
-    1. 그림을 BiB 번호로 복사한다
+    1. 그림을 BiB 번호의 PNG(600 dpi)로 변환한다 (저널 업로드용; 벡터 원본은 results/figures)
     2. 참고문헌 양식: Vancouver 에서 저자 넷 이상이면 셋 뒤 et al. (BiB 규정)
     3. Supplementary Notes S1-S10 을 BMC 판에서 잘라 조립한다
     4. 둘 다 컴파일한다
@@ -111,8 +111,18 @@ def figures():
             raise SystemExit('BiB 폭 그림 생성 실패: %s%s%s' % (' '.join(cmd), NL, r.stderr[-800:]))
     fdir = os.path.join(DST, FIGDIR)
     os.makedirs(fdir, exist_ok=True)
+    # 투고 그림은 PNG 하나만 둔다. 벡터 PDF 는 results/figures 에 남아 있고,
+    # figure_typography 는 그쪽 PDF 로 글자 크기를 잰다. PDF 와 PNG 가 같이 있으면 어느 쪽을
+    # 올렸는지 알 수 없다.
     for new, src in FIGS + SUPP_FIGS:
-        shutil.copy2(os.path.join('results/figures', src + '.pdf'), os.path.join(fdir, new + '.pdf'))
+        src_pdf = os.path.join('results/figures', src + '.pdf')
+        r = subprocess.run(['pdftoppm', '-r', '600', '-png', '-singlefile', src_pdf,
+                            os.path.join(fdir, new)], capture_output=True)
+        if r.returncode != 0 or not os.path.exists(os.path.join(fdir, new + '.png')):
+            raise SystemExit('PNG 변환 실패: %s%s%s' % (src_pdf, NL, r.stderr.decode('utf-8', 'replace')[-300:]))
+        old = os.path.join(fdir, new + '.pdf')
+        if os.path.exists(old):
+            os.remove(old)
     # 예전에는 루트에 두었다. 남아 있으면 preflight 가 낯선 파일로 잡는다.
     for f in os.listdir(DST):
         if re.match(r'Fig\d+\.pdf$', f):
@@ -174,7 +184,7 @@ def supplement():
         o = B + 'includegraphics[width=' + B + 'textwidth]{' + src + '}'
         if t.count(o) != 1:
             raise SystemExit('보충자료 그림 %s 가 %d 번 나옵니다' % (src, t.count(o)))
-        t = t.replace(o, B + 'includegraphics[width=' + B + 'textwidth]{' + new + '}')
+        t = t.replace(o, B + 'includegraphics[width=' + B + 'textwidth]{' + new + '.png}')
     t = re.sub(r'Additional' + r'\s+' + r'file(~|\s)', lambda m: 'Supplementary File' + m.group(1), t)
     t = t.replace('Additional files', 'Supplementary Files')
     for o, n in REWORD:
@@ -383,6 +393,23 @@ def claims_match():
     return bad
 
 
+def source_zip():
+    """저널 시스템에 올릴 LaTeX 소스 묶음: tex, bbl, bib, bst 와 PNG 그림을 zip 하나에.
+    본문 PDF 와 따로 올린다. 여기서 만들어야 그림·bbl 이 방금 컴파일한 것과 같다."""
+    import zipfile
+    out = os.path.join(DST, 'bib-manuscript-source.zip')
+    names = ['bib-manuscript.tex', 'bib-manuscript.bbl', 'bib-supplement.tex',
+             'bib-supplement.bbl', 'dkd-references.bib', 'bib-vancouver.bst']
+    names += [FIGDIR + '/' + new + '.png' for new, _ in FIGS + SUPP_FIGS]
+    with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
+        for n in names:
+            p = os.path.join(DST, n)
+            if not os.path.exists(p):
+                raise SystemExit('소스 묶음에 넣을 파일이 없습니다: %s' % p)
+            z.write(p, n)
+    return out, len(names)
+
+
 def main():
     os.makedirs(DST, exist_ok=True)
     figures()
@@ -423,6 +450,8 @@ def main():
     for f in os.listdir(DST):
         if f.endswith(('.aux', '.blg', '.out', '.log')):
             os.remove(os.path.join(DST, f))
+    zp, nz = source_zip()
+    log('  LaTeX 소스 묶음 %s (%d 파일)' % (zp, nz))
     # 제출 위생도 여기서 본다. submission/ 만 검사하고 BiB 폴더를 검사했다고 착각한 적이 있다.
     r2 = subprocess.run([sys.executable, 'scripts/preflight.py', '--target', 'bib'],
                         capture_output=True, env=dict(os.environ, PYTHONIOENCODING='utf-8'))

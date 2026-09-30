@@ -25,6 +25,9 @@ import tempfile
 
 import pymupdf
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from bib_build import FIGS, SUPP_FIGS  # noqa: E402  투고 PNG 이름 -> 벡터 원본 이름
+
 B = chr(92)
 TARGETS = {
     'bmc': dict(tex='submission/dkd-manuscript.tex', dir='submission',
@@ -112,8 +115,12 @@ def main():
             % (name, tw, colw, a.min))
         items = cfg.get('manual') or placements(cfg['tex'])
         for fig, (frac, base, star) in sorted(items.items()):
-            cands = [os.path.join(d, fig + '.pdf')
+            # 투고 폴더의 그림은 PNG 이므로 글자 크기는 같은 그림의 벡터 원본(results/figures)에서 잰다
+            stem = re.sub(r'\.(png|pdf)$', '', fig)
+            cands = [os.path.join(d, stem + '.pdf')
                      for d in [cfg['dir']] + list(cfg.get('extra', []))]
+            cands += [os.path.join('results/figures', src + '.pdf')
+                      for new, src in FIGS + SUPP_FIGS if new == stem]
             p = next((c for c in cands if os.path.exists(c)), None)
             if p is None:
                 log('  %-22s 파일 없음' % fig)

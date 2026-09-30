@@ -351,7 +351,7 @@ both axes (mean Jaccard 0.064 and AUROC 0.711 over the 26 subsets, against 0.107
 the reimplementation), so the reimplementation did not flatter stability selection.
 \begin{figure*}[!t]
 \centering
-\includegraphics[width=\textwidth]{Fig1}
+\includegraphics[width=\textwidth]{Fig1.png}
 \caption{\textbf{The reproducibility verdict depends on which cohorts are in the benchmark; the mean predictive advantage stays positive.} The benchmark was repeated over all 26 subsets of the five discovery cohorts; panels show the 16 of size three or more. \textbf{a} Percentage of subsets in which each method wins on cross-fold reproducibility, ties excluded. \textbf{b} Stability selection minus the connectivity comparator in cross-fold agreement for every subset; the difference spans $-0.106$ to $+0.170$. \textbf{c} The same subsets scored by external AUROC, where the mean advantage is positive at every size ($+0.058$, $+0.096$, $+0.139$ for sizes three to five). Custom co-expression hub comparator; not the reference WGCNA implementation.}\label{fig:sensitivity}
 \smallskip\noindent{\footnotesize Alt text: Three panels. Left, stacked bars for benchmarks of three, four and five cohorts showing the percentage of cohort subsets in which each feature-selection method wins on cross-fold reproducibility; stability selection wins 90 percent of three-cohort subsets and none of the five-cohort benchmark. Middle, one point per subset of the reproducibility difference between stability selection and the connectivity comparator, ranging from minus 0.106 to plus 0.170, with points on both sides of zero at three and four cohorts. Right, the mean external AUROC difference with its range, positive at every size and rising with cohort count.}
 \end{figure*}
@@ -438,7 +438,7 @@ module-dependent exclusion rather than general robustness to confounding.
 
 \begin{figure*}[!t]
 \centering
-\includegraphics[width=\textwidth]{Fig2}
+\includegraphics[width=\textwidth]{Fig2.png}
 \caption{\textbf{The most reproducible signal tracks tissue procurement.} \textbf{a} The immediate-early module, $z$-scored within dataset, for every diagnosis group in nine kidney datasets. Biopsy-procured groups sit below nephrectomy- and donor-procured groups in eight of nine (Spearman $\rho = -0.75$, $p < 0.001$); GSE162830, the one identically processed design, is the exception. \textbf{b} The module as Hedges' $g$ for four contrasts. In KPMP, DKD against non-biopsy reference tissue gives $-0.84$ while DKD against other biopsies gives $+0.08$; in heart failure (GSE5406), disease against donor reaches only $-0.23$.}\label{fig:procurement}
 \smallskip\noindent{\footnotesize Alt text: Two panels. Left, a dumbbell chart of nine kidney datasets: for each dataset the immediate-early module score of biopsy-procured groups (orange) sits below that of nephrectomy- or donor-procured groups (blue) in eight of nine; GSE162830, processed identically, shows no gap. Right, horizontal bars of Hedges' g for four contrasts: diabetic kidney disease against non-biopsy reference tissue in KPMP is minus 0.84, against other biopsies plus 0.08; heart failure against donor heart is minus 0.23, ischaemic against idiopathic plus 0.33.}
 \end{figure*}
@@ -485,7 +485,7 @@ Residualise on $h$        & 1.0 & 5\%  & 40\% & 0.926 & 0.260 \\
 
 \begin{figure*}[!t]
 \centering
-\includegraphics[width=\textwidth]{Fig3}
+\includegraphics[width=\textwidth]{Fig3.png}
 \caption{\textbf{What each correction removes, and what it costs.} \textbf{a} Percentage of the top 50 selected features flagged as procurement-driven. \textbf{b} Specificity pass-rate as fold-enrichment over the 8.3\% background rate at which a random gene passes the gate. \textbf{c} External AUROC. Handling-score residualisation and surrogate-variable analysis reduce procurement-driven features from 27\% to 5--6\%; residualisation does so at a fold-mean AUROC identical to no correction to three decimal places, surrogate-variable analysis at 0.915 against 0.926. The separate paired bootstrap estimate of the residualisation cost is uncertain and is given in the text. ComBat returned the same values as no correction in this evaluation setting; the confounder is within-cohort.}\label{fig:corrections}
 \smallskip\noindent{\footnotesize Alt text: Three panels of horizontal bars for six correction strategies. Left, the percentage of the top 50 selected genes flagged as procurement-driven: 27 percent with no correction or ComBat, 6 percent with surrogate variables and 5 percent with handling-score residualisation. Middle, specificity pass rate as fold enrichment over background, all above threefold. Right, external AUROC from 0.905 to 0.926, with no correction and residualisation both at 0.926.}
 \end{figure*}
@@ -562,7 +562,7 @@ Membranous glomerulonephropathy & 38 & 3{,}282 & 702     & 56\% \\
 
 \begin{figure*}[!t]
 \centering
-\includegraphics[width=\textwidth]{Fig4}
+\includegraphics[width=\textwidth]{Fig4.png}
 \caption{\textbf{Changing the control-group definition rebuilds the top of the ranking.} \textbf{a} Each line is one gene, drawn between its rank by $|g|$ when diabetic nephropathy cases are compared with non-biopsy controls (left) and with biopsies of other diagnoses (right); blue rises, orange falls. \textbf{b} Genes shared by the two top-50 lists, over all 9,900 genes, for each of the seven ERCB biopsy diagnoses. This is the same case set against two control groups, not a within-patient pairing.}\label{fig:reordering}
 \smallskip\noindent{\footnotesize Alt text: Two panels. Left, a slope chart of gene ranks in diabetic nephropathy under two control definitions, non-biopsy controls on the left and other-diagnosis biopsies on the right, on a logarithmic rank axis from 1 to 9,900; lines cross extensively, some genes falling from the top 10 to below rank 100 and others rising. Right, horizontal bars of the number of genes shared by the two top-50 lists for seven diagnoses, from 0 in IgA nephropathy to 18 in lupus nephritis, with 1 in diabetic nephropathy.}
 \end{figure*}
@@ -630,7 +630,7 @@ P3. Immediate-early genes in the uncorrected stability top 50: kidney $>$ liver 
 
 \begin{figure*}[!t]
 \centering
-\includegraphics[width=\textwidth]{Fig5}
+\includegraphics[width=\textwidth]{Fig5.png}
 \caption{\textbf{Outside kidney, the immediate-early module follows procurement where it is asymmetric and inflammation where it is not, and reaches the most reproducible genes mainly in kidney.} \textbf{a} Hedges' $g$ of the handling score, case minus control, one point per cohort, grouped by tissue and by whether cases and controls were procured differently (biopsy vs surgical) or identically (same procurement); cohort counts in brackets. Filled points are $g$ as measured. Hollow points are not a second $g$: they are that $g$ multiplied by the ratio of the adjusted to the unadjusted standardised case coefficient from the inflammation regression, which carries the adjustment onto the same axis. The two coefficients themselves, on their own scale, are in Supplementary File~7 and their medians are quoted in the text. Bars mark group medians. Per-cohort values with accession labels and bootstrap intervals are in Supplementary Figure~S5. \textbf{b} Mean immediate-early genes in the stability top 50 over LODO folds on each tissue's five core cohorts, uncorrected and after residualising on the handling score. \textbf{c} Stability selection minus the connectivity comparator in cross-fold agreement for every three-cohort subset; orange points are reversed verdicts. $\rho$ is the median pairwise Spearman correlation of gene-wise effect sizes. The rightmost column repeats colon subsampled to kidney sizes. The inflammation adjustment, concordance and subsampling are post hoc. Custom co-expression hub comparator; not the reference WGCNA implementation.}\label{fig:xtissue}
 \smallskip\noindent{\footnotesize Alt text: Three panels. Left, a dot plot of the immediate-early module effect per cohort in four groups: kidney and liver cohorts with biopsy cases and surgical controls have negative values, liver cohorts with matched procurement sit near zero, and colon cohorts with matched procurement are positive; filled and hollow points show measured and inflammation-adjusted effects. Middle, bars of immediate-early genes in the stability top 50: 8.0 in kidney, 0.6 in liver, 0.0 in colon, each reduced by correction. Right, per-subset reproducibility differences for kidney, liver, colon and colon subsampled to kidney sizes, with reversed verdicts in orange: one each in kidney and liver, none in colon, two of fifty in the subsampled colon.}
 \end{figure*}

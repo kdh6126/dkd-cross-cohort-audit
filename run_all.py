@@ -610,7 +610,8 @@ SUBMIT_FILES = ['submission/dkd-manuscript.pdf', 'submission/dkd-manuscript.tex'
                 'submission/dkd-references.bib', 'submission/COVER_LETTER.md',
                 'submission_bib/bib-manuscript.pdf', 'submission_bib/bib-manuscript.tex',
                 'submission_bib/bib-supplement.pdf', 'submission_bib/bib-supplement.tex',
-                'submission_bib/COVER_LETTER_BiB.md']
+                'submission_bib/COVER_LETTER_BiB.md', 'submission_bib/CoverLetter.docx',
+                'submission_bib/bib-manuscript-source.zip']
 
 
 def submit_check():
@@ -637,7 +638,7 @@ def submit_check():
                     blockers.append('%s: %s' % (label, line.strip()[:96]))
     files = [f for f in SUBMIT_FILES if os.path.exists(f)]
     files += sorted(glob.glob('submission/Fig*.pdf') + glob.glob('submission/Additional_file_*')
-                    + glob.glob('submission_bib/figures/*.pdf')
+                    + glob.glob('submission_bib/figures/*.png')
                     + glob.glob('submission_bib/Supplementary_File_*'))
     state = '최종 (모든 검사 통과)' if not bad else '잠정 (검사 미통과 - 제출본이 아니다)'
     lines = ['# 제출본 해시 %s' % time.strftime('%Y-%m-%dT%H:%M:%S'),
