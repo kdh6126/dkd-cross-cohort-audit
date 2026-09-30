@@ -116,7 +116,7 @@ def main():
         items = cfg.get('manual') or placements(cfg['tex'])
         for fig, (frac, base, star) in sorted(items.items()):
             # 투고 폴더의 그림은 PNG 이므로 글자 크기는 같은 그림의 벡터 원본(results/figures)에서 잰다
-            stem = re.sub(r'\.(png|pdf)$', '', fig)
+            stem = re.sub(r'\.(png|pdf|eps)$', '', fig)
             cands = [os.path.join(d, stem + '.pdf')
                      for d in [cfg['dir']] + list(cfg.get('extra', []))]
             cands += [os.path.join('results/figures', src + '.pdf')

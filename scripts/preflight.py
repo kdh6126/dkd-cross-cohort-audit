@@ -32,8 +32,8 @@ TARGETS = {
         outbound=['bib-manuscript.tex', 'bib-supplement.tex', 'dkd-references.bib',
                   'COVER_LETTER_BiB.md'],
         expected=(r'^(bib-(manuscript|supplement)' + chr(92) + r'.(tex|pdf|bbl)|dkd-references' + chr(92) + r'.bib|'
-                  r'COVER_LETTER_BiB' + chr(92) + r'.md|CoverLetter' + chr(92) + r'.docx|'
-                  r'bib-manuscript-source' + chr(92) + r'.zip|figures|'
+                  r'COVER_LETTER_BiB' + chr(92) + r'.md|CoverLetter' + chr(92) + r'.(docx|pdf)|'
+                  r'bib-manuscript-source' + chr(92) + r'.zip|oup-authoring-template' + chr(92) + r'.cls|figures|'
                   r'Supplementary_File_' + chr(92) + r'd+' + chr(92) + r'.(pdf|xlsx)|bib-vancouver' + chr(92) + r'.bst)$'),
     ),
 }

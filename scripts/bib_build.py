@@ -7,7 +7,7 @@ BMC 판(submission/dkd-manuscript.tex)이 감사를 거친 원본이다. BiB 는
 본문에서 빠진 방법과 결과는 BMC 판의 문장을 그대로 떼어 Supplementary Notes 로 묶는다.
 손으로 옮겨 적으면 두 판이 어긋나므로, 보충 자료는 여기서 매번 BMC 판에서 다시 만든다.
 
-    1. 그림을 BiB 번호의 PNG(600 dpi)로 변환한다 (저널 업로드용; 벡터 원본은 results/figures)
+    1. 그림을 BiB 번호의 EPS 로 변환한다 (저널의 LaTeX 투고 규정; 벡터 원본은 results/figures)
     2. 참고문헌 양식: Vancouver 에서 저자 넷 이상이면 셋 뒤 et al. (BiB 규정)
     3. Supplementary Notes S1-S10 을 BMC 판에서 잘라 조립한다
     4. 둘 다 컴파일한다
@@ -38,6 +38,7 @@ SUPP_FIGS = [('FigS1', 'P2_null_control'), ('FigS2', 'P4_singlecell_control'),
              ('FigS3', 'P5_block_size'), ('FigS4', 'P7_candidates'),
              ('FigS5', 'P10_cross_tissue')]
 FIGDIR = 'figures'
+CLS = 'oup-authoring-template'   # 본문 클래스; 투고 묶음에 같이 넣는다
 
 # BiB 본문에 들어간 그림과 표. 보충 자료에서는 떼어 내고 본문 번호로 가리킨다.
 MAIN_FIG = {'fig:sensitivity': 1, 'fig:procurement': 2, 'fig:corrections': 3,
@@ -111,18 +112,29 @@ def figures():
             raise SystemExit('BiB 폭 그림 생성 실패: %s%s%s' % (' '.join(cmd), NL, r.stderr[-800:]))
     fdir = os.path.join(DST, FIGDIR)
     os.makedirs(fdir, exist_ok=True)
-    # 투고 그림은 PNG 하나만 둔다. 벡터 PDF 는 results/figures 에 남아 있고,
-    # figure_typography 는 그쪽 PDF 로 글자 크기를 잰다. PDF 와 PNG 가 같이 있으면 어느 쪽을
-    # 올렸는지 알 수 없다.
+    # 투고 그림은 EPS 하나만 둔다 (BiB LaTeX 규정: "All images must be EPS files"). 벡터 PDF 는
+    # results/figures 에 남아 있고, figure_typography 는 그쪽 PDF 로 글자 크기를 잰다. tex 는
+    # 확장자 없이 부르고, pdflatex 이 epstopdf 로 변환한 *-eps-converted-to.pdf 는 컴파일 뒤 지운다.
     for new, src in FIGS + SUPP_FIGS:
         src_pdf = os.path.join('results/figures', src + '.pdf')
-        r = subprocess.run(['pdftoppm', '-r', '600', '-png', '-singlefile', src_pdf,
-                            os.path.join(fdir, new)], capture_output=True)
-        if r.returncode != 0 or not os.path.exists(os.path.join(fdir, new + '.png')):
-            raise SystemExit('PNG 변환 실패: %s%s%s' % (src_pdf, NL, r.stderr.decode('utf-8', 'replace')[-300:]))
-        old = os.path.join(fdir, new + '.pdf')
-        if os.path.exists(old):
-            os.remove(old)
+        # 투명도가 있는 그림(P1, P9, P10, S1, S2, S5)은 PostScript 에 담을 수 없어 pdftops 가
+        # 그 그림 전체를 비트맵으로 바꾼다; 그때의 해상도가 -r 이다. 투명도 없는 그림은 벡터로 남는다.
+        r = subprocess.run(['pdftops', '-eps', '-level3', '-r', '600', src_pdf,
+                            os.path.join(fdir, new + '.eps')],
+                           capture_output=True)
+        if r.returncode != 0 or not os.path.exists(os.path.join(fdir, new + '.eps')):
+            raise SystemExit('EPS 변환 실패: %s%s%s' % (src_pdf, NL, r.stderr.decode('utf-8', 'replace')[-300:]))
+        for ext in ('.pdf', '.png', '-eps-converted-to.pdf'):
+            old = os.path.join(fdir, new + ext)
+            if os.path.exists(old):
+                os.remove(old)
+    # 저널은 문서가 쓰는 스타일 파일을 전부 올리라고 한다. 설치본과 같은 파일을 옆에 둔다.
+    # 경로에 한글 사용자명이 들어 있어 text=True(cp949)로는 읽지 못한다
+    r = subprocess.run(['kpsewhich', CLS + '.cls'], capture_output=True)
+    found = r.stdout.decode('utf-8', 'replace').strip()
+    if r.returncode != 0 or not found or not os.path.exists(found):
+        raise SystemExit('%s.cls 를 찾지 못했습니다: %r' % (CLS, found))
+    shutil.copy2(found, os.path.join(DST, CLS + '.cls'))
     # 예전에는 루트에 두었다. 남아 있으면 preflight 가 낯선 파일로 잡는다.
     for f in os.listdir(DST):
         if re.match(r'Fig\d+\.pdf$', f):
@@ -184,7 +196,7 @@ def supplement():
         o = B + 'includegraphics[width=' + B + 'textwidth]{' + src + '}'
         if t.count(o) != 1:
             raise SystemExit('보충자료 그림 %s 가 %d 번 나옵니다' % (src, t.count(o)))
-        t = t.replace(o, B + 'includegraphics[width=' + B + 'textwidth]{' + new + '.png}')
+        t = t.replace(o, B + 'includegraphics[width=' + B + 'textwidth]{' + new + '}')
     t = re.sub(r'Additional' + r'\s+' + r'file(~|\s)', lambda m: 'Supplementary File' + m.group(1), t)
     t = t.replace('Additional files', 'Supplementary Files')
     for o, n in REWORD:
@@ -399,8 +411,8 @@ def source_zip():
     import zipfile
     out = os.path.join(DST, 'bib-manuscript-source.zip')
     names = ['bib-manuscript.tex', 'bib-manuscript.bbl', 'bib-supplement.tex',
-             'bib-supplement.bbl', 'dkd-references.bib', 'bib-vancouver.bst']
-    names += [FIGDIR + '/' + new + '.png' for new, _ in FIGS + SUPP_FIGS]
+             'bib-supplement.bbl', 'dkd-references.bib', 'bib-vancouver.bst', CLS + '.cls']
+    names += [FIGDIR + '/' + new + '.eps' for new, _ in FIGS + SUPP_FIGS]
     with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
         for n in names:
             p = os.path.join(DST, n)
@@ -450,6 +462,9 @@ def main():
     for f in os.listdir(DST):
         if f.endswith(('.aux', '.blg', '.out', '.log')):
             os.remove(os.path.join(DST, f))
+    for f in os.listdir(os.path.join(DST, FIGDIR)):
+        if f.endswith('-eps-converted-to.pdf'):
+            os.remove(os.path.join(DST, FIGDIR, f))
     zp, nz = source_zip()
     log('  LaTeX 소스 묶음 %s (%d 파일)' % (zp, nz))
     # 제출 위생도 여기서 본다. submission/ 만 검사하고 BiB 폴더를 검사했다고 착각한 적이 있다.
