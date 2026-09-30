@@ -60,7 +60,7 @@ def availability_block():
         'cohort audit is\ndistributed with them as a relational database whose views encode the '
         'exclusion and overlap\nrules stated in Section~\\ref{sec:cohorts}, so that the audit is '
         'enforced by the schema rather\nthan by prose.\n\n'
-        r'\textbf{Code.} All analysis code is available at \url{%s} under %s, archived at '
+        r'\textbf{Code.} All analysis code is available at \url{%s} under %s \cite{kim2026zenodo}, archived at '
         '\\url{%s}.' % (r['doi'], r['data_licence'], r['url'], r['code_licence'], r['doi'])
     )
 
@@ -68,13 +68,13 @@ def availability_block():
 def funding_block():
     """Join the funder statements. Each entry supplies its own sentence-fragment wording,
     because Korean funding bodies mandate specific phrasing that differs between them."""
-    parts = ['%s (No. %s)' % (f['funder'], f['grant']) for f in cfg.FUNDING]
+    parts = ['%s [grant number %s]' % (f['funder'], f['grant']) for f in cfg.FUNDING]
     if len(parts) == 1:
         joined, noun = parts[0], 'funder'
     else:
-        joined = '; by '.join(parts)
+        joined = '; '.join(parts[:-1]) + '; and ' + parts[-1]
         noun = 'funders'
-    return ('This research was supported by %s. The %s had no role in the design of the study, '
+    return ('This work was supported by %s. The %s had no role in the design of the study, '
             'in the collection, analysis and interpretation of data, or in writing the '
             'manuscript.' % (joined, noun))
 
