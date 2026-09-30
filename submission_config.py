@@ -125,7 +125,7 @@ PROJECT = dict(
 # data and materials statement is built from these.
 REPOSITORY = dict(
     url='https://github.com/kdh6126/dkd-cross-cohort-audit',
-    doi='https://doi.org/10.5281/zenodo.XXXXXXX',
+    doi='https://doi.org/10.5281/zenodo.23051697',
     code_licence='the MIT licence',
     data_licence='CC BY 4.0',
 )

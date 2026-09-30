@@ -4,7 +4,7 @@ title: "Auditing cross-cohort feature-selection benchmarks: cohort composition a
 version: "1.0.0"
 license: MIT
 repository-code: "https://github.com/kdh6126/dkd-cross-cohort-audit"
-doi: "10.5281/zenodo.XXXXXXX"
+doi: "10.5281/zenodo.23051697"
 keywords:
   - "feature selection"
   - "benchmarking"

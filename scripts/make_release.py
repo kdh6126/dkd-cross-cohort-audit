@@ -373,6 +373,10 @@ def main():
     # it, leaving a half-staged tree.
     os.makedirs(OUT, exist_ok=True)
     for name in os.listdir(OUT):
+        # release/ is itself the git repository that is pushed to GitHub. Wiping .git here once
+        # destroyed the local history and made a later `git add` run in the project root.
+        if name == '.git':
+            continue
         path = os.path.join(OUT, name)
         if os.path.isdir(path) and not os.path.islink(path):
             shutil.rmtree(path, ignore_errors=True)
