@@ -166,7 +166,7 @@ KPMP = dict(
 COVER = dict(
     # Bracketed so that, if it is ever written through unfilled, preflight's placeholder
     # pattern still catches it in the outbound file.
-    date='[SUBMISSION DATE]',
+    date='30 September 2026',
     # Optional. BMC asks for suggested reviewers; leave the list empty to drop the paragraph.
     suggested_reviewers=[
         # dict(name='', affiliation='', email='', expertise='benchmarking methodology'),
