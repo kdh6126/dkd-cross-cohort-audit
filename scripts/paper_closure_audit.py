@@ -38,6 +38,7 @@ SKIP = {'provenance_gap_audit.py', 'paper_closure_audit.py',
         'make_release.py', 'preflight.py', 'fill_submission.py',
         # BiB 판은 BMC 원고에서 파생된다. BMC 원고가 그것에 기대지 않으므로 씨앗이 아니다.
         'bib_build.py',
+        'giga_build.py',   # GigaScience 판; bib_build 와 같은 이유로 제출 점검에서만 돈다
         # 그림 글자 크기 검사는 제출물을 읽기만 하고 아무것도 만들지 않는다.
         'figure_typography.py'}
 # verify_provenance.py 는 원고에 적힌 수치와 결과 파일을 잇는 다리다. 그것이 읽는

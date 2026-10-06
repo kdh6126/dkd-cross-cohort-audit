@@ -523,8 +523,6 @@ S = [
     Stage('x_bib', 'Briefings in Bioinformatics version: condensed text, supplement, number trace',
           [PY, 'scripts/bib_build.py'], ['submission_bib/bib-manuscript.pdf',
            'submission_bib/bib-supplement.pdf'], group='extra', minutes=2),
-    Stage('x_giga', 'GigaScience version: BMC body re-ordered to the Research structure, 250-word abstract',
-          [PY, 'scripts/giga_build.py'], ['submission_giga/giga-manuscript.pdf'], group='extra', minutes=2),
     Stage('x_release', 'stage the public release tree under release/ (publishes nothing)',
           [PY, 'scripts/make_release.py'], ['release/CITATION.cff'], group='extra', minutes=2),
 ]
@@ -557,7 +555,7 @@ PAPER = ['inventory', 'audit', 'genespace', 'harmonise', 'add_cohort5',
 # BMC 형식 원고(submission/dkd-manuscript.tex)를 읽는 단계. 공개 릴리스에는 투고본(BiB)만
 # 들어가므로 그 파일이 없고, 이 단계들은 실패가 아니라 건너뛴다. 결과·그림 생성과는 무관하다.
 NEEDS_MANUSCRIPT = {'prose_audit', 'gene_claims', 'stage_figures', 'additional_files',
-                    'submission_audit', 'x_verify', 'x_fill', 'x_figtype', 'x_bib', 'x_giga', 'x_release'}
+                    'submission_audit', 'x_verify', 'x_fill', 'x_figtype', 'x_bib', 'x_release'}
 
 
 def run(stage, dry, force):
