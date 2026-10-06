@@ -27,6 +27,13 @@ TARGETS = {
                   r'Additional_file_' + chr(92) + r'd+' + chr(92) + r'.(pdf|xlsx)|sn-[a-z-]+' + chr(92) + r'.(cls|bst)|'
                   r'bst|sn-article-template)$'),
     ),
+    'giga': dict(
+        dir='submission_giga',
+        outbound=['giga-manuscript.tex', 'giga-extra.bib', 'COVER_LETTER_Giga.md'],
+        expected=(r'^(giga-manuscript' + chr(92) + r'.(tex|pdf|bbl)|dkd-references' + chr(92) + r'.bib|'
+                  r'giga-extra' + chr(92) + r'.bib|bib-vancouver' + chr(92) + r'.bst|COVER_LETTER_Giga' + chr(92) + r'.md|'
+                  r'figures|Additional_file_' + chr(92) + r'd+' + chr(92) + r'.(pdf|xlsx))$'),
+    ),
     'bib': dict(
         dir='submission_bib',
         outbound=['bib-manuscript.tex', 'bib-supplement.tex', 'dkd-references.bib',
@@ -149,6 +156,10 @@ def main():
     build = re.compile(r'^P\d+_[A-Za-z0-9_]+\.pdf$')
     stray = 0
     for name in sorted(os.listdir(SUB)):
+        if name.startswith('~$'):
+            # Office lock file: exists only while the document is open, is never uploaded
+            log('  lock file %s  (close the document to remove it)' % name)
+            continue
         if name in INTERNAL:
             log('  internal %s' % name)
         elif build.match(name):

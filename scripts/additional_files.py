@@ -92,7 +92,9 @@ def longtable(df, spec, headers, fmt=None, raw=(), small=False):
 # 손으로 적은 번호는 BMC 판 안에서도 이미 어긋나 있었다(Figure 8 이 Figure 10 이 되었고,
 # 코호트 표는 Table 1 이 아니라 Table 2 였다).
 TARGET = 'bmc'
-MANUSCRIPT = {'bmc': 'submission/dkd-manuscript.tex', 'bib': 'submission_bib/bib-manuscript.tex'}
+MANUSCRIPT = {'bmc': 'submission/dkd-manuscript.tex', 'bib': 'submission_bib/bib-manuscript.tex',
+              # GigaScience 판: BMC 본문을 절 순서만 바꿔 다시 붙인 것. 번호 붙은 절, Additional file N.
+              'giga': 'submission_giga/giga-manuscript.tex'}
 BIB_SUPPLEMENT = 'submission_bib/bib-supplement.tex'
 # BiB 본문에 제목 줄이 없는 BMC 절이 들어간 Supplementary Note
 BIB_NOTE = {'sec:harmonisation': 'S1', 'sec:nulls': 'S2', 'sec:auroc-null': 'S2',
@@ -102,11 +104,11 @@ BIB_NOTE = {'sec:harmonisation': 'S1', 'sec:nulls': 'S2', 'sec:auroc-null': 'S2'
 
 
 def file_title(n):
-    return ('Additional file %d' if TARGET == 'bmc' else 'Supplementary File %d') % n
+    return ('Additional file %d' if TARGET in ('bmc', 'giga') else 'Supplementary File %d') % n
 
 
 def file_name(n):
-    return ('Additional_file_%d' if TARGET == 'bmc' else 'Supplementary_File_%d') % n
+    return ('Additional_file_%d' if TARGET in ('bmc', 'giga') else 'Supplementary_File_%d') % n
 
 
 def _float_order(tex, env):
@@ -133,7 +135,7 @@ def where(label, tex=True):
             txt = 'Supplementary %s~S%d' % (word, _float_order(BIB_SUPPLEMENT, env).index(label) + 1)
         else:
             raise SystemExit('부록이 가리키는 %s 를 %s 에서 찾지 못했습니다' % (label, ms))
-    elif TARGET == 'bmc':
+    elif TARGET in ('bmc', 'giga'):
         txt = 'Section~%s of the main text' % section_number(label)
     else:
         src = open(ms, encoding='utf-8').read()
@@ -160,7 +162,7 @@ def section_number(label):
     부록에 "Section 3.9" 처럼 손으로 적어 두면 본문에 절이 하나 늘거나 줄 때 조용히
     어긋납니다. 실제로 3.9 라고 적힌 곳이 3.8 이 되어 있었습니다. 그래서 세어서 씁니다.
     """
-    src = open(MANUSCRIPT['bmc'], encoding='utf-8').read()
+    src = open(MANUSCRIPT[TARGET], encoding='utf-8').read()
     sec = sub = 0
     for m in re.finditer(r'(?m)^' + re.escape(BS) + r'(section|subsection)\{|'
                          + re.escape(BS) + r'label\{([^}]+)\}', src):
@@ -892,7 +894,7 @@ def main():
     global TARGET, DST
     if '--target' in sys.argv:
         TARGET = sys.argv[sys.argv.index('--target') + 1]
-        DST = {'bmc': 'submission', 'bib': 'submission_bib'}[TARGET]
+        DST = {'bmc': 'submission', 'bib': 'submission_bib', 'giga': 'submission_giga'}[TARGET]
     log('본문이 약속한 부록을 만듭니다 (%s -> %s).' % (TARGET, DST))
     ok = all([af1(), af2(), af3(), af4(), af5(), af6(), af7()])
     log('')

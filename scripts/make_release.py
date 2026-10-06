@@ -99,6 +99,7 @@ INCLUDE = [
     # 투고하지 않는 원고가 공개되면 혼동을 낳는다. 반려되어 BMC 로 갈 때 다시 넣는다.
     # 커버레터는 아래 EXCLUDE 로 뺀다.
     ('submission_bib', 'submission_bib'),
+    ('submission_giga', 'submission_giga'),
     # 부록은 아래 additional_files() 가 원고에서 읽어 붙인다. 손으로 적어 두었더니
     # 여섯 번째 부록이 생겼을 때 목록이 그대로 남아, 공개본에만 빠져 있었다.
 ]
@@ -251,6 +252,9 @@ def log(*a):
 
 def excluded(rel):
     rel = rel.replace(os.sep, '/')
+    # Word/Excel lock files (~$name) appear while a document is open; one was released once.
+    if os.path.basename(rel).startswith('~$'):
+        return True
     return rel.endswith(EXCLUDE_SUFFIX) or any(c in rel for c in EXCLUDE_CONTAINS)
 
 

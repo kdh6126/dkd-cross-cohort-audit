@@ -26,6 +26,8 @@ LETTER = os.path.join(ROOT, 'submission', 'COVER_LETTER.md')
 # BiB 판도 같은 값을 쓴다. 여기를 빼 두면 BMC 만 채워 놓고 다 됐다고 착각하게 된다.
 BIB_TEX = os.path.join(ROOT, 'submission_bib', 'bib-manuscript.tex')
 BIB_LETTER = os.path.join(ROOT, 'submission_bib', 'COVER_LETTER_BiB.md')
+# GigaScience 판 (2026-10-06, OUP transfer). 본문은 giga_build.py 가 BMC tex 에서 만든다.
+GIGA_LETTER = os.path.join(ROOT, 'submission_giga', 'COVER_LETTER_Giga.md')
 
 
 def log(*a):
@@ -213,6 +215,10 @@ REGIONS_BIB_LETTER = [
     ('REPO', lambda: 'audit database and code regenerating every figure and table are released '
                      'at %s\n(%s).' % (cfg.REPOSITORY['url'], cfg.REPOSITORY['doi'])),
 ]
+REGIONS_GIGA_LETTER = [
+    ('DATE', lambda: cfg.COVER['date']),
+    ('REPO', lambda: '%s, and the code at\n%s (MIT).' % (cfg.REPOSITORY['doi'], cfg.REPOSITORY['url'])),
+]
 REGIONS_LETTER = [
     ('TITLE', lambda: '**"%s."**' % cfg.PROJECT['title']),
     ('DATE', lambda: cfg.COVER['date']),
@@ -245,7 +251,8 @@ def main():
 
     total = 0
     for path, regions in ((TEX, REGIONS_TEX), (LETTER, REGIONS_LETTER),
-                          (BIB_TEX, REGIONS_BIB_TEX), (BIB_LETTER, REGIONS_BIB_LETTER)):
+                          (BIB_TEX, REGIONS_BIB_TEX), (BIB_LETTER, REGIONS_BIB_LETTER),
+                          (GIGA_LETTER, REGIONS_GIGA_LETTER)):
         if not os.path.exists(path):
             log('  MISSING %s' % path)
             return 1

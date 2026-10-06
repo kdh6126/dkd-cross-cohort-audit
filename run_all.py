@@ -523,6 +523,8 @@ S = [
     Stage('x_bib', 'Briefings in Bioinformatics version: condensed text, supplement, number trace',
           [PY, 'scripts/bib_build.py'], ['submission_bib/bib-manuscript.pdf',
            'submission_bib/bib-supplement.pdf'], group='extra', minutes=2),
+    Stage('x_giga', 'GigaScience version: BMC body re-ordered to the Research structure, 250-word abstract',
+          [PY, 'scripts/giga_build.py'], ['submission_giga/giga-manuscript.pdf'], group='extra', minutes=2),
     Stage('x_release', 'stage the public release tree under release/ (publishes nothing)',
           [PY, 'scripts/make_release.py'], ['release/CITATION.cff'], group='extra', minutes=2),
 ]
@@ -555,7 +557,7 @@ PAPER = ['inventory', 'audit', 'genespace', 'harmonise', 'add_cohort5',
 # BMC 형식 원고(submission/dkd-manuscript.tex)를 읽는 단계. 공개 릴리스에는 투고본(BiB)만
 # 들어가므로 그 파일이 없고, 이 단계들은 실패가 아니라 건너뛴다. 결과·그림 생성과는 무관하다.
 NEEDS_MANUSCRIPT = {'prose_audit', 'gene_claims', 'stage_figures', 'additional_files',
-                    'submission_audit', 'x_verify', 'x_fill', 'x_figtype', 'x_bib', 'x_release'}
+                    'submission_audit', 'x_verify', 'x_fill', 'x_figtype', 'x_bib', 'x_giga', 'x_release'}
 
 
 def run(stage, dry, force):
@@ -599,6 +601,8 @@ SUBMIT_STEPS = [
     ('BiB 판 빌드', [PY, 'scripts/bib_build.py']),
     ('BMC 제출 점검', [PY, 'scripts/preflight.py', '--target', 'bmc']),
     ('BiB 제출 점검', [PY, 'scripts/preflight.py', '--target', 'bib']),
+    ('GigaScience 판 빌드', [PY, 'scripts/giga_build.py']),
+    ('GigaScience 제출 점검', [PY, 'scripts/preflight.py', '--target', 'giga']),
     ('그림 글자 크기', [PY, 'scripts/figure_typography.py', '--min', '6']),
     ('쪽 배치', [PY, 'scripts/page_layout_audit.py']),
     ('BMC 형식', [PY, 'scripts/submission_audit.py']),
@@ -612,7 +616,9 @@ SUBMIT_FILES = ['submission/dkd-manuscript.pdf', 'submission/dkd-manuscript.tex'
                 'submission_bib/bib-supplement.pdf', 'submission_bib/bib-supplement.tex',
                 'submission_bib/COVER_LETTER_BiB.md', 'submission_bib/CoverLetter.docx',
                 'submission_bib/bib-manuscript-source.zip',
-                'submission_bib/oup-authoring-template.cls']
+                'submission_bib/oup-authoring-template.cls',
+                'submission_giga/giga-manuscript.pdf', 'submission_giga/giga-manuscript.tex',
+                'submission_giga/giga-extra.bib', 'submission_giga/COVER_LETTER_Giga.md']
 
 
 def submit_check():
@@ -640,7 +646,8 @@ def submit_check():
     files = [f for f in SUBMIT_FILES if os.path.exists(f)]
     files += sorted(glob.glob('submission/Fig*.pdf') + glob.glob('submission/Additional_file_*')
                     + glob.glob('submission_bib/figures/*.eps') + glob.glob('submission_bib/figures/*.tif')
-                    + glob.glob('submission_bib/Supplementary_File_*'))
+                    + glob.glob('submission_bib/Supplementary_File_*')
+                    + glob.glob('submission_giga/figures/*.pdf') + glob.glob('submission_giga/Additional_file_*'))
     state = '최종 (모든 검사 통과)' if not bad else '잠정 (검사 미통과 - 제출본이 아니다)'
     lines = ['# 제출본 해시 %s' % time.strftime('%Y-%m-%dT%H:%M:%S'),
              '# 상태: ' + state,

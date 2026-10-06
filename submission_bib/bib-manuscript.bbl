@@ -293,10 +293,4 @@ Moore H, Kelly A, Jewell S, et~al.
 \newblock J Proteome Res. 2011;10(8):3429--38.
 \newblock PMID: 21574648. \doi{10.1021/pr200021n}.
 
-\bibitem[\protect\citeauthoryear{Kim et~al.}{2026}]{kim2026zenodo}
-Kim D, Bae M, Park J, et~al.: {Auditing cross-cohort feature-selection
-  benchmarks: code, harmonised cohorts and audit database}.
-\newblock Zenodo.
-\newblock Version 1.0.0.
-
 \end{thebibliography}
