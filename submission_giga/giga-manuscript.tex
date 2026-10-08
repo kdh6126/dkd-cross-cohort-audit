@@ -11,6 +11,7 @@
 \providecommand{\bmhead}[1]{\subsection{#1}}
 \renewcommand{\footnotetext}[1]{\par\smallskip{\footnotesize #1}}
 \emergencystretch=3em
+\hyphenation{OpenAI ChatGPT Anthropic}
 
 \title{Auditing cross-cohort feature-selection benchmarks: cohort composition and tissue-context-dependent confounding across kidney, liver and colon transcriptomes}
 
@@ -215,7 +216,7 @@ are applied.
 
 Randomly drawn 50-gene sets achieve external AUROC of 0.68--0.88 depending on the held-out
 cohort, while permuting training labels gives approximately 0.50 (Table~\ref{tab:null},
-Fig.~\ref{fig:null}). The signal is real, but which genes carry it is nearly immaterial. The DKD
+Figure~\ref{fig:null}). The signal is real, but which genes carry it is nearly immaterial. The DKD
 programme is broadly co-expressed: among the 50 genes with the largest mean $|g|$ the mean pairwise
 $|r|$ within a cohort is 0.51, against 0.25 for random gene sets of the same size, so most random
 signatures inherit it. On the GSE142025 fold, random sets reach AUROC 1.000 at $K = 100$, making
@@ -269,7 +270,7 @@ method}\label{sec:sensitivity}
 
 Repeating the full benchmark over all subsets of the five discovery cohorts gives the
 distribution of conclusions a study could have reported (Table~\ref{tab:sensitivity},
-Fig.~\ref{fig:sensitivity}).
+Figure~\ref{fig:sensitivity}).
 
 \begin{figure*}[!t]
 % source: P1_cohort_sensitivity
@@ -407,7 +408,7 @@ exactly these transcripts within minutes, including in kidney \cite{ma2012}, and
 data support but do not prove.
 
 Across nine kidney datasets the IEG module tracks how tissue was obtained, not disease
-(Table~\ref{tab:procurement}, Fig.~\ref{fig:procurement}). The Spearman correlation between
+(Table~\ref{tab:procurement}, Figure~\ref{fig:procurement}). The Spearman correlation between
 procurement (biopsy versus non-biopsy) and module level across all groups is $\rho = -0.752$,
 $p < 0.001$.
 
@@ -453,7 +454,7 @@ GSE162830  & $+0.13$ & $+0.18$ & $-0.05$ \\
 
 The KPMP single-nucleus data provide the decisive control because they contain both contrasts
 with donor-level replication (27 DKD-proxy donors as defined in the section \textit{Cohort assembly and audit}, 10 non-diabetic CKD, 12 reference, 6 nephrectomy donors;
-statistics on donor $\times$ cell-type pseudobulk, Fig.~\ref{fig:singlecell}; the three
+statistics on donor $\times$ cell-type pseudobulk, Figure~\ref{fig:singlecell}; the three
 contrasts are tabulated in Additional file~4).
 
 \begin{figure*}[!t]
@@ -464,7 +465,7 @@ contrasts are tabulated in Additional file~4).
 reduced to donor-level pseudobulk. Comparing DKD with non-diabetic CKD, both procured by needle
 biopsy, gives $p = 0.21$; comparing DKD with non-biopsy reference tissue in the same resource
 gives $p = 6.0\times10^{-76}$. The contrast is the negative control for
-Fig.~\ref{fig:procurement}: when procurement is held constant the signal disappears, and it is
+Figure~\ref{fig:procurement}: when procurement is held constant the signal disappears, and it is
 not a property of DKD.}\label{fig:singlecell}
 \smallskip\noindent{\footnotesize Alt text: Box plots of the immediate-early module score in KPMP single-nucleus pseudobulk by donor. Diabetic kidney disease against non-diabetic chronic kidney disease, both needle biopsies, shows overlapping distributions (p equals 0.21); diabetic kidney disease against non-biopsy reference tissue shows a clear separation.}
 \end{figure*}
@@ -518,7 +519,7 @@ genes are not module members at all, so the confounder is missed earlier still. 
 improves their rank without approaching the top 50, so our lower $\beta$ is conservative against
 our own argument. Additional file~1 reports the full grid.
 
-Simulation confirms the mechanism and shows that it reverses (Fig.~\ref{fig:blocksize}; the
+Simulation confirms the mechanism and shows that it reverses (Figure~\ref{fig:blocksize}; the
 paired differences are tabulated in Additional file~1).
 
 \begin{figure*}[!t]
@@ -546,7 +547,7 @@ large programme, connectivity is the worst of the three.
 
 Corrections are compared on three axes at once: how much of the confounder survives, whether the
 surviving signal is DKD-specific, and what the correction costs in external AUROC
-(Table~\ref{tab:corrections}, Fig.~\ref{fig:corrections}).
+(Table~\ref{tab:corrections}, Figure~\ref{fig:corrections}).
 
 \begin{figure*}[!t]
 % source: P6_corrections
@@ -741,7 +742,7 @@ nephropathy, but every diagnosis it could test was a kidney biopsy diagnosis. Wh
 instability and a reproducible procurement confounder belong to cross-cohort benchmarking or to
 kidney cohorts needs tissues designed differently. Three predictions were fixed before any liver
 or colon expression value was read (the section \textit{Predictions fixed before the liver and colon data were read}), and each verdict below is
-judged against its written wording (Table~\ref{tab:xtissue}, Fig.~\ref{fig:xtissue}). The
+judged against its written wording (Table~\ref{tab:xtissue}, Figure~\ref{fig:xtissue}). The
 analyses that followed the verdicts were stated before they ran and are reported as post hoc.
 
 \begin{figure*}[!t]
@@ -802,7 +803,7 @@ across the five core cohorts was 0.66 in colon against 0.22 in kidney and 0.15 i
 size does not account for the difference. With each colon cohort subsampled to the case and
 control counts of a kidney cohort, concordance stayed between 0.60 and 0.65 in five replicates,
 and the agreement difference crossed zero in two of them, by at most 0.013, against a stated
-threshold of three (Fig.~\ref{fig:xtissue}c). The sign changes of
+threshold of three (Figure~\ref{fig:xtissue}c). The sign changes of
 The section \textit{Reproducibility verdicts depend on cohort composition, not on method} were therefore associated with cohorts that disagree about the
 disease signal rather than with cohort size, which three tissues cannot raise to a necessary
 condition.
@@ -829,7 +830,7 @@ positive raw effect, GSE294519, turns negative once inflammation is accounted fo
 \textbf{Reproducibility of the module (P3).} Over leave-one-dataset-out folds on each tissue's
 five core cohorts, the uncorrected stability top 50 contained a mean of 8.0 immediate-early
 genes in kidney, 0.6 in liver and 0.0 in colon, and residualising on the handling score removed
-7.2 of them in kidney (Fig.~\ref{fig:xtissue}b). The two new tissues fail to put the module among
+7.2 of them in kidney (Figure~\ref{fig:xtissue}b). The two new tissues fail to put the module among
 the most reproducible genes for different reasons. Liver carries the largest procurement effects
 in this study, but only two of its five core cohorts are asymmetric, so the effect is not
 shared. Colon shares a direction of effect across cohorts, but there the module is one
@@ -1137,11 +1138,7 @@ cross-cohort benchmark: retrieve public cohorts, audit them for patient reuse, h
 into one frozen gene space, and compare four selection strategies under leave-one-dataset-out
 evaluation. The second layer is the set of controls placed around that benchmark, namely the
 random-signature and permuted-label nulls, the sweep over cohort subsets, the procurement
-contrast, and the substitution of the control group. Cohort assembly and harmonisation are described under Data description (the sections \textit{Cohort assembly and audit} and \textit{Harmonisation}); the section \textit{Selection methods}
-the four strategies, the section \textit{Null controls and uncertainty} the nulls and the sensitivity sweeps,
-The section \textit{Confounder score, corrections and simulation} the confounder score and the corrections benchmarked against it,
-The section \textit{Predictions fixed before the liver and colon data were read} the test of both mechanisms in liver and colon,
-and the section \textit{Implementation} how each reported number is regenerated from source data.
+contrast, and the substitution of the control group. Cohort assembly and harmonisation are described under Data description (the sections \textit{Cohort assembly and audit} and \textit{Harmonisation}). The subsections below cover the four strategies (the section \textit{Selection methods}), the nulls and the sensitivity sweeps (the section \textit{Null controls and uncertainty}), the confounder score and the corrections benchmarked against it (the section \textit{Confounder score, corrections and simulation}), the test of both mechanisms in liver and colon (the section \textit{Predictions fixed before the liver and colon data were read}), and how each reported number is regenerated from source data (the section \textit{Implementation}).
 
 
 \subsection{Selection methods}\label{sec:selectors}
@@ -1356,13 +1353,7 @@ results reported here; every stage that resamples takes a fixed seed, and reruns
 reported numbers, with the run-time dependence on external reference resources recorded
 under Regeneration below.
 
-\textbf{Use of AI tools.} Claude Code (Anthropic) and ChatGPT (OpenAI) assisted with code
-development and refactoring, proposals for control analyses, language editing and revision of
-author-written text, and the code that draws the figures; no figure or result was generated by
-an AI model directly. Numerical results were computed from the cited datasets or explicitly
-described simulations using the analysis code. Automated checks were used to assess numerical
-consistency and provenance. The authors reviewed the code, analyses and manuscript and take
-responsibility for the final content.
+
 
 Every comparator is implemented directly rather than called from a reference package, for
 reasons of speed and single-environment reproducibility set out in Additional file~1. That file

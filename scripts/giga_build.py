@@ -302,8 +302,18 @@ def build_tex():
     old = ('Section~' + B + 'ref{sec:cohorts} and' + NL + 'Section~' + B + 'ref{sec:harmonisation} cover assembly and harmonisation, Section~' + B + 'ref{sec:selectors}')
     if m_head.count(old) != 1:
         raise SystemExit('Methods 머리 문단의 참조 문장이 바뀌었습니다; giga_build.py 를 맞추십시오')
-    m_head = m_head.replace(old, 'Cohort assembly and harmonisation are described under Data description'
-                            ' (Sections~' + B + 'ref{sec:cohorts} and~' + B + 'ref{sec:harmonisation}); Section~' + B + 'ref{sec:selectors}')
+    # 번호 없는 절 제목으로는 "Section X the four strategies" 식 생략문이 읽히지 않으므로 문장을 다시 쓴다
+    end = 'how each reported number is regenerated from source data.'
+    a, b = m_head.index(old), m_head.index(end) + len(end)
+    m_head = (m_head[:a]
+              + 'Cohort assembly and harmonisation are described under Data description'
+              + ' (Sections~' + B + 'ref{sec:cohorts} and~' + B + 'ref{sec:harmonisation}). The subsections'
+              + ' below cover the four strategies (Section~' + B + 'ref{sec:selectors}), the nulls and the'
+              + ' sensitivity sweeps (Section~' + B + 'ref{sec:nulls}), the confounder score and the corrections'
+              + ' benchmarked against it (Section~' + B + 'ref{sec:corrections}), the test of both mechanisms in'
+              + ' liver and colon (Section~' + B + 'ref{sec:xtmethods}), and how each reported number is'
+              + ' regenerated from source data (Section~' + B + 'ref{sec:implementation}).'
+              + m_head[b:])
     old2 = 'The study has two layers and the sections below follow them.'
     if m_head.count(old2) != 1:
         raise SystemExit('Methods 첫 문장이 바뀌었습니다')
@@ -319,6 +329,8 @@ def build_tex():
     if not ai:
         raise SystemExit('Use of AI tools 문단을 못 찾음')
     ai_text = ai.group(1).strip()
+    # 저널은 이 문단을 끝의 Disclosure 절에 요구한다; Methods 에 같은 문단을 두 번 두지 않는다
+    m_rest = m_rest.replace(ai.group(0), '', 1)
 
     results = results.replace(B + 'section{Results}', B + 'section{Analyses}', 1)
     conclusions = conclusions.replace(B + 'section{Conclusions}', B + 'section{Potential implications}', 1)
@@ -339,6 +351,7 @@ def build_tex():
         B + 'providecommand{' + B + 'bmhead}[1]{' + B + 'subsection{#1}}',
         B + 'renewcommand{' + B + 'footnotetext}[1]{' + B + 'par' + B + 'smallskip{' + B + 'footnotesize #1}}',
         B + 'emergencystretch=3em',
+        B + 'hyphenation{OpenAI ChatGPT Anthropic}',   # 'Ope-nAI' 로 끊긴 적이 있다
         '',
         front_matter(),
         '',
@@ -382,6 +395,7 @@ def build_tex():
     ]
     out = NL.join(parts)
     out = out.replace(B + 'backmatter', '')
+    out = out.replace('Fig.~' + B + 'ref', 'Figure~' + B + 'ref')   # BMC 판의 'Fig. 2' 와 'Figure 2' 혼용을 통일
     out = wide_floats(section_refs(narrow_equations(out)))
     return out, s
 
