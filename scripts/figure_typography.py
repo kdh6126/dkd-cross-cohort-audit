@@ -41,6 +41,10 @@ TARGETS = {
                      cls=(r'\documentclass[11pt]{article}'
                           r'\usepackage[a4paper,margin=22mm]{geometry}'),
                      cwd='submission_bib', extra=['submission_bib/figures']),
+    # GigaScience 판: 저널 클래스(두 단), 그림은 figure* 에 0.85\textwidth
+    'giga': dict(tex='submission_giga/giga-manuscript.tex', dir='submission_giga',
+                 cls=r'\documentclass[a4paper,num-refs]{oup-contemporary}\journal{gigascience}',
+                 cwd='submission_giga', extra=['submission_giga/figures', 'submission']),
     # BMC 부록 5번(후보 30개 전체 그림)은 같은 article 조판에 25mm 여백이다
     'bmc-af5': dict(tex=None, dir='submission',
                     cls=(r'\documentclass[11pt]{article}'

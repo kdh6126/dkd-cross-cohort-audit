@@ -103,15 +103,8 @@ procurement is asymmetric in some cohorts and matched in others, and in colon, w
 matched in all. One held, one held in one tissue, and one failed, and the failures narrow both
 claims in ways the kidney data could not.
 
-Figure~\ref{fig:overview} sets out the study workflow: audit the benchmark input, stress-test conclusions against cohort composition and control definition, then diagnose and correct the confounder before reporting an auditable candidate-evidence ledger. The cohort audit, the residual overlap it could not remove, and the discovery/validation split are described in the section \textit{Cohort assembly and audit}.
+The study proceeds in four steps: audit the benchmark input, stress-test conclusions against cohort composition and control definition, then diagnose and correct the confounder before reporting an auditable candidate-evidence ledger. The cohort audit, the residual overlap it could not remove, and the discovery/validation split are described in the section \textit{Cohort assembly and audit}.
 
-\begin{figure*}[!t]
-% source: P0_overview
-\centering
-\includegraphics[width=\textwidth]{Fig1}
-\caption{\textbf{Study workflow and scope.} The central analysis is a cross-cohort transcriptomic benchmark. It begins with patient-overlap and control-procurement audits, then applies two sensitivity analyses: cohort composition and control definition. These expose a procurement-associated immediate-early programme, whose attribution remains an inference because handling times were not recorded. Correction is evaluated by its removal of procurement-driven features and preservation of external AUROC; candidates are reported as an auditable evidence ledger rather than a ranked list alone. The lower band distinguishes supporting layers, which corroborate or falsify candidate claims, from participant-matched integrative multi-omics, which this study does not claim.}\label{fig:overview}
-\smallskip\noindent{\footnotesize Alt text: Flow diagram of the study. Top row: audit the benchmark input for patient overlap and control procurement; then two sensitivity analyses, cohort composition and control definition; then diagnosis and correction of a procurement-associated immediate-early programme; then an auditable candidate-evidence ledger. A lower band separates supporting layers that corroborate or falsify candidates from participant-matched integrative multi-omics, which is marked as not claimed.}
-\end{figure*}
 
 
 Both assumptions fail in ways that are measurable. Reproducibility is maximised by whatever is
@@ -225,7 +218,7 @@ that fold unable to discriminate methods at all.
 \begin{figure*}[!t]
 % source: P2_null_control
 \centering
-\includegraphics[width=\textwidth]{Fig2}
+\includegraphics[width=0.9\textwidth]{Fig1}
 \caption{\textbf{Absolute AUROC is uninformative in this disease.} External AUROC for random
 50-gene signatures, for permuted-label controls, and for the selected signatures, by held-out
 cohort. Random signatures reach 0.68--0.88 depending on the fold; permuted labels sit at
@@ -275,7 +268,7 @@ Figure~\ref{fig:sensitivity}).
 \begin{figure*}[!t]
 % source: P1_cohort_sensitivity
 \centering
-\includegraphics[width=\textwidth]{Fig3}
+\includegraphics[width=0.9\textwidth]{Fig2}
 \caption{\textbf{The reproducibility verdict depends on which cohorts are benchmarked; the predictive advantage stays positive.} The benchmark was repeated over all 26 non-trivial subsets of the
 five discovery cohorts; the panels show the 16 of size three or more. Two-cohort subsets are
 excluded because they leave only two folds, so cross-fold agreement collapses towards zero and
@@ -415,7 +408,7 @@ $p < 0.001$.
 \begin{figure*}[!t]
 % source: P3_procurement
 \centering
-\includegraphics[width=\textwidth]{Fig4}
+\includegraphics[width=0.9\textwidth]{Fig3}
 \caption{\textbf{The most reproducible signal tracks tissue procurement, and it is
 organ-specific.} \textbf{a} The immediate-early gene module, $z$-scored within dataset, for every
 diagnosis group in nine kidney datasets, ordered by effect. Biopsy-procured groups sit below
@@ -460,7 +453,7 @@ contrasts are tabulated in Additional file~4).
 \begin{figure*}[!t]
 % source: P4_singlecell_control
 \centering
-\includegraphics[width=\textwidth]{Fig5}
+\includegraphics[width=0.9\textwidth]{Fig4}
 \caption{\textbf{A biopsy-versus-biopsy contrast removes the effect.} KPMP single-nucleus data
 reduced to donor-level pseudobulk. Comparing DKD with non-diabetic CKD, both procured by needle
 biopsy, gives $p = 0.21$; comparing DKD with non-biopsy reference tissue in the same resource
@@ -525,7 +518,7 @@ paired differences are tabulated in Additional file~1).
 \begin{figure*}[!t]
 % source: P5_block_size
 \centering
-\includegraphics[width=\textwidth]{Fig6}
+\includegraphics[width=0.9\textwidth]{Fig5}
 \caption{\textbf{Connectivity criteria are biased by module size, which is why one method
 escaped.} Simulation sweeping the ratio between the size of the disease block and that of the
 confounder block. \textbf{a} Percentage of the top 50 features that come from the confounder
@@ -552,7 +545,7 @@ surviving signal is DKD-specific, and what the correction costs in external AURO
 \begin{figure*}[!t]
 % source: P6_corrections
 \centering
-\includegraphics[width=\textwidth]{Fig7}
+\includegraphics[width=0.9\textwidth]{Fig6}
 \caption{\textbf{What each correction removes, and what it costs.} \textbf{a} Percentage of the
 top 50 selected features flagged as procurement-driven, lower being better. \textbf{b}
 Specificity pass-rate expressed as fold-enrichment over the 8.3\% background rate at which a
@@ -678,7 +671,7 @@ priority under a contrast with less procurement asymmetry, not evidence that it 
 
 \begin{figure*}[!t]
 % source: P9_reordering
-\includegraphics[width=\textwidth]{Fig8}
+\includegraphics[width=0.9\textwidth]{Fig7}
 \caption{\textbf{Changing the control-group definition rebuilds the top of the ranking.}
 \textbf{a} Each line is one gene, drawn between its rank by $|g|$ when diabetic nephropathy
 cases are compared with non-biopsy controls (left) and its rank when the same cases are
@@ -748,7 +741,7 @@ analyses that followed the verdicts were stated before they ran and are reported
 \begin{figure*}[!t]
 % source: P10_cross_tissue
 \centering
-\includegraphics[width=\textwidth]{Fig9}
+\includegraphics[width=0.9\textwidth]{Fig8}
 \caption{\textbf{Outside kidney, the module follows procurement where asymmetric and inflammation where matched.} \textbf{a}
 Hedges' $g$ of the handling score, case minus control, with 95\% bootstrap intervals, for every
 cohort whose procurement could be coded. Above the dashed line, biopsy cases against surgical or
@@ -866,18 +859,11 @@ DKD hub genes \cite{feng2021}. A germline test against a Korean DKD genome-wide 
 (2,532 cases) with SNP-count-matched permutation nulls was a clean null (1 of 30 at empirical
 $p < 0.05$, expected 1.5; Kolmogorov--Smirnov $p = 0.74$).
 
-Figure~\ref{fig:candidates} shows what stands behind each of the 30, and why none
+Additional file~5 shows what stands behind each of the 30, and why none
 of them clears the bar. Two axes decide a biomarker claim: the gene must be strong in the data
 and it must not already be in the DKD literature. Six candidates are strong but reported, six are
 unreported but weak, and the cell requiring both is empty.
 
-\begin{figure*}[!t]
-% source: P7_candidates
-\centering
-\includegraphics[width=\textwidth]{Fig10}
-\caption{\textbf{Candidate evidence ledger.} \textbf{a} The 12 tier-2 and tier-3 candidates, which have either stronger current evidence or no prior DKD literature. The columns separate selection and control tests, human-kidney context, and literature status. Orange indicates a criterion met, pale a criterion not met, and a dash an assessment unavailable for that candidate; missing single-nucleus or regional-protein measurements are not scored as failures. The regional-protein column is the KPMP glomerulus-versus-tubulointerstitium contrast, which locates a protein rather than relating it to disease; it is not the diabetic-versus-non-diabetic protein evidence of the section \textit{Protein-level corroboration in two patient-independent datasets}, reported separately. The 18 tier-4 candidates are omitted here for legibility; Additional file~5 extends the matrix to all 30. \textbf{b} All 30 candidates classified by current evidence strength and prior DKD literature. The stronger-evidence/no-prior-literature cell is empty under the criteria fixed before the evidence was read.}\label{fig:candidates}
-\smallskip\noindent{\footnotesize Alt text: Two panels. Left, a matrix of 12 candidate genes (rows) against evidence criteria (columns) grouped as selection and control tests, human-kidney context and literature status; orange cells are criteria met, pale cells criteria not met, dashes unavailable assessments. Right, all 30 candidates placed on a grid of current evidence strength against prior diabetic kidney disease literature, showing that no candidate is both strong and novel.}
-\end{figure*}
 
 
 We report no novel biomarker. The corrected pipeline declining to promote its own uncorrected
@@ -1517,7 +1503,7 @@ the effect vectors for each ERCB diagnosis under both control definitions, the t
 external validation datasets, the KPMP single-nucleus contrast summary, and the KPMP modality
 table by diagnosis.
 
-\textbf{Additional file 5 (PDF).} Candidate evidence over all 30 specificity-gated candidates: Figure~\ref{fig:candidates} extended to include the 18 tier-4 candidates omitted from the main text for legibility.
+\textbf{Additional file 5 (PDF).} Candidate evidence over all 30 specificity-gated candidates: for each candidate the selection and control tests, the human-kidney context, the literature status, and the classification by current evidence strength and prior DKD literature.
 
 \textbf{Additional file 6 (PDF).} The two proteomic cohorts used in the section \textit{Protein-level corroboration in two patient-independent datasets}:
 what each source publication and repository record states about case and control definition,

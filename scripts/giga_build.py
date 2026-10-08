@@ -88,6 +88,26 @@ SOURCE_CODE = [
 
 AI_SECTION_TITLE = 'Disclosure of use of AI-assisted tools including generative AI'
 
+# 빼는 그림과, 그 그림을 가리키던 문장의 대체문 (2026-10-08). 개요 도식은 글로, 후보 매트릭스는
+# 전체 30개를 담은 Additional file 5 로 돌린다. 수치는 바뀌지 않는다.
+DROP_FIGS = {
+    'fig:overview': [
+        ('Figure~' + B + 'ref{fig:overview} sets out the study workflow: audit the benchmark input,',
+         'The study proceeds in four steps: audit the benchmark input,'),
+    ],
+    'fig:candidates': [
+        ('Figure~' + B + 'ref{fig:candidates} shows what stands behind each of the 30, and why none',
+         'Additional file~5 shows what stands behind each of the 30, and why none'),
+        ('Candidate evidence over all 30 specificity-gated candidates: Figure~' + B + 'ref{fig:candidates} extended to include the 18 tier-4 candidates omitted from the main text for legibility.',
+         'Candidate evidence over all 30 specificity-gated candidates: for each candidate the selection and '
+         'control tests, the human-kidney context, the literature status, and the classification by current '
+         'evidence strength and prior DKD literature.'),
+    ],
+}
+# 두 단 조판의 전체 폭(488pt)에 BMC 폭(372pt)으로 그린 그림을 넣으면 1.31 배로 커진다. 0.9 폭이면 1.18 배,
+# 그림 최소 글자 6.0pt 가 7.1pt 로 저널 하한(7pt)을 넘는다 (0.85 는 6.7pt 로 미달).
+FIG_WIDTH = '0.9'
+
 # 저널 요구: 범례 바로 아래 'Alt text:'. 수치는 범례·본문에 있는 것만 쓴다 (빌드가 대조한다).
 ALT = {
     'fig:overview': (
@@ -208,10 +228,38 @@ def numbers_in(text):
     return set(re.findall(r'(?<![\w.])\d+(?:[.,]\d+)?(?![\w])', text))
 
 
+def drop_figures(body):
+    """DROP_FIGS 의 그림 환경을 지우고 참조 문장을 대체문으로; 남은 그림은 등장 순서로 Fig1.. 로 다시 이름 붙인다.
+    돌려주는 사전은 {새 이름: BMC 이름} 이다 (파일 복사용)."""
+    for lab, pairs in DROP_FIGS.items():
+        # 다른 그림 환경을 넘어가지 않도록 \end{figure} 를 건너뛰지 못하게 한다 (처음엔 2-10번 그림을 통째로 지웠다)
+        pat = re.compile(r'(?s)' + E + r'begin\{figure\}(?:(?!' + E + r'end\{figure\}).)*?' + E + r'label\{' + re.escape(lab) + r'\}' + NL + E + r'end\{figure\}' + NL + r'?')
+        if len(pat.findall(body)) != 1:
+            raise SystemExit('그림 %s 환경을 %d 번 찾음' % (lab, len(pat.findall(body))))
+        body = pat.sub('', body, count=1)
+        for old, new in pairs:
+            if body.count(old) != 1:
+                raise SystemExit('그림 %s 참조 문장을 못 찾음: %s' % (lab, old[:60]))
+            body = body.replace(old, new)
+        if re.search(E + r'ref\{' + re.escape(lab) + r'\}', body):
+            raise SystemExit('그림 %s 를 가리키는 참조가 남아 있음' % lab)
+    names = {}
+    def rename(m):
+        new = 'Fig%d' % (len(names) + 1)
+        names[new] = m.group(2)
+        return m.group(1) + new + '}'
+    body = re.sub(r'(' + E + r'includegraphics\[[^]]*\]\{)(Fig\d+)\}', rename, body)
+    body = body.replace(B + 'includegraphics[width=' + B + 'textwidth]{Fig',
+                        B + 'includegraphics[width=' + FIG_WIDTH + B + 'textwidth]{Fig')
+    return body, names
+
+
 def figure_text(body):
     """범례 아래 Alt text 삽입, 긴 제목 축약, 제목·범례 길이 검사 (15 / 300 단어)."""
     bad = []
     for lab, alt in ALT.items():
+        if lab in DROP_FIGS:
+            continue
         pat = B + 'label{' + lab + '}' + NL
         if body.count(pat) != 1:
             raise SystemExit('그림 라벨 %s 를 %d 번 찾음' % (lab, body.count(pat)))
@@ -282,7 +330,8 @@ def addfile_formats(text):
 
 def build_tex():
     s = open(BMC, encoding='utf-8').read()
-    body = figure_text(s[s.index(B + 'maketitle'):])
+    body, fig_names = drop_figures(s[s.index(B + 'maketitle'):])
+    body = figure_text(body)
 
     background = between(body, E + r'section\{Background\}', E + r'section\{Methods\}', 'Background')
     methods = between(body, E + r'section\{Methods\}', E + r'section\{Results\}', 'Methods')
@@ -397,7 +446,7 @@ def build_tex():
     out = out.replace(B + 'backmatter', '')
     out = out.replace('Fig.~' + B + 'ref', 'Figure~' + B + 'ref')   # BMC 판의 'Fig. 2' 와 'Figure 2' 혼용을 통일
     out = wide_floats(section_refs(narrow_equations(out)))
-    return out, s
+    return out, s, fig_names
 
 
 def narrow_equations(body):
@@ -441,7 +490,7 @@ def compile_tex():
 def main():
     os.makedirs(DST, exist_ok=True)
     os.makedirs(os.path.join(DST, 'figures'), exist_ok=True)
-    tex, bmc = build_tex()
+    tex, bmc, fig_names = build_tex()
     open(os.path.join(DST, NAME + '.tex'), 'w', encoding='utf-8').write(tex)
 
     # 초록 검사: 길이와 수치 출처
@@ -449,8 +498,8 @@ def main():
     nums = numbers_in(' '.join(ABSTRACT.values())) - numbers_in(bmc)
     log('  초록 %d 단어 (한도 250) %s; BMC 본문에 없는 수치: %s' % (n, 'OK' if n <= 250 else '*** 초과', sorted(nums) or '없음'))
     ok = n <= 250 and not nums
-    alt_nums = numbers_in(' '.join(ALT.values())) - numbers_in(bmc)
-    log('  Alt text %d개; BMC 본문에 없는 수치: %s' % (len(ALT), sorted(alt_nums) or '없음'))
+    alt_nums = numbers_in(' '.join(v for k, v in ALT.items() if k not in DROP_FIGS)) - numbers_in(bmc)
+    log('  Alt text %d개; BMC 본문에 없는 수치: %s' % (len(ALT) - len(DROP_FIGS), sorted(alt_nums) or '없음'))
     ok = ok and not alt_nums
     # 코드 요구사항 목록의 판 번호는 requirements.txt 와 같아야 한다
     req = open('requirements.txt', encoding='utf-8').read()
@@ -459,8 +508,11 @@ def main():
             log('  *** requirements.txt 와 다름: %s %s' % (pkg, ver))
             ok = False
 
-    for i in range(1, N_FIG + 1):
-        shutil.copy2(os.path.join(SRC, 'Fig%d.pdf' % i), os.path.join(DST, 'figures', 'Fig%d.pdf' % i))
+    for f in os.listdir(os.path.join(DST, 'figures')):
+        os.remove(os.path.join(DST, 'figures', f))
+    for new, old in fig_names.items():
+        shutil.copy2(os.path.join(SRC, old + '.pdf'), os.path.join(DST, 'figures', new + '.pdf'))
+    log('  그림 %d개 (BMC %s 제외), 폭 %s' % (len(fig_names), ', '.join(sorted(set('Fig%d' % i for i in range(1, N_FIG + 1)) - set(fig_names.values()))), FIG_WIDTH + B + 'textwidth'))
     shutil.copy2(os.path.join(SRC, 'dkd-references.bib'), os.path.join(DST, 'dkd-references.bib'))
     for f in TEMPLATE_FILES:
         shutil.copy2(os.path.join(TEMPLATE, f), os.path.join(DST, f))
