@@ -2,16 +2,19 @@
 # -*- coding: utf-8 -*-
 """GigaScience 판을 만든다 (OUP Transfer Desk, 2026-10-06, BiB 데스크 리젝 뒤).
 
-BMC 판(submission/dkd-manuscript.tex)이 감사를 거친 전체 본문이다. GigaScience 는 초기 투고 형식이
-자유롭지만 Research 논문의 절 순서를 정해 두었다:
+BMC 판(submission/dkd-manuscript.tex)이 감사를 거친 전체 본문이다. GigaScience Research 논문의 절 순서:
 
     Abstract(Background/Results/Conclusions, 250 단어) - Keywords - Background - Data Description -
     Analyses - Discussion - Potential Implications - Methods - Availability of Source Code and
     Requirements - Data Availability - Declarations - References - Additional Files
 
 BiB 판처럼 본문을 다시 쓰지 않는다. BMC 본문을 절 단위로 떼어 이 순서로 다시 붙이고, 초록만 250 단어로
-줄여 쓴다(새 수치 없음; 아래 검사가 BMC 본문에 없는 수치를 잡는다). 절 번호는 그대로 둔다(상호참조와
-부록이 번호를 쓴다). 더블 스페이스, 쪽 번호, 그림은 본문 자리에 넣고 파일로도 따로 둔다.
+줄여 쓴다(새 수치 없음; 아래 검사가 BMC 본문에 없는 수치를 잡는다).
+
+조판은 저널의 LaTeX 템플릿(oup-contemporary.cls, \\journal{gigascience}; scripts/templates/gigascience/)
+으로 한다 (2026-10-08, 사용자 요청). 그 클래스는 절 번호를 찍지 않으므로 Section~\\ref 는 절 제목으로
+바꾼다(BiB 판과 같은 방식); 두 단 조판이라 그림·표는 전부 figure*/table* 로 둔다. 참고문헌 양식은
+클래스가 정한다(vancouver-authoryear.bst, num-refs).
 
     python scripts/giga_build.py
 """
@@ -30,6 +33,8 @@ SRC = 'submission'
 BMC = os.path.join(SRC, 'dkd-manuscript.tex')
 DST = 'submission_giga'
 NAME = 'giga-manuscript'
+TEMPLATE = os.path.join('scripts', 'templates', 'gigascience')
+TEMPLATE_FILES = ['oup-contemporary.cls', 'vancouver-authoryear.bst', 'gigascience-logo.pdf', 'oup.pdf']
 B = chr(92)
 E = re.escape(B)
 NL = chr(10)
@@ -81,8 +86,6 @@ SOURCE_CODE = [
     ('Archived version', B + 'url{%s} (version %s)' % (cfg.REPOSITORY['doi'], cfg.PROJECT['version'])),
 ]
 
-# AI 사용: 본문 Methods 의 문단을 그대로 끝에 다시 두고, 저널 규정대로 도구를 참고문헌으로 인용한다.
-# 모델·사용 기간·사용자는 저자가 확인한다 (giga-extra.bib 의 대괄호 자리).
 AI_SECTION_TITLE = 'Disclosure of use of AI-assisted tools including generative AI'
 
 # 저널 요구: 범례 바로 아래 'Alt text:'. 수치는 범례·본문에 있는 것만 쓴다 (빌드가 대조한다).
@@ -121,9 +124,9 @@ ALT = {
     'fig:blocksize': (
         "Two line panels over the ratio of disease-block size to confounder-block size in a simulation. "
         "Left, the percentage of the top 50 features drawn from the confounder block for each criterion "
-        "as the ratio changes. Right, the difference between the "
-        "connectivity and stability criteria, crossing zero where the ratio equals one. A marker shows "
-        "the real-data regime, 19 immediate-early genes against 705 top-connectivity genes."),
+        "as the ratio changes. Right, the difference between the connectivity and stability criteria, "
+        "crossing zero where the ratio equals one. A marker shows the real-data regime, 19 "
+        "immediate-early genes against 705 top-connectivity genes."),
     'fig:corrections': (
         "Three panels of horizontal bars for six correction strategies. Left, the percentage of the top "
         "50 selected features flagged as procurement-driven: 27 percent with no correction or ComBat, "
@@ -161,7 +164,6 @@ TITLE_FIX = {
 }
 
 
-
 def log(*a):
     print(*a, file=sys.stderr, flush=True)
 
@@ -176,22 +178,24 @@ def between(s, start_pat, end_pat, name):
     return s[a.start():a.start() + b.start()]
 
 
-def author_block():
-    marks = {}
-    lines = []
-    names = []
+def front_matter():
+    """템플릿 매크로: \\author[affil\\authfn{n}]{}, \\affil[]{}, \\authnote{}, \\papercat{}."""
+    lines = [B + 'title{' + TITLE + '}', '']
+    corr = [a for a in cfg.AUTHORS if a.get('corresponding')]
     for a in cfg.AUTHORS:
-        star = B + 'textsuperscript{*}' if a.get('corresponding') else ''
-        names.append('%s %s%stextsuperscript{%d}%s' % (a['given'], a['family'], B, a['affiliation'], star))
-    lines.append(', '.join(names[:-1]) + ' and ' + names[-1] + B + B + '[6pt]')
+        mark = B + 'authfn{1}' if a.get('corresponding') else ''
+        lines.append(B + 'author[%d%s]{%s %s}' % (a['affiliation'], mark, a['given'], a['family']))
+    lines.append('')
     for num, af in sorted(cfg.AFFILIATIONS.items()):
-        lines.append('{' + B + 'small ' + B + 'textsuperscript{%d}%s, %s, %s, %s}' % (
-            num, af['division'], af['organisation'], af['city'], af['country']) + B + B)
-    corr = next(a for a in cfg.AUTHORS if a.get('corresponding'))
-    lines.append('{' + B + 'small ' + B + 'textsuperscript{*}Corresponding author: %s %s, ' % (corr['given'], corr['family'])
-                 + B + 'href{mailto:%s}{%s}}' % (corr['email'], corr['email']) + B + B + '[2pt]')
+        lines.append(B + 'affil[%d]{%s, %s, %s, %s}' % (num, af['division'], af['organisation'], af['city'], af['country']))
+    lines.append('')
+    lines.append(B + 'authnote{' + B + 'authfn{1}Corresponding author. E-mail: ' + '; '.join(a['email'] for a in corr) + '}')
     emails = '; '.join('%s %s, %s' % (a['given'], a['family'], a['email']) for a in cfg.AUTHORS if a.get('email'))
-    lines.append('{' + B + 'small Author e-mail addresses: ' + emails + '}')
+    lines.append(B + 'authnote{Author e-mail addresses: ' + emails + '.}')
+    lines.append('')
+    lines.append(B + 'papercat{Research}')
+    lines.append(B + 'runningauthor{%s et al.}' % cfg.AUTHORS[0]['family'])
+    lines.append(B + 'jvolume{00}' + B + 'jnumber{0}' + B + 'jyear{%s}' % cfg.PROJECT['year'])
     return NL.join(lines)
 
 
@@ -232,6 +236,48 @@ def figure_text(body):
     if bad:
         raise SystemExit('그림 제목/범례 길이 초과: ' + '; '.join(bad))
     return body
+
+
+def section_refs(body):
+    """클래스가 절 번호를 찍지 않으므로 Section~\\ref{} 를 절 제목으로 바꾼다 (BiB 판과 같은 방식)."""
+    titles = {}
+    for m in re.finditer(E + r'(?:sub)?section\*?\{([^}]*)\}' + E + r'label\{(sec:[^}]+)\}', body):
+        titles[m.group(2)] = ' '.join(m.group(1).split())
+    missing = sorted(set(re.findall(E + r'ref\{(sec:[^}]+)\}', body)) - set(titles))
+    if missing:
+        raise SystemExit('제목을 모르는 절 라벨: %s' % ', '.join(missing))
+    body = re.sub(r'Sections~' + E + r'ref\{(sec:[^}]+)\}', lambda m: 'the sections ' + B + 'textit{' + titles[m.group(1)] + '}', body)
+    body = re.sub(r'Section~' + E + r'ref\{(sec:[^}]+)\}', lambda m: 'the section ' + B + 'textit{' + titles[m.group(1)] + '}', body)
+    body = re.sub(r'(and|,)~' + E + r'ref\{(sec:[^}]+)\}', lambda m: m.group(1) + ' ' + B + 'textit{' + titles[m.group(2)] + '}', body)
+    body = re.sub(E + r'ref\{(sec:[^}]+)\}', lambda m: B + 'textit{' + titles[m.group(1)] + '}', body)
+    # 문장 첫머리의 the -> The
+    body = re.sub(r'(?m)(^|(?<=[.!?]\s)|(?<=[.!?]\s\s))the (section|sections) ' + E + 'textit',
+                  lambda m: m.group(1) + 'The ' + m.group(2) + ' ' + B + 'textit', body)
+    return body
+
+
+def wide_floats(body):
+    """두 단 조판: 그림·표는 전부 단 너비를 넘으므로 figure*/table* 로."""
+    # 치환 문자열을 그대로 주면 re 가 '\b' 를 백스페이스로 읽는다; 람다로 넘긴다
+    body = re.sub(E + r'begin\{figure\}\[[^]]*\]', lambda _: B + 'begin{figure*}[!t]', body)
+    body = body.replace(B + 'end{figure}', B + 'end{figure*}')
+    body = re.sub(E + r'begin\{table\}\[[^]]*\]', lambda _: B + 'begin{table*}[!t]', body)
+    body = body.replace(B + 'end{table}', B + 'end{table*}')
+    return body
+
+
+def addfile_formats(text):
+    """저널 요구: 파일 이름, 형식(확장자), 제목, 설명. 실제 파일의 확장자를 읽어 넣는다."""
+    def fmt(m):
+        n = int(m.group(1))
+        ext = [f for f in os.listdir(DST) if f.startswith('Additional_file_%d.' % n)]
+        if len(ext) != 1:
+            raise SystemExit('Additional file %d 의 파일을 못 찾음' % n)
+        return B + 'textbf{Additional file %d (%s).}' % (n, ext[0].rsplit('.', 1)[1].upper())
+    out, k = re.subn(E + r'textbf\{Additional file (\d+)\.\}', fmt, text)
+    if k != 7:
+        raise SystemExit('Additional file 항목 %d 개 (7 이어야 함)' % k)
+    return out
 
 
 def build_tex():
@@ -280,38 +326,37 @@ def build_tex():
     src_list = NL.join('  ' + B + 'item ' + B + 'textbf{%s:} %s' % kv for kv in SOURCE_CODE)
 
     pre = [
-        '%% GigaScience Research article. Generated by scripts/giga_build.py from',
+        '%% GigaScience Research article, OUP contemporary template (oup-contemporary.cls,',
+        '%% \\journal{gigascience}). Generated by scripts/giga_build.py from',
         '%% submission/dkd-manuscript.tex; edit that file and rebuild, do not edit this one.',
-        B + 'documentclass[11pt,a4paper]{article}',
         B + 'PassOptionsToPackage{hyphens}{url}',   # 저장소 주소가 하이픈에서 끊기게
-        B + 'usepackage[a4paper,margin=25mm]{geometry}',
-        B + 'usepackage[T1]{fontenc}', B + 'usepackage{lmodern}', B + 'usepackage{cmap}',
-        B + 'usepackage{graphicx,booktabs,array,multirow,amsmath,amssymb,amsfonts,textcomp,url,xcolor}',
-        B + 'usepackage{setspace}',
-        B + 'usepackage[numbers,square,sort&compress]{natbib}',
-        B + 'usepackage[hidelinks]{hyperref}',
+        B + 'documentclass[a4paper,num-refs]{oup-contemporary}',
+        B + 'journal{gigascience}',
+        B + 'usepackage{graphicx,amsmath,array,multirow}',
         B + 'graphicspath{{figures/}}',
         B + 'providecommand{' + B + 'bibcommenthead}{}',
         B + 'providecommand{' + B + 'botrule}{' + B + 'bottomrule}',
-        B + 'providecommand{' + B + 'bmhead}[1]{' + B + 'subsection*{#1}}',
+        B + 'providecommand{' + B + 'bmhead}[1]{' + B + 'subsection{#1}}',
         B + 'renewcommand{' + B + 'footnotetext}[1]{' + B + 'par' + B + 'smallskip{' + B + 'footnotesize #1}}',
-        B + 'setlength{' + B + 'parskip}{4pt}',
         B + 'emergencystretch=3em',
-        B + 'renewcommand{' + B + 'topfraction}{0.9}' + B + 'renewcommand{' + B + 'bottomfraction}{0.7}',
-        B + 'renewcommand{' + B + 'textfraction}{0.08}' + B + 'renewcommand{' + B + 'floatpagefraction}{0.75}',
-        B + 'raggedbottom',
+        '',
+        front_matter(),
+        '',
         B + 'begin{document}',
-        B + 'doublespacing',
-        B + 'begin{center}',
-        '{' + B + 'Large ' + B + 'bfseries ' + TITLE + '}' + B + B + '[10pt]',
-        author_block(),
-        B + 'end{center}',
-        B + 'bigskip',
-        B + 'section*{Abstract}',
+        B + 'begin{frontmatter}',
+        B + 'maketitle',
+        B + 'begin{abstract}',
     ]
     for k, v in ABSTRACT.items():
-        pre.append(B + 'textbf{%s:} %s' % (k, v) + NL)
-    pre.append(B + 'noindent' + B + 'textbf{Keywords:} ' + '; '.join(cfg.PROJECT['keywords']) + NL)
+        pre.append(B + 'textbf{%s:} %s' % (k, v) + B + 'par')
+    pre += [
+        B + 'end{abstract}',
+        B + 'begin{keywords}',
+        '; '.join(cfg.PROJECT['keywords']),
+        B + 'end{keywords}',
+        B + 'end{frontmatter}',
+        '',
+    ]
 
     parts = pre + [
         background,
@@ -321,38 +366,39 @@ def build_tex():
         discussion,
         conclusions,
         m_head, m_rest,
-        B + 'section*{Availability of source code and requirements}' + NL + B + 'begin{itemize}' + NL
+        B + 'section{Availability of source code and requirements}' + NL + B + 'begin{itemize}' + NL
         + src_list + NL + B + 'end{itemize}' + NL,
-        B + 'section*{Data availability}' + NL + NL
+        B + 'section{Data availability}' + NL + NL
         + 'The data sets supporting the results of this article are available in the Zenodo repository, '
         + B + 'url{%s}' % cfg.REPOSITORY['doi'] + ' ' + B + 'cite{kim2026zenodo}, with the primary public records listed below.'
         + avail_body,
-        abbrev.replace(B + 'section*{List of abbreviations}', B + 'section*{Declarations}' + NL + B + 'bmhead{List of abbreviations}'),
+        abbrev.replace(B + 'section*{List of abbreviations}', B + 'section{Declarations}' + NL + B + 'bmhead{List of abbreviations}'),
         decl.replace(B + 'section*{Declarations}' + NL, ''),
         B + 'bmhead{' + AI_SECTION_TITLE + '}' + NL + NL + ai_text
         + ' The tools are cited as ' + B + 'cite{claudecode2026,chatgpt2026}.' + NL,
-        B + 'section*{Additional files}' + NL + NL + addfile_formats(addfiles.replace(B + 'bmhead{Supplementary information}' + NL, '')),
-        B + 'bibliographystyle{bib-vancouver}',
+        B + 'section{Additional files}' + NL + NL + addfile_formats(addfiles.replace(B + 'bmhead{Supplementary information}' + NL, '')),
         B + 'bibliography{dkd-references,giga-extra}',
         B + 'end{document}',
     ]
     out = NL.join(parts)
     out = out.replace(B + 'backmatter', '')
+    out = wide_floats(section_refs(narrow_equations(out)))
     return out, s
 
 
-def addfile_formats(text):
-    """저널 요구: 파일 이름, 형식(확장자), 제목, 설명. 실제 파일의 확장자를 읽어 넣는다."""
-    def fmt(m):
-        n = int(m.group(1))
-        ext = [f for f in os.listdir(DST) if f.startswith('Additional_file_%d.' % n)]
-        if len(ext) != 1:
-            raise SystemExit('Additional file %d 의 파일을 못 찾음' % n)
-        return B + 'textbf{Additional file %d (%s).}' % (n, ext[0].rsplit('.', 1)[1].upper())
-    out, k = re.subn(E + r'textbf\{Additional file (\d+)\.\}', fmt, text)
-    if k != 7:
-        raise SystemExit('Additional file 항목 %d 개 (7 이어야 함)' % k)
-    return out
+def narrow_equations(body):
+    """한 줄에 두 식을 \qquad 로 나란히 둔 수식은 한 단 폭을 넘는다. gathered 로 두 줄에 둔다."""
+    def fix(m):
+        inner = m.group(1)
+        if B + 'qquad' not in inner:
+            return m.group(0)
+        lab = re.search(E + r'label\{[^}]+\}', inner)
+        content = inner.replace(lab.group(0), '') if lab else inner
+        # 치환 문자열의 '\\' 는 re 가 '\' 하나로 줄인다; 람다로 넘긴다
+        content = re.sub(r',\s*' + E + r'qquad\s*', lambda _: ', ' + B + B + NL, content).strip()
+        return (B + 'begin{equation}' + B + 'begin{gathered}' + NL + content + NL + B + 'end{gathered}'
+                + (lab.group(0) if lab else '') + B + 'end{equation}')
+    return re.sub(r'(?s)' + E + r'begin\{equation\}(.*?)' + E + r'end\{equation\}', fix, body)
 
 
 def compile_tex():
@@ -368,6 +414,9 @@ def compile_tex():
     undef = sorted(set(re.findall(r"(?:Reference|Citation) `([^']+)' on page", logtxt)))
     errs = re.findall(r'(?m)^! (.*)$', logtxt)
     over = [float(x) for x in re.findall(r'Overfull ' + E + r'hbox \(([\d.]+)pt too wide', logtxt)]
+    # 템플릿이 초록 위아래에 그리는 장식선은 \hsize+4pc+6.64pt 로 일부러 54.64pt 넘친다
+    over = [o for o in over if abs(o - 54.64) > 0.05]
+    shutil.copy2(os.path.join(DST, NAME + '.log'), os.path.join('reports', 'giga-manuscript.log'))
     log('  컴파일: 오류 %d, 미해결 참조 %d %s, 넘침 >10pt %d (최대 %.1fpt)' % (
         len(errs), len(undef), undef[:6], sum(1 for o in over if o > 10), max(over or [0])))
     if errs:
@@ -387,7 +436,7 @@ def main():
     log('  초록 %d 단어 (한도 250) %s; BMC 본문에 없는 수치: %s' % (n, 'OK' if n <= 250 else '*** 초과', sorted(nums) or '없음'))
     ok = n <= 250 and not nums
     alt_nums = numbers_in(' '.join(ALT.values())) - numbers_in(bmc)
-    log('  Alt text 10개; BMC 본문에 없는 수치: %s' % (sorted(alt_nums) or '없음'))
+    log('  Alt text %d개; BMC 본문에 없는 수치: %s' % (len(ALT), sorted(alt_nums) or '없음'))
     ok = ok and not alt_nums
     # 코드 요구사항 목록의 판 번호는 requirements.txt 와 같아야 한다
     req = open('requirements.txt', encoding='utf-8').read()
@@ -399,7 +448,11 @@ def main():
     for i in range(1, N_FIG + 1):
         shutil.copy2(os.path.join(SRC, 'Fig%d.pdf' % i), os.path.join(DST, 'figures', 'Fig%d.pdf' % i))
     shutil.copy2(os.path.join(SRC, 'dkd-references.bib'), os.path.join(DST, 'dkd-references.bib'))
-    shutil.copy2(os.path.join('submission_bib', 'bib-vancouver.bst'), os.path.join(DST, 'bib-vancouver.bst'))
+    for f in TEMPLATE_FILES:
+        shutil.copy2(os.path.join(TEMPLATE, f), os.path.join(DST, f))
+    stale = os.path.join(DST, 'bib-vancouver.bst')   # 이전 article 판이 쓰던 양식
+    if os.path.exists(stale):
+        os.remove(stale)
     ok = compile_tex() and ok
 
     r = subprocess.run([sys.executable, 'scripts/additional_files.py', '--target', 'giga'],

@@ -31,7 +31,8 @@ TARGETS = {
         dir='submission_giga',
         outbound=['giga-manuscript.tex', 'giga-extra.bib', 'COVER_LETTER_Giga.md'],
         expected=(r'^(giga-manuscript' + chr(92) + r'.(tex|pdf|bbl)|dkd-references' + chr(92) + r'.bib|'
-                  r'giga-extra' + chr(92) + r'.bib|bib-vancouver' + chr(92) + r'.bst|COVER_LETTER_Giga' + chr(92) + r'.md|'
+                  r'giga-extra' + chr(92) + r'.bib|COVER_LETTER_Giga' + chr(92) + r'.md|'
+                  r'oup-contemporary' + chr(92) + r'.cls|vancouver-authoryear' + chr(92) + r'.bst|gigascience-logo' + chr(92) + r'.pdf|oup' + chr(92) + r'.pdf|'
                   r'figures|Additional_file_' + chr(92) + r'd+' + chr(92) + r'.(pdf|xlsx))$'),
     ),
     'bib': dict(

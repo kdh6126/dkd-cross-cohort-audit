@@ -135,7 +135,7 @@ def where(label, tex=True):
             txt = 'Supplementary %s~S%d' % (word, _float_order(BIB_SUPPLEMENT, env).index(label) + 1)
         else:
             raise SystemExit('부록이 가리키는 %s 를 %s 에서 찾지 못했습니다' % (label, ms))
-    elif TARGET in ('bmc', 'giga'):
+    elif TARGET == 'bmc':   # GigaScience 템플릿은 절 번호를 찍지 않으므로 giga 는 BiB 처럼 제목으로
         txt = 'Section~%s of the main text' % section_number(label)
     else:
         src = open(ms, encoding='utf-8').read()
