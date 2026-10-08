@@ -298,8 +298,9 @@ def section_refs(body):
     body = re.sub(r'Section~' + E + r'ref\{(sec:[^}]+)\}', lambda m: 'the section ' + B + 'textit{' + titles[m.group(1)] + '}', body)
     body = re.sub(r'(and|,)~' + E + r'ref\{(sec:[^}]+)\}', lambda m: m.group(1) + ' ' + B + 'textit{' + titles[m.group(2)] + '}', body)
     body = re.sub(E + r'ref\{(sec:[^}]+)\}', lambda m: B + 'textit{' + titles[m.group(1)] + '}', body)
-    # 문장 첫머리의 the -> The
-    body = re.sub(r'(?m)(^|(?<=[.!?]\s)|(?<=[.!?]\s\s))the (section|sections) ' + E + 'textit',
+    # 문장 첫머리의 the -> The. 줄 첫머리는 안 된다: 원문이 줄바꿈으로 감겨 있어 "of\nSection" 이
+    # 문장 중간에서도 줄 첫머리에 온다 (그렇게 해서 "of The section" 이 일곱 군데 생겼다).
+    body = re.sub(r'(\A|(?<=\n\n)|(?<=[.!?:]\s)|(?<=[.!?:]\n))the (section|sections) ' + E + 'textit',
                   lambda m: m.group(1) + 'The ' + m.group(2) + ' ' + B + 'textit', body)
     return body
 
@@ -446,6 +447,12 @@ def build_tex():
     out = out.replace(B + 'backmatter', '')
     out = out.replace('Fig.~' + B + 'ref', 'Figure~' + B + 'ref')   # BMC 판의 'Fig. 2' 와 'Figure 2' 혼용을 통일
     out = wide_floats(section_refs(narrow_equations(out)))
+    # 점검표(Table 6)의 셋째 열은 BMC 판에서 "Section 3.2" 가 들어가던 28mm 폭이다. 절 제목이 들어가면
+    # 네 줄로 감기므로, 두 단 전체 폭(172mm)에 맞춰 넓힌다.
+    spec_old = B + 'begin{tabular}{@{}p{46mm}p{46mm}p{28mm}@{}}'
+    if out.count(spec_old) != 1:
+        raise SystemExit('점검표의 열 규격을 %d 번 찾음' % out.count(spec_old))
+    out = out.replace(spec_old, B + 'begin{tabular}{@{}p{50mm}p{56mm}p{60mm}@{}}')
     return out, s, fig_names
 
 

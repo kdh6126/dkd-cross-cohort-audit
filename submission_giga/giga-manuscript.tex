@@ -369,7 +369,7 @@ sensitivity cannot be interpreted as a design finding. Table~\ref{tab:checklist}
 \caption{What a cross-cohort feature-selection benchmark on public cohorts should report, and where each item is applied here}\label{tab:checklist}
 \footnotesize
 \setlength{\tabcolsep}{4pt}
-\begin{tabular}{@{}p{46mm}p{46mm}p{28mm}@{}}
+\begin{tabular}{@{}p{50mm}p{56mm}p{60mm}@{}}
 \toprule
 Report & Because & Here \\
 \midrule
@@ -697,7 +697,7 @@ Every diagnosis loses most of its signal, and diabetic nephropathy is unremarkab
 it ranks fourth of seven, and the median across the other six is 36\% against its 37\%. In IgA
 nephropathy the 3,800 genes reaching $|g| \ge 0.5$ against non-biopsy controls fall to none.
 The problem therefore belongs to the design rather than to the disease, and the argument of
-The sections \textit{The most reproducible signal tracks tissue procurement, not disease} and \textit{Which corrections work} applies to kidney biopsy studies
+the sections \textit{The most reproducible signal tracks tissue procurement, not disease} and \textit{Which corrections work} applies to kidney biopsy studies
 generally. One qualification carries over from the section \textit{The most reproducible signal tracks tissue procurement, not disease}: the matched
 comparator here pools the remaining diagnoses, and pooling can itself produce a result, so these
 figures should be read as the pooled-comparator case.
@@ -797,7 +797,7 @@ size does not account for the difference. With each colon cohort subsampled to t
 control counts of a kidney cohort, concordance stayed between 0.60 and 0.65 in five replicates,
 and the agreement difference crossed zero in two of them, by at most 0.013, against a stated
 threshold of three (Figure~\ref{fig:xtissue}c). The sign changes of
-The section \textit{Reproducibility verdicts depend on cohort composition, not on method} were therefore associated with cohorts that disagree about the
+the section \textit{Reproducibility verdicts depend on cohort composition, not on method} were therefore associated with cohorts that disagree about the
 disease signal rather than with cohort size, which three tissues cannot raise to a necessary
 condition.
 Concordance can be computed before any selection method is run, and a low value warns that a
@@ -1047,7 +1047,7 @@ to cohort composition remains to be evaluated.
 The confounder-matched evidence rests on ERCB and KPMP; no other public DKD resource provides
 non-diabetic kidney disease biopsies procured identically to the cases, so the specificity
 argument rests on two resources. A partial external check is available and reported in
-The section \textit{The control-group problem is not specific to diabetic kidney disease}. The gate's background pass rate (8.3\%) and its permutation-based false-discovery estimate (16.7\%) are different quantities, as the footnote to Table~\ref{tab:corrections} sets out.
+the section \textit{The control-group problem is not specific to diabetic kidney disease}. The gate's background pass rate (8.3\%) and its permutation-based false-discovery estimate (16.7\%) are different quantities, as the footnote to Table~\ref{tab:corrections} sets out.
 
 GSE104948 contributed both to discovery and to the matched-control specificity gate, so that gate is not a fully independent validation. Re-deriving the candidates with GSE104948 removed from discovery changes which genes are returned: 17 of the 30 survive, among them \textit{FMOD}, \textit{LUM}, \textit{MMP7} and \textit{MOXD1}. It does not change the conclusions drawn from the gate. The rate at which ranked genes clear the gate is no lower once the gate no longer shares a cohort with discovery (pipeline stage \texttt{sens\_no\_ercb\_check}), and the external replication holds (candidate median $|g_{\text{DKD}}| - |g_{\text{NSC}}|$ of $+1.00$ against $+1.02$, Mann--Whitney $p = 4.8 \times 10^{-16}$ against $5.1 \times 10^{-18}$). The overlap is real and partial; it is not what produces the specificity result.
 
@@ -1206,7 +1206,7 @@ J = \binom{M}{2}^{-1} \sum_{m < m'}
 \frac{|G_m^{(K)} \cap G_{m'}^{(K)}|}{|G_m^{(K)} \cup G_{m'}^{(K)}|} .
 \label{eq:jaccard}
 \end{equation}
-The two axes are reported separately throughout and are not interchangeable: the section \textit{Reproducibility verdicts depend on cohort composition, not on method} shows they disagree.
+The two axes are reported separately throughout and are not interchangeable: The section \textit{Reproducibility verdicts depend on cohort composition, not on method} shows they disagree.
 
 \textbf{Effect size.} Every effect size reported here is Hedges' $g$ \cite{hedges1981}, the standardised
 mean difference with the small-sample correction. For gene $j$ with case and control
@@ -1374,19 +1374,19 @@ Expression Omnibus (\url{https://www.ncbi.nlm.nih.gov/geo/}) under accessions GS
 GSE30529, GSE96804, GSE104948, GSE104954, GSE142025, GSE294519, GSE162830, GSE175759,
 GSE142153, GSE1009, GSE111154, GSE20602 and GSE5406. The three series excluded by the cohort
 audit for patient-level reuse are GSE30122, GSE47183 and GSE99340. The liver cohorts of
-The section \textit{Both mechanisms outside kidney: predictions fixed before the data} are GSE89632, GSE48452, GSE162694, GSE126848, GSE83452, GSE66676,
+the section \textit{Both mechanisms outside kidney: predictions fixed before the data} are GSE89632, GSE48452, GSE162694, GSE126848, GSE83452, GSE66676,
 GSE63067 and GSE24807, and the colon cohorts GSE75214, GSE87466, GSE179285, GSE11223, GSE47908,
 GSE38713, GSE53306, GSE16879, GSE48958 and GSE13367; GSE59071, GSE17470 and GSE61260 were
 excluded by the reuse audit or for an unmappable matrix. Single-nucleus data are
 available from the Kidney Precision Medicine Project Atlas (\url{https://atlas.kpmp.org/}).
 
 \textbf{Other public resources.} The two protein datasets used for the orthogonal corroboration in
-The section \textit{Protein-level corroboration in two patient-independent datasets} are the SOMAscan aptamer panel of kidney cortex biopsies
+the section \textit{Protein-level corroboration in two patient-independent datasets} are the SOMAscan aptamer panel of kidney cortex biopsies
 (Mendeley Data 83k89shdx5, \url{https://doi.org/10.17632/83k89shdx5.1}) and the FFPE cortex
 LC-MS/MS dataset (PRIDE \url{https://www.ebi.ac.uk/pride/}, accession PXD041884). The
 germline test uses the diabetic-kidney-disease genome-wide association study GCST90179152
 from the GWAS Catalog (\url{https://www.ebi.ac.uk/gwas/}). The plasma metabolome used in
-The sections \textit{Absolute AUROC is uninformative in this disease} and \textit{The control-group problem is not specific to diabetic kidney disease} is study ST003255 of the Metabolomics
+the sections \textit{Absolute AUROC is uninformative in this disease} and \textit{The control-group problem is not specific to diabetic kidney disease} is study ST003255 of the Metabolomics
 Workbench (\url{https://www.metabolomicsworkbench.org/}).
 
 %% BEGIN AVAILABILITY
@@ -1489,7 +1489,7 @@ responsibility for the final content. The tools are cited as \cite{claudecode202
 \textbf{Additional file 1 (PDF).} Comparator implementation and its validation: what the WGCNA hub
 ranking used here does and does not share with the canonical pipeline, the scale-free topology
 fit across soft powers, the 32-variant grid testing whether
-The section \textit{Why one method escaped the confounder, and why that is not robustness} depends on those choices, the provenance of the remaining
+the section \textit{Why one method escaped the confounder, and why that is not robustness} depends on those choices, the provenance of the remaining
 selectors, and the block-size simulation run with the RBS implementation.
 
 \textbf{Additional file 2 (PDF).} Cohort audit report, including the patient-identifier evidence for
