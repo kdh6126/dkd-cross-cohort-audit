@@ -476,7 +476,7 @@ def source_zip(fig_names):
     import zipfile
     out = os.path.join(DST, NAME + '-source.zip')
     names = [NAME + '.tex', NAME + '.bbl', 'dkd-references.bib', 'giga-extra.bib'] + TEMPLATE_FILES
-    names += ['figures/' + new + '.pdf' for new in sorted(fig_names, key=lambda n: int(n[3:]))]
+    names += ['figures/' + new + '.png' for new in sorted(fig_names, key=lambda n: int(n[3:]))]
     with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
         for n in names:
             path = os.path.join(DST, n)
@@ -532,9 +532,19 @@ def main():
 
     for f in os.listdir(os.path.join(DST, 'figures')):
         os.remove(os.path.join(DST, 'figures', f))
+    # 그림은 PNG(600 dpi)로 올린다 (사용자 요청 2026-10-08; BiB 때 ScholarOne 이 PDF/EPS 변환에 실패했다).
+    # tex 는 확장자 없이 부르므로 PNG 만 있으면 그것을 쓴다. 글자 크기 검사는 벡터 원본을 봐야 하므로
+    # 새 이름 -> 원본 PDF 대응을 figures/sources.json 에 남긴다.
+    import json
     for new, old in fig_names.items():
-        shutil.copy2(os.path.join(SRC, old + '.pdf'), os.path.join(DST, 'figures', new + '.pdf'))
-    log('  그림 %d개 (BMC %s 제외), 폭 %s' % (len(fig_names), ', '.join(sorted(set('Fig%d' % i for i in range(1, N_FIG + 1)) - set(fig_names.values()))), FIG_WIDTH + B + 'textwidth'))
+        src_pdf = os.path.join(SRC, old + '.pdf')
+        r = subprocess.run(['pdftoppm', '-r', '600', '-png', '-singlefile', src_pdf,
+                            os.path.join(DST, 'figures', new)], capture_output=True)
+        if r.returncode != 0 or not os.path.exists(os.path.join(DST, 'figures', new + '.png')):
+            raise SystemExit('PNG 변환 실패: %s' % src_pdf)
+    json.dump({new: os.path.join(SRC, old + '.pdf').replace(os.sep, '/') for new, old in fig_names.items()},
+              open(os.path.join(DST, 'figures', 'sources.json'), 'w', encoding='utf-8'), indent=1)
+    log('  그림 %d개 PNG 600 dpi (BMC %s 제외), 폭 %s' % (len(fig_names), ', '.join(sorted(set('Fig%d' % i for i in range(1, N_FIG + 1)) - set(fig_names.values()))), FIG_WIDTH + B + 'textwidth'))
     shutil.copy2(os.path.join(SRC, 'dkd-references.bib'), os.path.join(DST, 'dkd-references.bib'))
     for f in TEMPLATE_FILES:
         shutil.copy2(os.path.join(TEMPLATE, f), os.path.join(DST, f))

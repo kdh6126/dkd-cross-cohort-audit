@@ -1,0 +1,500 @@
+\begin{thebibliography}{57}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{}
+
+\bibitem[{Haynes et~al.(2017)Haynes, WA and Vallania, F and Liu, C and Bongen,
+  E and Tomczak, A and Andres-Terrè, M and Lofgren, S and Tam, A and
+  Deisseroth, CA and Li, MD and Sweeney, TE and Khatri, P}]{haynes2017}
+Haynes W, Vallania F, Liu C, Bongen E, Tomczak A, Andres-Terrè M, et~al.
+\newblock {Empowering multi-cohort gene expression analysis to increase
+  reproducibility}.
+\newblock Pac Symp Biocomput 2017;22:144--153.
+\newblock PMID: 27896970.
+
+\bibitem[{Meinshausen and B{\"u}hlmann(2010)Meinshausen, N and B{\"u}hlmann,
+  P}]{meinshausen2010}
+Meinshausen N, B{\"u}hlmann P.
+\newblock Stability selection.
+\newblock Journal of the Royal Statistical Society: Series B
+  2010;72(4):417--473.
+
+\bibitem[{Simon et~al.(2003)Simon, R and Radmacher, MD and Dobbin, K and
+  McShane, LM}]{simon2003}
+Simon R, Radmacher M, Dobbin K, McShane L.
+\newblock {Pitfalls in the use of DNA microarray data for diagnostic and
+  prognostic classification}.
+\newblock J Natl Cancer Inst 2003;95(1):14--8.
+\newblock PMID: 12509396.
+
+\bibitem[{Whalen et~al.(2022)Whalen, S and Schreiber, J and Noble, WS and
+  Pollard, KS}]{whalen2022}
+Whalen S, Schreiber J, Noble W, Pollard K.
+\newblock {Navigating the pitfalls of applying machine learning in genomics}.
+\newblock Nat Rev Genet 2022;23(3):169--181.
+\newblock PMID: 34837041.
+
+\bibitem[{Diaz-Uriarte et~al.(2022)Diaz-Uriarte, R and Gómez de Lope, E and
+  Giugno, R and Fröhlich, H and Nazarov, PV and Nepomuceno-Chamorro, IA and
+  Rauschenberger, A and Glaab, E}]{diazuriarte2022}
+Diaz-Uriarte R, Gómez~de Lope E, Giugno R, Fröhlich H, Nazarov P,
+  Nepomuceno-Chamorro I, et~al.
+\newblock {Ten quick tips for biomarker discovery and validation analyses using
+  machine learning}.
+\newblock PLoS Comput Biol 2022;18(8):e1010357.
+\newblock PMID: 35951526.
+
+\bibitem[{Leek et~al.(2010)Leek, JT and Scharpf, RB and Bravo, HC and Simcha, D
+  and Langmead, B and Johnson, WE and Geman, D and Baggerly, K and Irizarry,
+  RA}]{leek2010}
+Leek J, Scharpf R, Bravo H, Simcha D, Langmead B, Johnson W, et~al.
+\newblock {Tackling the widespread and critical impact of batch effects in
+  high-throughput data}.
+\newblock Nat Rev Genet 2010;11(10):733--9.
+\newblock PMID: 20838408.
+
+\bibitem[{Boulesteix et~al.(2013)Boulesteix, AL and Lauer, S and Eugster,
+  MJ}]{boulesteix2013}
+Boulesteix A, Lauer S, Eugster M.
+\newblock {A plea for neutral comparison studies in computational sciences}.
+\newblock PLoS One 2013;8(4):e61562.
+\newblock PMID: 23637855.
+
+\bibitem[{Jelizarow et~al.(2010)Jelizarow, M and Guillemot, V and Tenenhaus, A
+  and Strimmer, K and Boulesteix, AL}]{jelizarow2010}
+Jelizarow M, Guillemot V, Tenenhaus A, Strimmer K, Boulesteix A.
+\newblock {Over-optimism in bioinformatics: an illustration}.
+\newblock Bioinformatics 2010;26(16):1990--8.
+\newblock PMID: 20581402.
+
+\bibitem[{Ullmann et~al.(2023)Ullmann, T and Peschel, S and Finger, P and
+  Müller, CL and Boulesteix, AL}]{ullmann2023}
+Ullmann T, Peschel S, Finger P, Müller C, Boulesteix A.
+\newblock {Over-optimism in unsupervised microbiome analysis: Insights from
+  network learning and clustering}.
+\newblock PLoS Comput Biol 2023;19(1):e1010820.
+\newblock PMID: 36608142.
+
+\bibitem[{Weber et~al.(2019)Weber, LM and Saelens, W and Cannoodt, R and
+  Soneson, C and Hapfelmeier, A and Gardner, PP and Boulesteix, AL and Saeys, Y
+  and Robinson, MD}]{weber2019}
+Weber L, Saelens W, Cannoodt R, Soneson C, Hapfelmeier A, Gardner P, et~al.
+\newblock {Essential guidelines for computational method benchmarking}.
+\newblock Genome Biol 2019;20(1):125.
+\newblock PMID: 31221194.
+
+\bibitem[{Mangul et~al.(2019)Mangul, S and Martin, LS and Hill, BL and Lam, AK
+  and Distler, MG and Zelikovsky, A and Eskin, E and Flint, J}]{mangul2019}
+Mangul S, Martin L, Hill B, Lam A, Distler M, Zelikovsky A, et~al.
+\newblock {Systematic benchmarking of omics computational tools}.
+\newblock Nat Commun 2019;10(1):1393.
+\newblock PMID: 30918265.
+
+\bibitem[{Norel et~al.(2011)Norel, R and Rice, JJ and Stolovitzky,
+  G}]{norel2011}
+Norel R, Rice J, Stolovitzky G.
+\newblock {The self-assessment trap: can we all be better than average?}
+\newblock Mol Syst Biol 2011;7:537.
+\newblock PMID: 21988833.
+
+\bibitem[{Dehghani et~al.(2021)Dehghani, M and Tay, Y and Gritsenko, AA and
+  Zhao, Z and Houlsby, N and Diaz, F and Metzler, D and Vinyals,
+  O}]{dehghani2021}
+Dehghani M, Tay Y, Gritsenko A, Zhao Z, Houlsby N, Diaz F, et~al.
+\newblock The benchmark lottery.
+\newblock arXiv 2021;ArXiv:2107.07002.
+
+\bibitem[{Haury et~al.(2011)Haury, AC and Gestraud, P and Vert, JP}]{haury2011}
+Haury A, Gestraud P, Vert J.
+\newblock {The influence of feature selection methods on accuracy, stability
+  and interpretability of molecular signatures}.
+\newblock PLoS One 2011;6(12):e28210.
+\newblock PMID: 22205940.
+
+\bibitem[{Ebiele et~al.(2026)Ebiele, M and Bendechache, M and Brennan,
+  R}]{ebiele2026}
+Ebiele M, Bendechache M, Brennan R.
+\newblock {Bias in filter feature selection evaluation: a meta-analysis of
+  datasets, baselines, and experimental design choices}.
+\newblock arXiv 2026;ArXiv:2606.07068.
+
+\bibitem[{Angelakis(2026)Angelakis, A}]{angelakis2026}
+Angelakis A.
+\newblock {REDE: a quantitative framework for differential-expression
+  reproducibility and diagnostic transfer across nine cohorts and three
+  cancers}.
+\newblock arXiv 2026;ArXiv:2608.02796.
+
+\bibitem[{Woroniecka et~al.(2011)Woroniecka, KI and Park, AS and Mohtat, D and
+  Thomas, DB and Pullman, JM and Susztak, K}]{woroniecka2011}
+Woroniecka K, Park A, Mohtat D, Thomas D, Pullman J, Susztak K.
+\newblock {Transcriptome analysis of human diabetic kidney disease}.
+\newblock Diabetes 2011;60(9):2354--69.
+\newblock PMID: 21752957.
+
+\bibitem[{Pan et~al.(2018)Pan, Y and Jiang, S and Hou, Q and Qiu, D and Shi, J
+  and Wang, L and Chen, Z and Zhang, M and Duan, A and Qin, W and Zen, K and
+  Liu, Z}]{pan2018}
+Pan Y, Jiang S, Hou Q, Qiu D, Shi J, Wang L, et~al.
+\newblock {Dissection of Glomerular Transcriptional Profile in Patients With
+  Diabetic Nephropathy: SRGAP2a Protects Podocyte Structure and Function}.
+\newblock Diabetes 2018;67(4):717--730.
+\newblock PMID: 29242313.
+
+\bibitem[{Grayson et~al.(2018)Grayson, PC and Eddy, S and Taroni, JN and
+  Lightfoot, YL and Mariani, L and Parikh, H and Lindenmeyer, MT and Ju, W and
+  Greene, CS and Godfrey, B and Cohen, CD and Krischer, J and Kretzler, M and
+  Merkel, PA}]{grayson2018}
+Grayson P, Eddy S, Taroni J, Lightfoot Y, Mariani L, Parikh H, et~al.
+\newblock {Metabolic pathways and immunometabolism in rare kidney diseases}.
+\newblock Ann Rheum Dis 2018;77(8):1226--1233.
+\newblock PMID: 29724730.
+
+\bibitem[{Fan et~al.(2019)Fan, Y and Yi, Z and D'Agati, VD and Sun, Z and
+  Zhong, F and Zhang, W and Wen, J and Zhou, T and Li, Z and He, L and Zhang, Q
+  and Lee, K and He, JC and Wang, N}]{fan2019}
+Fan Y, Yi Z, D'Agati V, Sun Z, Zhong F, Zhang W, et~al.
+\newblock {Comparison of Kidney Transcriptomic Profiles of Early and Advanced
+  Diabetic Nephropathy Reveals Potential New Mechanisms for Disease
+  Progression}.
+\newblock Diabetes 2019;68(12):2301--2314.
+\newblock PMID: 31578193.
+
+\bibitem[{Jin et~al.(2026)Jin, Q and Li, L and Qu, P and Ma, F and Li, P and
+  Qiao, Y and Zhang, Y and Ran, S and Li, X and Liu, T and Yang, L and Li, Q
+  and Mao, H and Wang, Y and Ren, F and Zhan, Y and Peng, L}]{jin2026}
+Jin Q, Li L, Qu P, Ma F, Li P, Qiao Y, et~al.
+\newblock {Mitigation of renal tubular injury by SIRT6 may improve individual
+  outcomes in diabetic kidney disease-potential mechanisms involving epigenetic
+  repression of inflammatory responses}.
+\newblock J Adv Res 2026;85:281--294.
+\newblock PMID: 41076119.
+
+\bibitem[{Park et~al.(2022)Park, S and Lee, H and Lee, J and Lee, S and Cho, S
+  and Huh, H and Kim, JY and Park, M and Lee, S and Kim, Y and Choi, M and Joo,
+  KW and Kim, YS and Yang, SH and Kim, DK}]{park2022}
+Park S, Lee H, Lee J, Lee S, Cho S, Huh H, et~al.
+\newblock {RNA-seq profiling of tubulointerstitial tissue reveals a potential
+  therapeutic role of dual anti-phosphatase 1 in glomerulonephritis}.
+\newblock J Cell Mol Med 2022;26(12):3364--3377.
+\newblock PMID: 35488446.
+
+\bibitem[{Eadon et~al.(2021)Eadon, MT and Lampe, S and Baig, MM and Collins, KS
+  and Melo Ferreira, R and Mang, H and Cheng, YH and Barwinska, D and
+  El-Achkar, TM and Schwantes-An, TH and Winfree, S and Temm, CJ and Ferkowicz,
+  MJ and Dunn, KW and Kelly, KJ and Sutton, TA and Moe, SM and Moorthi, RN and
+  Phillips, CL and Dagher, PC}]{eadon2021}
+Eadon M, Lampe S, Baig M, Collins K, Melo~Ferreira R, Mang H, et~al.
+\newblock {Clinical, histopathologic and molecular features of idiopathic and
+  diabetic nodular mesangial sclerosis in humans}.
+\newblock Nephrol Dial Transplant 2021;37(1):72--84.
+\newblock PMID: 33537765.
+
+\bibitem[{Sur et~al.(2021)Sur, S and Nguyen, M and Boada, P and Sigdel, TK and
+  Sollinger, H and Sarwal, MM}]{sur2021}
+Sur S, Nguyen M, Boada P, Sigdel T, Sollinger H, Sarwal M.
+\newblock {FcER1: A Novel Molecule Implicated in the Progression of Human
+  Diabetic Kidney Disease}.
+\newblock Front Immunol 2021;12:769972.
+\newblock PMID: 34925339.
+
+\bibitem[{Baelde et~al.(2004)Baelde, HJ and Eikmans, M and Doran, PP and
+  Lappin, DW and de Heer, E and Bruijn, JA}]{baelde2004}
+Baelde H, Eikmans M, Doran P, Lappin D, de~Heer E, Bruijn J.
+\newblock {Gene expression profiling in glomeruli from human kidneys with
+  diabetic nephropathy}.
+\newblock Am J Kidney Dis 2004;43(4):636--50.
+\newblock PMID: 15042541.
+
+\bibitem[{Sircar et~al.(2018)Sircar, M and Rosales, IA and Selig, MK and Xu, D
+  and Zsengeller, ZK and Stillman, IE and Libermann, TA and Karumanchi, SA and
+  Thadhani, RI}]{sircar2018}
+Sircar M, Rosales I, Selig M, Xu D, Zsengeller Z, Stillman I, et~al.
+\newblock {Complement 7 Is Up-Regulated in Human Early Diabetic Kidney
+  Disease}.
+\newblock Am J Pathol 2018;188(10):2147--2154.
+\newblock PMID: 30253844.
+
+\bibitem[{Neusser et~al.(2010)Neusser, MA and Lindenmeyer, MT and Moll, AG and
+  Segerer, S and Edenhofer, I and Sen, K and Stiehl, DP and Kretzler, M and
+  Gröne, HJ and Schlöndorff, D and Cohen, CD}]{neusser2010}
+Neusser M, Lindenmeyer M, Moll A, Segerer S, Edenhofer I, Sen K, et~al.
+\newblock {Human nephrosclerosis triggers a hypoxia-related glomerulopathy}.
+\newblock Am J Pathol 2010;176(2):594--607.
+\newblock PMID: 20019191.
+
+\bibitem[{El-Achkar et~al.(2021)El-Achkar, TM and Eadon, MT and Menon, R and
+  Lake, BB and Sigdel, TK and Alexandrov, T and Parikh, S and Zhang, G and
+  Dobi, D and Dunn, KW and Otto, EA and Anderton, CR and Carson, JM and Luo, J
+  and Park, C and Hamidi, H and Zhou, J and Hoover, P and Schroeder, A and
+  Joanes, M and Azeloglu, EU and Sealfon, R and Winfree, S and Steck, B and He,
+  Y and D'Agati, V and Iyengar, R and Troyanskaya, OG and Barisoni, L and Gaut,
+  J and Zhang, K and Laszik, Z and Rovin, BH and Dagher, PC and Sharma, K and
+  Sarwal, MM and Hodgin, JB and Alpers, CE and Kretzler, M and Jain,
+  S}]{elachkar2021}
+El-Achkar T, Eadon M, Menon R, Lake B, Sigdel T, Alexandrov T, et~al.
+\newblock {A multimodal and integrated approach to interrogate human kidney
+  biopsies with rigor and reproducibility: guidelines from the Kidney Precision
+  Medicine Project}.
+\newblock Physiol Genomics 2021;53(1):1--11.
+\newblock PMID: 33197228.
+
+\bibitem[{Lake et~al.(2023)Lake, BB and Menon, R and Winfree, S and Hu, Q and
+  Melo Ferreira, R and Kalhor, K and Barwinska, D and Otto, EA and Ferkowicz, M
+  and Diep, D and Plongthongkum, N and Knoten, A and Urata, S and Mariani, LH
+  and Naik, AS and Eddy, S and Zhang, B and Wu, Y and Salamon, D and Williams,
+  JC and Wang, X and Balderrama, KS and Hoover, PJ and Murray, E and Marshall,
+  JL and Noel, T and Vijayan, A and Hartman, A and Chen, F and Waikar, SS and
+  Rosas, SE and Wilson, FP and Palevsky, PM and Kiryluk, K and Sedor, JR and
+  Toto, RD and Parikh, CR and Kim, EH and Satija, R and Greka, A and Macosko,
+  EZ and Kharchenko, PV and Gaut, JP and Hodgin, JB and and Knight, R and
+  Lecker, SH and Stillman, I and Amodu, AA and Ilori, T and Maikhor, S and
+  Schmidt, I and McMahon, GM and Weins, A and Hacohen, N and Bush, L and
+  Gonzalez-Vicente, A and Taliercio, J and O’toole, J and Poggio, E and
+  Cooperman, L and Jolly, S and Herlitz, L and Nguyen, J and Palmer, E and
+  Sendrey, D and Spates-Harden, K and Appelbaum, P and Barasch, JM and Bomback,
+  AS and D’Agati, VD and Mehl, K and Canetta, PA and Shang, N and Balderes, O
+  and Kudose, S and Barisoni, L and Alexandrov, T and Cheng, Y and Dunn, KW and
+  Kelly, KJ and Sutton, TA and Wen, Y and Corona-Villalobos, CP and Menez, S
+  and Rosenberg, A and Atta, M and Johansen, C and Sun, J and Roy, N and
+  Williams, M and Azeloglu, EU and He, C and Iyengar, R and Hansen, J and
+  Xiong, Y and Rovin, B and Parikh, S and Madhavan, SM and Anderton, CR and
+  Pasa-Tolic, L and Velickovic, D and Troyanskaya, O and Sealfon, R and Tuttle,
+  KR and Laszik, ZG and Nolan, G and Sarwal, M and Anjani, K and Sigdel, T and
+  Ascani, H and Balis, UGJ and Lienczewski, C and Steck, B and He, Y and
+  Schaub, J and Blanc, VM and Murugan, R and Randhawa, P and Rosengart, M and
+  Tublin, M and Vita, T and Kellum, JA and Hall, DE and Elder, MM and Winters,
+  J and Gilliam, M and Alpers, CE and Blank, KN and Carson, J and De Boer, IH
+  and Dighe, AL and Himmelfarb, J and Mooney, SD and Shankland, S and Williams,
+  K and Park, C and Dowd, F and McClelland, RL and Daniel, S and Hoofnagle, AN
+  and Wilcox, A and Bansal, S and Sharma, K and Venkatachalam, M and Zhang, G
+  and Pamreddy, A and Kakade, VR and Moledina, D and Shaw, MM and Ugwuowo, U
+  and Arora, T and Ardayfio, J and Bebiak, J and Brown, K and Campbell, CE and
+  Saul, J and Shpigel, A and Stutzke, C and Koewler, R and Campbell, T and
+  Hayashi, L and Jefferson, N and Pinkeney, R and Roberts, GV and Eadon, MT and
+  Dagher, PC and El-Achkar, TM and Zhang, K and Kretzler, M and Jain,
+  S}]{lake2023}
+Lake B, Menon R, Winfree S, Hu Q, Melo~Ferreira R, Kalhor K, et~al.
+\newblock {An atlas of healthy and injured cell states and niches in the human
+  kidney}.
+\newblock Nature 2023;619(7970):585--594.
+
+\bibitem[{Hannenhalli et~al.(2006)Hannenhalli, S and Putt, ME and Gilmore, JM
+  and Wang, J and Parmacek, MS and Epstein, JA and Morrisey, EE and Margulies,
+  KB and Cappola, TP}]{hannenhalli2006}
+Hannenhalli S, Putt M, Gilmore J, Wang J, Parmacek M, Epstein J, et~al.
+\newblock {Transcriptional genomics associates FOX transcription factors with
+  human heart failure}.
+\newblock Circulation 2006;114(12):1269--76.
+\newblock PMID: 16952980.
+
+\bibitem[{Ma et~al.(2012)Ma, Y and Dai, H and Kong, X}]{ma2012}
+Ma Y, Dai H, Kong X.
+\newblock {Impact of warm ischemia on gene expression analysis in surgically
+  removed biosamples}.
+\newblock Anal Biochem 2012;423(2):229--35.
+\newblock PMID: 22343191.
+
+\bibitem[{Ferreira et~al.(2018)Ferreira, PG and Mu{\~n}oz-Aguirre, M and
+  Reverter, F and S{\'a} Godinho, CP and Sousa, A and Amadoz, A and Sodaei, R
+  and Hidalgo, MR and Pervouchine, D and Carbonell-Caballero, J and Nurtdinov,
+  R and Breschi, A and Amador, R and Oliveira, P and Cu{\c}uk{\'a}, C and
+  Aguet, F and Vieira, ML and Dopazo, J and Guigó, R}]{ferreira2018}
+Ferreira P, Mu{\~n}oz-Aguirre M, Reverter F, S{\'a}~Godinho C, Sousa A, Amadoz
+  A, et~al.
+\newblock {The effects of death and post-mortem cold ischemia on human tissue
+  transcriptomes}.
+\newblock Nat Commun 2018;9:490.
+
+\bibitem[{Menon et~al.(2026)Menon, R and Kimmel, PL and Otto, EA and
+  Subramanian, L and O'Connor, CL and Godfrey, B and Smith, C and Alakwaa, F
+  and Berthier, CC and Sarwal, MM and Woodle, ES and Pyle, L and Choi, YJ and
+  Ladd, P and Sedor, JR and Rosas, SE and Waikar, SS and Naik, AS and Melo
+  Ferreira, R and Eadon, MT and Bitzer, M and Bjornstad, P and Hodgin, JB and
+  Kretzler, M}]{menon2026}
+Menon R, Kimmel P, Otto E, Subramanian L, O'Connor C, Godfrey B, et~al.
+\newblock {Not all reference samples are equal in single-cell transcriptomics
+  of human kidney tissue}.
+\newblock JCI Insight 2026;11(14):e204385.
+
+\bibitem[{Feng et~al.(2021)Feng, S and Gao, Y and Yin, D and Lv, L and Wen, Y
+  and Li, Z and Wang, B and Wu, M and Liu, B}]{feng2021}
+Feng S, Gao Y, Yin D, Lv L, Wen Y, Li Z, et~al.
+\newblock {Identification of Lumican and Fibromodulin as Hub Genes Associated
+  with Accumulation of Extracellular Matrix in Diabetic Nephropathy}.
+\newblock Kidney Blood Press Res 2021;46(3):275--285.
+\newblock PMID: 33887734.
+
+\bibitem[{Hirohama et~al.(2023)Hirohama, D and Abedini, A and Moon, S and
+  Surapaneni, A and Dillon, ST and Vassalotti, A and Liu, H and Doke, T and
+  Martinez, V and Md Dom, Z and Karihaloo, A and Palmer, MB and Coresh, J and
+  Grams, ME and Susztak, K}]{hirohama2023}
+Hirohama D, Abedini A, Moon S, Surapaneni A, Dillon S, Vassalotti A, et~al.
+\newblock {Unbiased human kidney tissue proteomics identifies matrix
+  metalloproteinase 7 as a kidney disease biomarker}.
+\newblock J Am Soc Nephrol 2023;34(7):1279--1291.
+\newblock PMID: 37022120.
+
+\bibitem[{Schwab et~al.(2024)Schwab, SK and Harris, PS and Michel, C and
+  McGinnis, CD and Nahomi, RB and Assiri, MA and Reisdorph, R and Henriksen, K
+  and Rosenberg, AZ and Levi, M and Fritz, KS}]{schwab2024}
+Schwab S, Harris P, Michel C, McGinnis C, Nahomi R, Assiri M, et~al.
+\newblock {Quantifying protein acetylation in diabetic nephropathy from
+  formalin-fixed paraffin-embedded tissue}.
+\newblock Proteomics Clin Appl 2024;18(6):e202400018.
+\newblock PMID: 38923810.
+
+\bibitem[{Mantel and Haenszel(1959)Mantel, N and Haenszel, W}]{mantel1959}
+Mantel N, Haenszel W.
+\newblock {Statistical Aspects of the Analysis of Data From Retrospective
+  Studies of Disease}.
+\newblock JNCI: Journal of the National Cancer Institute 1959;22(4):719--748.
+
+\bibitem[{Benjamini and Hochberg(1995)Benjamini, Y and Hochberg,
+  Y}]{benjamini1995}
+Benjamini Y, Hochberg Y.
+\newblock {Controlling the False Discovery Rate: A Practical and Powerful
+  Approach to Multiple Testing}.
+\newblock Journal of the Royal Statistical Society Series B: Statistical
+  Methodology 1995;57(1):289--300.
+
+\bibitem[{Betsou et~al.(2010)Betsou, F and Lehmann, S and Ashton, G and Barnes,
+  M and Benson, EE and Coppola, D and DeSouza, Y and Eliason, J and Glazer, B
+  and Guadagni, F and Harding, K and Horsfall, DJ and Kleeberger, C and Nanni,
+  U and Prasad, A and Shea, K and Skubitz, A and Somiari, S and Gunter,
+  E}]{betsou2010}
+Betsou F, Lehmann S, Ashton G, Barnes M, Benson E, Coppola D, et~al.
+\newblock {Standard preanalytical coding for biospecimens: defining the sample
+  PREanalytical code}.
+\newblock Cancer Epidemiol Biomarkers Prev 2010;19(4):1004--11.
+\newblock PMID: 20332280.
+
+\bibitem[{Lehmann et~al.(2012)Lehmann, S and Guadagni, F and Moore, H and
+  Ashton, G and Barnes, M and Benson, E and Clements, J and Koppandi, I and
+  Coppola, D and Demiroglu, SY and DeSouza, Y and De Wilde, A and Duker, J and
+  Eliason, J and Glazer, B and Harding, K and Jeon, JP and Kessler, J and
+  Kokkat, T and Nanni, U and Shea, K and Skubitz, A and Somiari, S and Tybring,
+  G and Gunter, E and Betsou, F}]{lehmann2012}
+Lehmann S, Guadagni F, Moore H, Ashton G, Barnes M, Benson E, et~al.
+\newblock {Standard preanalytical coding for biospecimens: review and
+  implementation of the Sample PREanalytical Code (SPREC)}.
+\newblock Biopreserv Biobank 2012;10(4):366--74.
+\newblock PMID: 24849886.
+
+\bibitem[{Moore et~al.(2011)Moore, HM and Kelly, AB and Jewell, SD and McShane,
+  LM and Clark, DP and Greenspan, R and Hayes, DF and Hainaut, P and Kim, P and
+  Mansfield, E and Potapova, O and Riegman, P and Rubinstein, Y and Seijo, E
+  and Somiari, S and Watson, P and Weier, HU and Zhu, C and Vaught,
+  J}]{moore2011}
+Moore H, Kelly A, Jewell S, McShane L, Clark D, Greenspan R, et~al.
+\newblock {Biospecimen reporting for improved study quality (BRISQ)}.
+\newblock J Proteome Res 2011;10(8):3429--38.
+\newblock PMID: 21574648.
+
+\bibitem[{Whitlock(2005)Whitlock, MC}]{whitlock2005}
+Whitlock M.
+\newblock {Combining probability from independent tests: the weighted Z
+  ‐method is superior to Fisher's approach}.
+\newblock Journal of Evolutionary Biology 2005;18(5):1368--1373.
+
+\bibitem[{Langfelder and Horvath(2008)Langfelder, P and Horvath,
+  S}]{langfelder2008}
+Langfelder P, Horvath S.
+\newblock {WGCNA: an R package for weighted correlation network analysis}.
+\newblock BMC Bioinformatics 2008;9:559.
+\newblock PMID: 19114008.
+
+\bibitem[{Tibshirani(1996)Tibshirani, R}]{tibshirani1996}
+Tibshirani R.
+\newblock {Regression Shrinkage and Selection Via the Lasso}.
+\newblock Journal of the Royal Statistical Society Series B: Statistical
+  Methodology 1996;58(1):267--288.
+
+\bibitem[{Zou and Hastie(2005)Zou, H and Hastie, T}]{zou2005}
+Zou H, Hastie T.
+\newblock {Regularization and Variable Selection Via the Elastic Net}.
+\newblock Journal of the Royal Statistical Society Series B: Statistical
+  Methodology 2005;67(2):301--320.
+
+\bibitem[{Peng et~al.(2005)Hanchuan Peng and Fuhui Long and Ding, C}]{peng2005}
+Peng H, Long F, Ding C.
+\newblock {Feature selection based on mutual information criteria of
+  max-dependency, max-relevance, and min-redundancy}.
+\newblock IEEE Transactions on Pattern Analysis and Machine Intelligence
+  2005;27(8):1226--1238.
+
+\bibitem[{Kononenko(1994)Kononenko, I}]{kononenko1994}
+Kononenko I.
+\newblock {Estimating attributes: Analysis and extensions of RELIEF}.
+\newblock In: Lecture Notes in Computer Science Springer; 1994. p. 171--182.
+
+\bibitem[{Breiman(2001)Breiman, L}]{breiman2001}
+Breiman L.
+\newblock {Random Forests}.
+\newblock Machine Learning 2001;45(1):5--32.
+
+\bibitem[{Kursa and Rudnicki(2010)Kursa, MB and Rudnicki, WR}]{kursa2010}
+Kursa M, Rudnicki W.
+\newblock {Feature Selection with the Boruta Package}.
+\newblock Journal of Statistical Software 2010;36(11).
+
+\bibitem[{Hedges(1981)Hedges, LV}]{hedges1981}
+Hedges L.
+\newblock {Distribution Theory for Glass's Estimator of Effect size and Related
+  Estimators}.
+\newblock Journal of Educational Statistics 1981;6(2):107--128.
+
+\bibitem[{Venet et~al.(2011)Venet, D and Dumont, JE and Detours, V}]{venet2011}
+Venet D, Dumont J, Detours V.
+\newblock {Most random gene expression signatures are significantly associated
+  with breast cancer outcome}.
+\newblock PLoS Comput Biol 2011;7(10):e1002240.
+\newblock PMID: 22028643.
+
+\bibitem[{Risso et~al.(2014)Risso, D and Ngai, J and Speed, TP and Dudoit,
+  S}]{risso2014}
+Risso D, Ngai J, Speed T, Dudoit S.
+\newblock {Normalization of RNA-seq data using factor analysis of control genes
+  or samples}.
+\newblock Nat Biotechnol 2014;32(9):896--902.
+\newblock PMID: 25150836.
+
+\bibitem[{Leek and Storey(2007)Leek, JT and Storey, JD}]{leek2007}
+Leek J, Storey J.
+\newblock {Capturing heterogeneity in gene expression studies by surrogate
+  variable analysis}.
+\newblock PLoS Genet 2007;3(9):1724--35.
+\newblock PMID: 17907809.
+
+\bibitem[{Johnson et~al.(2007)Johnson, WE and Li, C and Rabinovic,
+  A}]{johnson2007}
+Johnson W, Li C, Rabinovic A.
+\newblock {Adjusting batch effects in microarray expression data using
+  empirical Bayes methods}.
+\newblock Biostatistics 2007;8(1):118--27.
+\newblock PMID: 16632515.
+
+\bibitem[{Kim et~al.(2026)Kim, Dohun and Bae, Minho and Park, Jinho and Lee,
+  Hayoung and Lim, Hyeokjin and Lee, Seonghee}]{kim2026zenodo}
+Kim D, Bae M, Park J, Lee H, Lim H, Lee S, {Auditing cross-cohort
+  feature-selection benchmarks: code, harmonised cohorts and audit database}.
+\newblock Zenodo; 2026.
+\newblock Version 1.0.0.
+\newblock \url{https://doi.org/10.5281/zenodo.23051697}.
+
+\bibitem[{{Anthropic}(2026)}]{claudecode2026}
+{Anthropic}, {Claude Code (Claude models served during 2026, latest Claude
+  Fable 5.1, claude-fable-5-1) [Large language model agent]}; 2026.
+\newblock Responses to queries made by Dohun Kim, January to October 2026, for
+  code development and refactoring, proposals for control analyses, language
+  editing of author-written text and figure-drawing code.
+\newblock \url{https://claude.com/claude-code}.
+
+\bibitem[{{OpenAI}(2026)}]{chatgpt2026}
+{OpenAI}, {ChatGPT (web interface, models as deployed during 2026) [Large
+  language model]}; 2026.
+\newblock Responses to queries made by Dohun Kim, January to October 2026, for
+  language editing of author-written text and proposals for control analyses.
+\newblock \url{https://chatgpt.com}.
+
+\end{thebibliography}

@@ -125,6 +125,11 @@ def main():
                      for d in [cfg['dir']] + list(cfg.get('extra', []))]
             cands += [os.path.join('results/figures', src + '.pdf')
                       for new, src in FIGS + SUPP_FIGS if new == stem]
+            # GigaScience 판은 그림을 PNG 로 두고 새 번호 -> 벡터 원본 대응을 json 에 남긴다
+            sj = os.path.join(cfg['dir'], 'figures', 'sources.json')
+            if os.path.exists(sj):
+                import json
+                cands += [json.load(open(sj, encoding='utf-8')).get(stem, '')]
             p = next((c for c in cands if os.path.exists(c)), None)
             if p is None:
                 log('  %-22s 파일 없음' % fig)
