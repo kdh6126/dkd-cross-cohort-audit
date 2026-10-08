@@ -477,12 +477,21 @@ def source_zip(fig_names):
     out = os.path.join(DST, NAME + '-source.zip')
     names = [NAME + '.tex', NAME + '.bbl', 'dkd-references.bib', 'giga-extra.bib'] + TEMPLATE_FILES
     names += ['figures/' + new + '.png' for new in sorted(fig_names, key=lambda n: int(n[3:]))]
+    # 저널 시스템(Editorial Manager)은 하위 폴더가 있는 묶음을 거부한다 (2026-10-08). 그림을 루트에
+    # 평평하게 넣고, 묶음 안의 tex 만 그림 경로를 루트로 돌린다. 폴더의 tex 와의 차이는 그 한 줄뿐이다.
     with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
         for n in names:
             path = os.path.join(DST, n)
             if not os.path.exists(path):
                 raise SystemExit('소스 묶음에 넣을 파일이 없습니다: %s' % path)
-            z.write(path, n)
+            if n == NAME + '.tex':
+                tex = open(path, encoding='utf-8').read()
+                gp = B + 'graphicspath{{figures/}}'
+                if tex.count(gp) != 1:
+                    raise SystemExit('graphicspath 줄을 못 찾음')
+                z.writestr(n, tex.replace(gp, B + 'graphicspath{{./}}'))
+            else:
+                z.write(path, os.path.basename(n))
     return out, len(names)
 
 
