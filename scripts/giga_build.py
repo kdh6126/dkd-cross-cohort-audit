@@ -471,6 +471,21 @@ def narrow_equations(body):
     return re.sub(r'(?s)' + E + r'begin\{equation\}(.*?)' + E + r'end\{equation\}', fix, body)
 
 
+def source_zip(fig_names):
+    """저널에 올릴 LaTeX 소스 묶음: 컴파일에 필요한 것만 (tex, bbl, bib 둘, 템플릿 네 파일, 그림)."""
+    import zipfile
+    out = os.path.join(DST, NAME + '-source.zip')
+    names = [NAME + '.tex', NAME + '.bbl', 'dkd-references.bib', 'giga-extra.bib'] + TEMPLATE_FILES
+    names += ['figures/' + new + '.pdf' for new in sorted(fig_names, key=lambda n: int(n[3:]))]
+    with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
+        for n in names:
+            path = os.path.join(DST, n)
+            if not os.path.exists(path):
+                raise SystemExit('소스 묶음에 넣을 파일이 없습니다: %s' % path)
+            z.write(path, n)
+    return out, len(names)
+
+
 def compile_tex():
     env = dict(os.environ, PYTHONIOENCODING='utf-8')
     ok = True
@@ -540,6 +555,8 @@ def main():
     for f in os.listdir(DST):
         if f.endswith(('.aux', '.blg', '.out', '.log')):
             os.remove(os.path.join(DST, f))
+    zp, nz = source_zip(fig_names)
+    log('  LaTeX 소스 묶음 %s (%d 파일)' % (zp, nz))
     pages = re.search(r'Pages:\s+(\d+)', subprocess.run(['pdfinfo', os.path.join(DST, NAME + '.pdf')],
                                                       capture_output=True, text=True).stdout or '')
     log('  %s/%s.pdf %s쪽' % (DST, NAME, pages.group(1) if pages else '?'))

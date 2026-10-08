@@ -616,7 +616,8 @@ SUBMIT_FILES = ['submission/dkd-manuscript.pdf', 'submission/dkd-manuscript.tex'
                 'submission_bib/bib-manuscript-source.zip',
                 'submission_bib/oup-authoring-template.cls',
                 'submission_giga/giga-manuscript.pdf', 'submission_giga/giga-manuscript.tex',
-                'submission_giga/giga-extra.bib', 'submission_giga/COVER_LETTER_Giga.md']
+                'submission_giga/giga-extra.bib', 'submission_giga/COVER_LETTER_Giga.md',
+                'submission_giga/giga-manuscript-source.zip']
 
 
 def submit_check():
