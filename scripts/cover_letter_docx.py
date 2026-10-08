@@ -23,9 +23,12 @@ os.chdir(ROOT)
 sys.path.insert(0, ROOT)
 import submission_config as cfg  # noqa: E402
 
-MD = 'submission_bib/COVER_LETTER_BiB.md'
-DOCX = 'submission_bib/CoverLetter.docx'
-JOURNAL = 'Briefings in Bioinformatics'
+# --target 로 고른다. GigaScience 판(2026-10-08)은 같은 서식 파일을 submission_giga/ 에 두고 채운다.
+TARGETS = {
+    'bib': ('submission_bib/COVER_LETTER_BiB.md', 'submission_bib/CoverLetter.docx', 'Briefings in Bioinformatics'),
+    'giga': ('submission_giga/COVER_LETTER_Giga.md', 'submission_giga/CoverLetter.docx', 'GigaScience'),
+}
+MD, DOCX, JOURNAL = TARGETS['bib']
 # Contact details the markdown letter does not carry. The phone and fax are the corresponding
 # author's office numbers as given on the author's previous cover letter.
 PHONE = '+82-31-739-7273'
@@ -105,7 +108,10 @@ def clone_after(p, text):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--check', action='store_true')
+    ap.add_argument('--target', choices=sorted(TARGETS), default='bib')
     a = ap.parse_args()
+    global MD, DOCX, JOURNAL
+    MD, DOCX, JOURNAL = TARGETS[a.target]
 
     greeting, body, closing, sig = split_letter(md_paragraphs())
     title = title_from(body)
