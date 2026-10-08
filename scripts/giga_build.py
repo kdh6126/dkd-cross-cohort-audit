@@ -85,6 +85,82 @@ SOURCE_CODE = [
 # 모델·사용 기간·사용자는 저자가 확인한다 (giga-extra.bib 의 대괄호 자리).
 AI_SECTION_TITLE = 'Disclosure of use of AI-assisted tools including generative AI'
 
+# 저널 요구: 범례 바로 아래 'Alt text:'. 수치는 범례·본문에 있는 것만 쓴다 (빌드가 대조한다).
+ALT = {
+    'fig:overview': (
+        "Flow diagram of the study. Top row: audit the benchmark input for patient overlap and control "
+        "procurement; then two sensitivity analyses, cohort composition and control definition; then "
+        "diagnosis and correction of a procurement-associated immediate-early programme; then an "
+        "auditable candidate-evidence ledger. A lower band separates supporting layers that corroborate "
+        "or falsify candidates from participant-matched integrative multi-omics, which is marked as not "
+        "claimed."),
+    'fig:null': (
+        "Dot plot of external AUROC by held-out cohort for three groups: random 50-gene signatures, "
+        "permuted-label controls and the selected signatures. Random signatures form a band from about "
+        "0.68 to 0.88 that differs by fold; permuted labels sit near 0.50; the selected signatures are "
+        "shown against that band for each fold."),
+    'fig:sensitivity': (
+        "Three panels. Left, stacked bars by benchmark size (three, four, five cohorts) of the "
+        "percentage of subsets in which each selection method wins on cross-fold reproducibility. "
+        "Middle, one point per subset of stability selection minus the connectivity comparator in "
+        "cross-fold agreement, spanning minus 0.106 to plus 0.170 with points on both sides of zero at "
+        "every size except five. Right, the mean external AUROC difference with its range, positive at "
+        "every size."),
+    'fig:procurement': (
+        "Two panels. Left, a dumbbell chart of nine kidney datasets in which biopsy-procured groups "
+        "(orange) sit below nephrectomy- or donor-procured groups (blue) on the immediate-early module "
+        "score in eight of nine; GSE162830 shows no gap. Right, horizontal bars of Hedges g for four "
+        "contrasts: in KPMP, diabetic kidney disease against non-biopsy reference tissue minus 0.84 and "
+        "against other biopsies plus 0.08; in heart failure, disease against donor minus 0.23 and "
+        "ischaemic against idiopathic plus 0.33."),
+    'fig:singlecell': (
+        "Box plots of the immediate-early module score in KPMP single-nucleus pseudobulk by donor. "
+        "Diabetic kidney disease against non-diabetic chronic kidney disease, both needle biopsies, "
+        "shows overlapping distributions (p equals 0.21); diabetic kidney disease against non-biopsy "
+        "reference tissue shows a clear separation."),
+    'fig:blocksize': (
+        "Two line panels over the ratio of disease-block size to confounder-block size in a simulation. "
+        "Left, the percentage of the top 50 features drawn from the confounder block for each criterion "
+        "as the ratio changes. Right, the difference between the "
+        "connectivity and stability criteria, crossing zero where the ratio equals one. A marker shows "
+        "the real-data regime, 19 immediate-early genes against 705 top-connectivity genes."),
+    'fig:corrections': (
+        "Three panels of horizontal bars for six correction strategies. Left, the percentage of the top "
+        "50 selected features flagged as procurement-driven: 27 percent with no correction or ComBat, "
+        "5 to 6 percent with handling-score residualisation or surrogate-variable analysis. Middle, "
+        "specificity pass rate as fold enrichment over the 8.3 percent background. Right, external "
+        "AUROC, 0.926 for no correction and residualisation and 0.915 for surrogate-variable analysis."),
+    'fig:reordering': (
+        "Two panels. Left, a slope chart of 46 genes drawn between their rank against non-biopsy "
+        "controls and their rank against other-diagnosis biopsies in diabetic nephropathy, on a "
+        "logarithmic rank axis; blue lines rise under the matched control and orange lines fall, 23 "
+        "each. Right, horizontal bars of the number of genes shared by the two top-50 lists for seven "
+        "ERCB biopsy diagnoses."),
+    'fig:xtissue': (
+        "Three panels. Left, a dot plot of Hedges g for the handling score, case minus control, with 95 "
+        "percent bootstrap intervals, one row per cohort, split into cohorts with biopsy cases against "
+        "surgical or donor controls (above the dashed line) and cohorts with both arms obtained by the "
+        "same procedure (below); hollow points show the inflammation-adjusted value. Middle, bars of the "
+        "mean number of immediate-early genes in the stability-selection top 50 per tissue, with and "
+        "without correction. Right, per-subset reproducibility differences for kidney, liver and colon "
+        "with reversed verdicts highlighted."),
+    'fig:candidates': (
+        "Two panels. Left, a matrix of 12 candidate genes (rows) against evidence criteria (columns) "
+        "grouped as selection and control tests, human-kidney context and literature status; orange "
+        "cells are criteria met, pale cells criteria not met, dashes unavailable assessments. Right, all "
+        "30 candidates placed on a grid of current evidence strength against prior diabetic kidney "
+        "disease literature, showing that no candidate is both strong and novel."),
+}
+
+# 저널 상한 15 단어. 제목만 바꾸고 범례는 그대로 둔다.
+TITLE_FIX = {
+    'The reproducibility verdict depends on which cohorts are in the benchmark; the mean predictive advantage stays positive.':
+        'The reproducibility verdict depends on which cohorts are benchmarked; the predictive advantage stays positive.',
+    'Outside kidney, the immediate-early module follows procurement where it is asymmetric and inflammation where it is not, and reaches the most reproducible genes mainly in kidney.':
+        'Outside kidney, the module follows procurement where asymmetric and inflammation where matched.',
+}
+
+
 
 def log(*a):
     print(*a, file=sys.stderr, flush=True)
@@ -128,9 +204,39 @@ def numbers_in(text):
     return set(re.findall(r'(?<![\w.])\d+(?:[.,]\d+)?(?![\w])', text))
 
 
+def figure_text(body):
+    """범례 아래 Alt text 삽입, 긴 제목 축약, 제목·범례 길이 검사 (15 / 300 단어)."""
+    bad = []
+    for lab, alt in ALT.items():
+        pat = B + 'label{' + lab + '}' + NL
+        if body.count(pat) != 1:
+            raise SystemExit('그림 라벨 %s 를 %d 번 찾음' % (lab, body.count(pat)))
+        body = body.replace(pat, pat + B + 'smallskip' + B + 'noindent{' + B + 'footnotesize Alt text: ' + alt + '}' + NL)
+    for old, new in TITLE_FIX.items():
+        # 원문의 제목은 줄바꿈으로 감겨 있다
+        pat = re.compile(re.escape(B + 'textbf{') + r'\s+'.join(map(re.escape, old.split())) + re.escape('}'))
+        if len(pat.findall(body)) != 1:
+            raise SystemExit('그림 제목을 못 찾음: %s' % old[:50])
+        body = pat.sub(lambda _: B + 'textbf{' + new + '}', body, count=1)
+    # figure 환경 안에서만 찾는다; 표의 \caption 에서 시작해 다음 그림 라벨까지 이어 붙던 것을 막는다
+    for blk in re.finditer(r'(?s)' + E + r'begin\{figure\}(.*?)' + E + r'end\{figure\}', body):
+        m = re.search(r'(?s)' + E + r'caption\{(.*)\}' + E + r'label\{(fig:[^}]+)\}', blk.group(1))
+        if not m:
+            continue
+        cap, lab = m.group(1), m.group(2)
+        title = re.search(E + r'textbf\{([^}]*)\}', cap)
+        nt = len(title.group(1).split()) if title else 0
+        nl = len(re.sub(r'\\[a-zA-Z]+|[{}$]', '', cap).split())
+        if nt > 15 or nl > 300:
+            bad.append('%s 제목 %d 단어, 범례 %d 단어' % (lab, nt, nl))
+    if bad:
+        raise SystemExit('그림 제목/범례 길이 초과: ' + '; '.join(bad))
+    return body
+
+
 def build_tex():
     s = open(BMC, encoding='utf-8').read()
-    body = s[s.index(B + 'maketitle'):]
+    body = figure_text(s[s.index(B + 'maketitle'):])
 
     background = between(body, E + r'section\{Background\}', E + r'section\{Methods\}', 'Background')
     methods = between(body, E + r'section\{Methods\}', E + r'section\{Results\}', 'Methods')
@@ -217,12 +323,15 @@ def build_tex():
         m_head, m_rest,
         B + 'section*{Availability of source code and requirements}' + NL + B + 'begin{itemize}' + NL
         + src_list + NL + B + 'end{itemize}' + NL,
-        B + 'section*{Data availability}' + avail_body,
+        B + 'section*{Data availability}' + NL + NL
+        + 'The data sets supporting the results of this article are available in the Zenodo repository, '
+        + B + 'url{%s}' % cfg.REPOSITORY['doi'] + ' ' + B + 'cite{kim2026zenodo}, with the primary public records listed below.'
+        + avail_body,
         abbrev.replace(B + 'section*{List of abbreviations}', B + 'section*{Declarations}' + NL + B + 'bmhead{List of abbreviations}'),
         decl.replace(B + 'section*{Declarations}' + NL, ''),
         B + 'bmhead{' + AI_SECTION_TITLE + '}' + NL + NL + ai_text
         + ' The tools are cited as ' + B + 'cite{claudecode2026,chatgpt2026}.' + NL,
-        B + 'section*{Additional files}' + NL + NL + addfiles.replace(B + 'bmhead{Supplementary information}' + NL, ''),
+        B + 'section*{Additional files}' + NL + NL + addfile_formats(addfiles.replace(B + 'bmhead{Supplementary information}' + NL, '')),
         B + 'bibliographystyle{bib-vancouver}',
         B + 'bibliography{dkd-references,giga-extra}',
         B + 'end{document}',
@@ -230,6 +339,20 @@ def build_tex():
     out = NL.join(parts)
     out = out.replace(B + 'backmatter', '')
     return out, s
+
+
+def addfile_formats(text):
+    """저널 요구: 파일 이름, 형식(확장자), 제목, 설명. 실제 파일의 확장자를 읽어 넣는다."""
+    def fmt(m):
+        n = int(m.group(1))
+        ext = [f for f in os.listdir(DST) if f.startswith('Additional_file_%d.' % n)]
+        if len(ext) != 1:
+            raise SystemExit('Additional file %d 의 파일을 못 찾음' % n)
+        return B + 'textbf{Additional file %d (%s).}' % (n, ext[0].rsplit('.', 1)[1].upper())
+    out, k = re.subn(E + r'textbf\{Additional file (\d+)\.\}', fmt, text)
+    if k != 7:
+        raise SystemExit('Additional file 항목 %d 개 (7 이어야 함)' % k)
+    return out
 
 
 def compile_tex():
@@ -263,6 +386,9 @@ def main():
     nums = numbers_in(' '.join(ABSTRACT.values())) - numbers_in(bmc)
     log('  초록 %d 단어 (한도 250) %s; BMC 본문에 없는 수치: %s' % (n, 'OK' if n <= 250 else '*** 초과', sorted(nums) or '없음'))
     ok = n <= 250 and not nums
+    alt_nums = numbers_in(' '.join(ALT.values())) - numbers_in(bmc)
+    log('  Alt text 10개; BMC 본문에 없는 수치: %s' % (sorted(alt_nums) or '없음'))
+    ok = ok and not alt_nums
     # 코드 요구사항 목록의 판 번호는 requirements.txt 와 같아야 한다
     req = open('requirements.txt', encoding='utf-8').read()
     for pkg, ver in re.findall(r'([a-z-]+) (\d+\.\d+\.\d+)', SOURCE_CODE[4][1]):

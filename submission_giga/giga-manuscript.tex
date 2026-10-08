@@ -105,6 +105,7 @@ Figure~\ref{fig:overview} sets out the study workflow: audit the benchmark input
 \centering
 \includegraphics[width=\textwidth]{Fig1}
 \caption{\textbf{Study workflow and scope.} The central analysis is a cross-cohort transcriptomic benchmark. It begins with patient-overlap and control-procurement audits, then applies two sensitivity analyses: cohort composition and control definition. These expose a procurement-associated immediate-early programme, whose attribution remains an inference because handling times were not recorded. Correction is evaluated by its removal of procurement-driven features and preservation of external AUROC; candidates are reported as an auditable evidence ledger rather than a ranked list alone. The lower band distinguishes supporting layers, which corroborate or falsify candidate claims, from participant-matched integrative multi-omics, which this study does not claim.}\label{fig:overview}
+\smallskip\noindent{\footnotesize Alt text: Flow diagram of the study. Top row: audit the benchmark input for patient overlap and control procurement; then two sensitivity analyses, cohort composition and control definition; then diagnosis and correction of a procurement-associated immediate-early programme; then an auditable candidate-evidence ledger. A lower band separates supporting layers that corroborate or falsify candidates from participant-matched integrative multi-omics, which is marked as not claimed.}
 \end{figure}
 
 
@@ -225,6 +226,7 @@ that fold unable to discriminate methods at all.
 cohort. Random signatures reach 0.68--0.88 depending on the fold; permuted labels sit at
 approximately 0.50. A reported AUROC must be read against the random-signature band for its fold,
 not against 0.5.}\label{fig:null}
+\smallskip\noindent{\footnotesize Alt text: Dot plot of external AUROC by held-out cohort for three groups: random 50-gene signatures, permuted-label controls and the selected signatures. Random signatures form a band from about 0.68 to 0.88 that differs by fold; permuted labels sit near 0.50; the selected signatures are shown against that band for each fold.}
 \end{figure}
 
 
@@ -269,8 +271,7 @@ Fig.~\ref{fig:sensitivity}).
 % source: P1_cohort_sensitivity
 \centering
 \includegraphics[width=\textwidth]{Fig3}
-\caption{\textbf{The reproducibility verdict depends on which cohorts are in the benchmark; the
-mean predictive advantage stays positive.} The benchmark was repeated over all 26 non-trivial subsets of the
+\caption{\textbf{The reproducibility verdict depends on which cohorts are benchmarked; the predictive advantage stays positive.} The benchmark was repeated over all 26 non-trivial subsets of the
 five discovery cohorts; the panels show the 16 of size three or more. Two-cohort subsets are
 excluded because they leave only two folds, so cross-fold agreement collapses towards zero and
 ties between methods cannot be broken. \textbf{a} Percentage of subsets in which each method
@@ -282,6 +283,7 @@ external AUROC instead. Here the advantage is positive at every size and grows m
 ($+0.058$, $+0.096$, $+0.139$ for sizes three through five). Reproducibility
 and predictive performance are therefore not interchangeable summaries of the same
 quantity.}\label{fig:sensitivity}
+\smallskip\noindent{\footnotesize Alt text: Three panels. Left, stacked bars by benchmark size (three, four, five cohorts) of the percentage of subsets in which each selection method wins on cross-fold reproducibility. Middle, one point per subset of stability selection minus the connectivity comparator in cross-fold agreement, spanning minus 0.106 to plus 0.170 with points on both sides of zero at every size except five. Right, the mean external AUROC difference with its range, positive at every size.}
 \end{figure}
 
 
@@ -420,6 +422,7 @@ disease against donor reaches only $-0.23$ and the within-procurement contrast (
 idiopathic) is $+0.33$. The kidney effect therefore appears when procurement differs and vanishes
 when it does not, and it does not transfer to heart, which bounds the claim to kidney procurement
 rather than to tissue injury in general.}\label{fig:procurement}
+\smallskip\noindent{\footnotesize Alt text: Two panels. Left, a dumbbell chart of nine kidney datasets in which biopsy-procured groups (orange) sit below nephrectomy- or donor-procured groups (blue) on the immediate-early module score in eight of nine; GSE162830 shows no gap. Right, horizontal bars of Hedges g for four contrasts: in KPMP, diabetic kidney disease against non-biopsy reference tissue minus 0.84 and against other biopsies plus 0.08; in heart failure, disease against donor minus 0.23 and ischaemic against idiopathic plus 0.33.}
 \end{figure}
 
 
@@ -459,6 +462,7 @@ biopsy, gives $p = 0.21$; comparing DKD with non-biopsy reference tissue in the 
 gives $p = 6.0\times10^{-76}$. The contrast is the negative control for
 Fig.~\ref{fig:procurement}: when procurement is held constant the signal disappears, and it is
 not a property of DKD.}\label{fig:singlecell}
+\smallskip\noindent{\footnotesize Alt text: Box plots of the immediate-early module score in KPMP single-nucleus pseudobulk by donor. Diabetic kidney disease against non-diabetic chronic kidney disease, both needle biopsies, shows overlapping distributions (p equals 0.21); diabetic kidney disease against non-biopsy reference tissue shows a clear separation.}
 \end{figure}
 
 
@@ -525,6 +529,7 @@ which changes sign as the ratio crosses one. In the real data the immediate-earl
 19 genes against 705 in the top-connectivity block, placing it in the regime where connectivity
 misses the confounder for reasons unrelated to robustness. All seven configurations are
 significant by Wilcoxon signed-rank on paired replicates.}\label{fig:blocksize}
+\smallskip\noindent{\footnotesize Alt text: Two line panels over the ratio of disease-block size to confounder-block size in a simulation. Left, the percentage of the top 50 features drawn from the confounder block for each criterion as the ratio changes. Right, the difference between the connectivity and stability criteria, crossing zero where the ratio equals one. A marker shows the real-data regime, 19 immediate-early genes against 705 top-connectivity genes.}
 \end{figure}
 
 
@@ -553,6 +558,7 @@ does so at a fold-mean AUROC identical to no correction to three decimal places,
 analysis at 0.915 against 0.926. The separate paired bootstrap estimate of the residualisation cost
 is uncertain and is given in the text. ComBat returned the same values as no correction in this
 evaluation setting; the confounder is within-cohort rather than between-cohort.}\label{fig:corrections}
+\smallskip\noindent{\footnotesize Alt text: Three panels of horizontal bars for six correction strategies. Left, the percentage of the top 50 selected features flagged as procurement-driven: 27 percent with no correction or ComBat, 5 to 6 percent with handling-score residualisation or surrogate-variable analysis. Middle, specificity pass rate as fold enrichment over the 8.3 percent background. Right, external AUROC, 0.926 for no correction and residualisation and 0.915 for surrogate-variable analysis.}
 \end{figure}
 
 
@@ -680,6 +686,7 @@ than the subset drawn in \textbf{a}, for each of the seven ERCB biopsy diagnoses
 set compared against two control groups, not a within-patient pairing; no public resource
 provides the latter. \textit{MOXD1} rising from 204 to 40 is a change in priority under a
 contrast with less procurement asymmetry, not evidence that it is a marker.}\label{fig:reordering}
+\smallskip\noindent{\footnotesize Alt text: Two panels. Left, a slope chart of 46 genes drawn between their rank against non-biopsy controls and their rank against other-diagnosis biopsies in diabetic nephropathy, on a logarithmic rank axis; blue lines rise under the matched control and orange lines fall, 23 each. Right, horizontal bars of the number of genes shared by the two top-50 lists for seven ERCB biopsy diagnoses.}
 \end{figure}
 
 
@@ -737,9 +744,7 @@ analyses that followed the verdicts were stated before they ran and are reported
 % source: P10_cross_tissue
 \centering
 \includegraphics[width=\textwidth]{Fig9}
-\caption{\textbf{Outside kidney, the immediate-early module follows procurement where it is
-asymmetric and inflammation where it is not, and reaches the most reproducible genes mainly in
-kidney.} \textbf{a}
+\caption{\textbf{Outside kidney, the module follows procurement where asymmetric and inflammation where matched.} \textbf{a}
 Hedges' $g$ of the handling score, case minus control, with 95\% bootstrap intervals, for every
 cohort whose procurement could be coded. Above the dashed line, biopsy cases against surgical or
 donor controls; below, both arms obtained by the same procedure. Hollow points are not a second $g$: they are that $g$
@@ -755,6 +760,7 @@ cohort subsampled to kidney case and control counts (five replicates of ten subs
 points in \textbf{a}, panel \textbf{b} and the first three columns of \textbf{c} test the
 registered predictions; the inflammation adjustment, concordance and subsampling are post
 hoc.}\label{fig:xtissue}
+\smallskip\noindent{\footnotesize Alt text: Three panels. Left, a dot plot of Hedges g for the handling score, case minus control, with 95 percent bootstrap intervals, one row per cohort, split into cohorts with biopsy cases against surgical or donor controls (above the dashed line) and cohorts with both arms obtained by the same procedure (below); hollow points show the inflammation-adjusted value. Middle, bars of the mean number of immediate-early genes in the stability-selection top 50 per tissue, with and without correction. Right, per-subset reproducibility differences for kidney, liver and colon with reversed verdicts highlighted.}
 \end{figure}
 
 
@@ -865,6 +871,7 @@ unreported but weak, and the cell requiring both is empty.
 \centering
 \includegraphics[width=\textwidth]{Fig10}
 \caption{\textbf{Candidate evidence ledger.} \textbf{a} The 12 tier-2 and tier-3 candidates, which have either stronger current evidence or no prior DKD literature. The columns separate selection and control tests, human-kidney context, and literature status. Orange indicates a criterion met, pale a criterion not met, and a dash an assessment unavailable for that candidate; missing single-nucleus or regional-protein measurements are not scored as failures. The regional-protein column is the KPMP glomerulus-versus-tubulointerstitium contrast, which locates a protein rather than relating it to disease; it is not the diabetic-versus-non-diabetic protein evidence of Section~\ref{sec:proteome}, reported separately. The 18 tier-4 candidates are omitted here for legibility; Additional file~5 extends the matrix to all 30. \textbf{b} All 30 candidates classified by current evidence strength and prior DKD literature. The stronger-evidence/no-prior-literature cell is empty under the criteria fixed before the evidence was read.}\label{fig:candidates}
+\smallskip\noindent{\footnotesize Alt text: Two panels. Left, a matrix of 12 candidate genes (rows) against evidence criteria (columns) grouped as selection and control tests, human-kidney context and literature status; orange cells are criteria met, pale cells criteria not met, dashes unavailable assessments. Right, all 30 candidates placed on a grid of current evidence strength against prior diabetic kidney disease literature, showing that no candidate is both strong and novel.}
 \end{figure}
 
 
@@ -1380,6 +1387,8 @@ and~\ref{sec:modulesize} should read it alongside them.
 
 \section*{Data availability}
 
+The data sets supporting the results of this article are available in the Zenodo repository, \url{https://doi.org/10.5281/zenodo.23051697} \cite{kim2026zenodo}, with the primary public records listed below.
+
 All data supporting the conclusions of this article are publicly available, and all code
 required to regenerate every figure and table is openly released.
 
@@ -1500,32 +1509,32 @@ responsibility for the final content. The tools are cited as \cite{claudecode202
 \section*{Additional files}
 
 
-\textbf{Additional file 1.} Comparator implementation and its validation: what the WGCNA hub
+\textbf{Additional file 1 (PDF).} Comparator implementation and its validation: what the WGCNA hub
 ranking used here does and does not share with the canonical pipeline, the scale-free topology
 fit across soft powers, the 32-variant grid testing whether
 Section~\ref{sec:modulesize} depends on those choices, the provenance of the remaining
 selectors, and the block-size simulation run with the RBS implementation.
 
-\textbf{Additional file 2.} Cohort audit report, including the patient-identifier evidence for
+\textbf{Additional file 2 (PDF).} Cohort audit report, including the patient-identifier evidence for
 the three excluded series and the residual overlap that could not be removed.
 
-\textbf{Additional file 3.} Per-cohort harmonisation summary and the complete candidate table
+\textbf{Additional file 3 (XLSX).} Per-cohort harmonisation summary and the complete candidate table
 with every line of evidence.
 
-\textbf{Additional file 4.} Per-diagnosis results underlying Section~\ref{sec:external}:
+\textbf{Additional file 4 (XLSX).} Per-diagnosis results underlying Section~\ref{sec:external}:
 the effect vectors for each ERCB diagnosis under both control definitions, the three
 external validation datasets, the KPMP single-nucleus contrast summary, and the KPMP modality
 table by diagnosis.
 
-\textbf{Additional file 5.} Candidate evidence over all 30 specificity-gated candidates: Figure~\ref{fig:candidates} extended to include the 18 tier-4 candidates omitted from the main text for legibility.
+\textbf{Additional file 5 (PDF).} Candidate evidence over all 30 specificity-gated candidates: Figure~\ref{fig:candidates} extended to include the 18 tier-4 candidates omitted from the main text for legibility.
 
-\textbf{Additional file 6.} The two proteomic cohorts used in Section~\ref{sec:proteome}:
+\textbf{Additional file 6 (PDF).} The two proteomic cohorts used in Section~\ref{sec:proteome}:
 what each source publication and repository record states about case and control definition,
 tissue, procurement route and pre-analytical reporting, together with the abundance- and
 peptide-count-matched permutation and its achieved balance, and a negative control asking
 whether the two proteomic datasets could have produced a candidate list on their own.
 
-\textbf{Additional file 7.} The test in liver and colon (Section~\ref{sec:xtissue}): the
+\textbf{Additional file 7 (XLSX).} The test in liver and colon (Section~\ref{sec:xtissue}): the
 registered predictions and post hoc plan with their SHA-256 digests; every cohort considered,
 with platform, case and control definitions, procurement coding per arm with its evidence, and
 inclusion status; the value-vector reuse audit; per-cohort immediate-early effects; the

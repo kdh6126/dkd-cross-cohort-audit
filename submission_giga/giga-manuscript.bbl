@@ -373,19 +373,21 @@ Kim D, Bae M, Park J, et~al.: {Auditing cross-cohort feature-selection
   benchmarks: code, harmonised cohorts and audit database}.
 \newblock Zenodo.
 \newblock Version 1.0.0.
+\newblock \url{https://doi.org/10.5281/zenodo.23051697}.
 
 \bibitem[\protect\citeauthoryear{{Anthropic}}{2026}]{claudecode2026}
-{Anthropic}.: {Claude Code (command-line agent) with the Claude models served
-  through it during 2026, latest Claude Fable 5.1 (claude-fable-5-1)}.
-\newblock Used by Dohun Kim during 2026 (January to October) for code
-  development and refactoring, proposals for control analyses, language editing
-  of author-written text and figure-drawing code.
+{Anthropic}.: {Claude Code (Claude models served during 2026, latest Claude
+  Fable 5.1, claude-fable-5-1) [Large language model agent]}.
+\newblock Responses to queries made by Dohun Kim, January to October 2026, for
+  code development and refactoring, proposals for control analyses, language
+  editing of author-written text and figure-drawing code.
 \newblock \url{https://claude.com/claude-code}.
 
 \bibitem[\protect\citeauthoryear{{OpenAI}}{2026}]{chatgpt2026}
-{OpenAI}.: {ChatGPT (web interface, models as deployed by OpenAI during 2026)}.
-\newblock Used by Dohun Kim during 2026 (January to October) for language
-  editing of author-written text and proposals for control analyses.
+{OpenAI}.: {ChatGPT (web interface, models as deployed during 2026) [Large
+  language model]}.
+\newblock Responses to queries made by Dohun Kim, January to October 2026, for
+  language editing of author-written text and proposals for control analyses.
 \newblock \url{https://chatgpt.com}.
 
 \end{thebibliography}
