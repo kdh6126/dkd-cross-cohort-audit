@@ -1,0 +1,18 @@
+\begin{table}[h]
+\caption{What the correlation-module comparator shares with the canonical WGCNA pipeline, and where it departs. Additional file~1 tests whether any departure changes a conclusion.}\label{tab:comparator}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{24mm}p{41mm}p{41mm}p{15mm}@{}}
+\toprule
+Element & Canonical WGCNA & Used here & Status \\
+\midrule
+Similarity measure & Pearson correlation & Pearson correlation & same \\
+Adjacency & signed or unsigned power & unsigned power & restricted \\
+Soft-threshold power & chosen by scale-free fit & fixed at $\beta = 6$ & differs \\
+Module detection & TOM distance, dynamic tree cut & clustering on correlation distance & differs \\
+Hub score & kME, eigengene correlation & intramodular connectivity kIN & differs \\
+Module eigengene & first principal component & not computed & absent \\
+\botrule
+\end{tabular}
+\footnotetext{The departures are why the manuscript calls this a correlation-module comparator rather than WGCNA. We do not claim it reproduces the reference package.}
+\end{table}

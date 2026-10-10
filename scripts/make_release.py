@@ -98,8 +98,9 @@ INCLUDE = [
     # 투고본은 BiB 판 하나다. BMC 형식 확장판(submission/)은 공개본에 넣지 않는다 -
     # 투고하지 않는 원고가 공개되면 혼동을 낳는다. 반려되어 BMC 로 갈 때 다시 넣는다.
     # 커버레터는 아래 EXCLUDE 로 뺀다.
-    ('submission_bib', 'submission_bib'),
-    ('submission_giga', 'submission_giga'),
+    # 2026-10-10: BiB, GigaScience 모두 반려. 투고하는 판은 BMC 이므로 submission/ 을 공개하고
+    # 두 판은 뺀다 (git 이력에는 남아 있다). 부록 1-7 은 아래 additional_files() 가 붙인다.
+    ('submission', 'submission'),
     # 부록은 아래 additional_files() 가 원고에서 읽어 붙인다. 손으로 적어 두었더니
     # 여섯 번째 부록이 생겼을 때 목록이 그대로 남아, 공개본에만 빠져 있었다.
 ]

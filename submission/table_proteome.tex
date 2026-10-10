@@ -1,0 +1,29 @@
+\begin{table}[h]
+\caption{Candidates measured at the protein level in two patient-independent datasets. Neither shares patients with the other or with any transcriptome cohort used here, and the two use different measurement principles. Transcriptome effect is the mean across the harmonised cohorts; protein effect and $q$ are from the proteomic cohort named in each block.}\label{tab:proteome}
+\begin{tabular}{@{}lrrrl@{}}
+\toprule
+Gene & Transcriptome $g$ & Protein $g$ & Protein $q$ & Direction \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{SOMAscan aptamer panel; 23 DKD, 10 healthy (Mendeley 83k89shdx5)}} \\
+\midrule
+MMP2 & +1.58 & +1.71 & 0.008 & agrees \\
+MMP7 & +1.82 & +2.04 & 0.008 & agrees \\
+THBS2 & +1.78 & +1.31 & 0.013 & agrees \\
+CA10 & -1.85 & -1.05 & 0.046 & agrees \\
+LUM & +1.72 & +1.00 & 0.057 & agrees \\
+TNFRSF12A & +0.95 & +0.32 & 0.587 & agrees \\
+TNNT2 & -1.68 & +0.19 & 0.952 & differs \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{LC-MS/MS of FFPE cortex; 5 DKD, 7 non-diabetic (PRIDE PXD041884)}} \\
+\midrule
+MMP7 & +1.82 & +3.34 & 0.045 & agrees \\
+ACTN1 & +1.81 & +1.78 & 0.046 & agrees \\
+CTNNBIP1 & -1.42 & +0.75 & 0.391 & differs \\
+RNASE6 & +1.71 & -0.59 & 0.542 & differs \\
+LUM & +1.72 & +0.43 & 0.587 & agrees \\
+VCAN & +1.66 & +0.42 & 0.589 & agrees \\
+COL1A2 & +2.01 & +0.39 & 0.614 & agrees \\
+\botrule
+\end{tabular}
+\footnotetext{Neither cohort is genome-wide. The aptamer panel carries 841 of the 9,900 genes in the frozen space and 7 of the 30 candidates; the mass-spectrometry cohort quantifies 1,142 and 7. Twelve distinct candidates are measured in total, two (\textit{LUM}, \textit{MMP7}) in both. Absence means the protein was not measured, not that it failed. Pooled across the two cohorts, candidates reach $q<0.05$ more often than the proteins that are measured but not candidates (Cochran--Mantel--Haenszel $p = 0.030$; permutation without replacement $p = 0.035$; permutation with the background matched on abundance and peptide count $p = 0.039$).}
+\end{table}

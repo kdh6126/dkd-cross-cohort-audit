@@ -596,18 +596,21 @@ def run(stage, dry, force):
 # ---------------------------------------------------------------------------- 제출 고정
 # 새 검사를 만들지 않는다. 있는 것을 정해진 순서로 돌리고 해시를 남긴다.
 SUBMIT_STEPS = [
-    ('BiB 판 빌드', [PY, 'scripts/bib_build.py']),
-    ('BMC 제출 점검', [PY, 'scripts/preflight.py', '--target', 'bmc']),
-    ('BiB 제출 점검', [PY, 'scripts/preflight.py', '--target', 'bib']),
-    ('GigaScience 판 빌드', [PY, 'scripts/giga_build.py']),
-    ('GigaScience 제출 점검', [PY, 'scripts/preflight.py', '--target', 'giga']),
-    ('그림 글자 크기', [PY, 'scripts/figure_typography.py', '--min', '6']),
-    ('쪽 배치', [PY, 'scripts/page_layout_audit.py']),
-    ('BMC 형식', [PY, 'scripts/submission_audit.py']),
-    ('수치 출처', [PY, 'scripts/verify_provenance.py']),
-    ('문장 감사', [PY, 'scripts/prose_audit.py']),
-    ('재생성 폐쇄집합', [PY, 'scripts/paper_closure_audit.py']),
+    # (이름, 명령, 해당 판). --submit bmc 처럼 판을 고르면 그 판의 단계만 돈다 - 세 판을 다 빌드하면
+    # 한 번에 수십 분이 걸리고, 투고하지 않는 판까지 다시 만든다 (2026-10-10).
+    ('BiB 판 빌드', [PY, 'scripts/bib_build.py'], {'bib'}),
+    ('BMC 제출 점검', [PY, 'scripts/preflight.py', '--target', 'bmc'], {'bmc'}),
+    ('BiB 제출 점검', [PY, 'scripts/preflight.py', '--target', 'bib'], {'bib'}),
+    ('GigaScience 판 빌드', [PY, 'scripts/giga_build.py'], {'giga'}),
+    ('GigaScience 제출 점검', [PY, 'scripts/preflight.py', '--target', 'giga'], {'giga'}),
+    ('그림 글자 크기', [PY, 'scripts/figure_typography.py', '--min', '6'], {'bmc', 'bib', 'giga'}),
+    ('쪽 배치', [PY, 'scripts/page_layout_audit.py'], {'bmc', 'bib', 'giga'}),
+    ('BMC 형식', [PY, 'scripts/submission_audit.py'], {'bmc', 'bib', 'giga'}),
+    ('수치 출처', [PY, 'scripts/verify_provenance.py'], {'bmc', 'bib', 'giga'}),
+    ('문장 감사', [PY, 'scripts/prose_audit.py'], {'bmc', 'bib', 'giga'}),
+    ('재생성 폐쇄집합', [PY, 'scripts/paper_closure_audit.py'], {'bmc', 'bib', 'giga'}),
 ]
+SUBMIT_DIRS = {'bmc': 'submission/', 'bib': 'submission_bib/', 'giga': 'submission_giga/'}
 SUBMIT_FILES = ['submission/dkd-manuscript.pdf', 'submission/dkd-manuscript.tex',
                 'submission/dkd-references.bib', 'submission/COVER_LETTER.md',
                 'submission_bib/bib-manuscript.pdf', 'submission_bib/bib-manuscript.tex',
@@ -620,13 +623,16 @@ SUBMIT_FILES = ['submission/dkd-manuscript.pdf', 'submission/dkd-manuscript.tex'
                 'submission_giga/giga-manuscript-source.zip']
 
 
-def submit_check():
-    """전체 절차를 돌리고, 전부 통과하면 제출 파일의 해시를 기록한다."""
+def submit_check(target='all'):
+    """전체 절차를 돌리고, 전부 통과하면 제출 파일의 해시를 기록한다. target 은 all 또는 한 판."""
     import glob
     import hashlib
     import time
     bad, blockers = [], []
-    for label, cmd in SUBMIT_STEPS:
+    want = set(SUBMIT_DIRS) if target == 'all' else {target}
+    for label, cmd, tg in SUBMIT_STEPS:
+        if not (tg & want):
+            continue
         r = subprocess.run(cmd, env=dict(os.environ, PYTHONIOENCODING='utf-8'),
                            capture_output=True)
         out = (r.stdout + r.stderr).decode('utf-8', 'replace')
@@ -647,7 +653,8 @@ def submit_check():
                     + glob.glob('submission_bib/figures/*.eps') + glob.glob('submission_bib/figures/*.tif')
                     + glob.glob('submission_bib/Supplementary_File_*')
                     + glob.glob('submission_giga/figures/*.png') + glob.glob('submission_giga/Additional_file_*'))
-    state = '최종 (모든 검사 통과)' if not bad else '잠정 (검사 미통과 - 제출본이 아니다)'
+    files = [f for f in files if any(f.startswith(SUBMIT_DIRS[t]) for t in want)]
+    state = ('최종 (모든 검사 통과)' if not bad else '잠정 (검사 미통가 - 제출본이 아니다)').replace('미통가', '미통과') + ('' if target == 'all' else ' - %s 판' % target)
     lines = ['# 제출본 해시 %s' % time.strftime('%Y-%m-%dT%H:%M:%S'),
              '# 상태: ' + state,
              '# 이 해시는 파일이 같은지만 확인한다. 저자 기여·승인·투고 적합성을 증명하지',
@@ -689,12 +696,12 @@ def main():
     ap.add_argument('--skip-network', action='store_true')
     ap.add_argument('--force', action='store_true')
     ap.add_argument('--dry-run', action='store_true')
-    ap.add_argument('--submit', action='store_true',
+    ap.add_argument('--submit', nargs='?', const='all', choices=['all', 'bmc', 'bib', 'giga'],
                     help='제출 직전 점검을 순서대로 돌리고 제출 파일 해시를 적는다')
     args = ap.parse_args()
 
     if args.submit:
-        return submit_check()
+        return submit_check(args.submit)
 
     by_name = {s.name: s for s in S}
 

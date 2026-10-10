@@ -20,10 +20,10 @@ failed independent validation, and the paper reports that rather than the candid
 
 ## Which manuscript is in this repository
 
-`submission_bib/` is the submitted version (Briefings in Bioinformatics, Problem Solving
-Protocol) with its supplementary notes, files and figures. An extended manuscript in another
-journal's format exists in the authors' working tree and is not distributed; the pipeline stages
-that audit that file are skipped automatically in this copy, and none of them produce results.
+`submission/` is the submitted version (BMC Bioinformatics, Research article) with its
+Additional files 1-7, figures and cover letter. Condensed versions prepared earlier for other
+journals are not distributed; the pipeline stages that audit the manuscript run against this
+file.
 
 ## Where things are
 
