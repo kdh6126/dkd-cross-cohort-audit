@@ -653,7 +653,7 @@ def submit_check(target='all'):
                     + glob.glob('submission_bib/figures/*.eps') + glob.glob('submission_bib/figures/*.tif')
                     + glob.glob('submission_bib/Supplementary_File_*')
                     + glob.glob('submission_giga/figures/*.png') + glob.glob('submission_giga/Additional_file_*'))
-    files = [f for f in files if any(f.startswith(SUBMIT_DIRS[t]) for t in want)]
+    files = [f for f in files if any(f.replace(chr(92), '/').startswith(SUBMIT_DIRS[t]) for t in want)]
     state = ('최종 (모든 검사 통과)' if not bad else '잠정 (검사 미통가 - 제출본이 아니다)').replace('미통가', '미통과') + ('' if target == 'all' else ' - %s 판' % target)
     lines = ['# 제출본 해시 %s' % time.strftime('%Y-%m-%dT%H:%M:%S'),
              '# 상태: ' + state,

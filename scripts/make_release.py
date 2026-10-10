@@ -108,6 +108,7 @@ INCLUDE = [
 # matched against the path relative to ROOT, with forward slashes
 EXCLUDE_SUFFIX = ('.pyc', '.npz', '.pptx')
 EXCLUDE_CONTAINS = ('__pycache__', '/figures/.ipynb', 'db/columnar', 'dkd.sqlite',
+                    'sn-article-template', 'submission/bst',   # 출판사 템플릿 묶음; 원고는 sn-jnl.cls 와 sn-vancouver-num.bst 만 쓴다
                     # 커버레터는 편집자에게만 가는 문서다(심사자 추천 등). 공개하지 않는다.
                     'COVER_LETTER', '.aux', '.blg', '.out', '.log',
                     # 옛 마크다운 초안. 투고하지 않는 또 하나의 원고라 공개본에서 뺀다.
