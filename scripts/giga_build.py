@@ -234,6 +234,8 @@ def drop_figures(body):
     for lab, pairs in DROP_FIGS.items():
         # 다른 그림 환경을 넘어가지 않도록 \end{figure} 를 건너뛰지 못하게 한다 (처음엔 2-10번 그림을 통째로 지웠다)
         pat = re.compile(r'(?s)' + E + r'begin\{figure\}(?:(?!' + E + r'end\{figure\}).)*?' + E + r'label\{' + re.escape(lab) + r'\}' + NL + E + r'end\{figure\}' + NL + r'?')
+        if len(pat.findall(body)) == 0:   # 2026-10-16 부터 BMC 원본에서 이미 빠져 있다
+            continue
         if len(pat.findall(body)) != 1:
             raise SystemExit('그림 %s 환경을 %d 번 찾음' % (lab, len(pat.findall(body))))
         body = pat.sub('', body, count=1)

@@ -620,7 +620,7 @@ def af5():
     body = [
         BS + 'section*{' + file_title(5) + '. Candidate evidence, all %d candidates}' % n,
         # GigaScience 판은 이 그림을 본문에 두지 않는다 (2026-10-08); 부록이 유일한 매트릭스다
-        (cap(where('fig:candidates')) + ' shows' if TARGET != 'giga' else 'The main text describes')
+        'The main text describes'   # 후보 매트릭스 그림은 2026-10-16 부터 어느 판에도 없다; 이 부록이 유일한 매트릭스
         + ' the 12 candidates in tiers 2 and 3 -- those that are '
         'either strong in the data or absent from the DKD literature. This file shows the '
         'evidence matrix over all %d specificity-gated candidates, adding the 18 in tier 4, which are '
